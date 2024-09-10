@@ -7,6 +7,22 @@
 
 body {
     background-color: beige;
-    min-height: 100vh;
+    min-height: 99vh;
     background: url(../images/background-image.jpg)no-repeat center/cover;
+    font-family: "Antic Slab", serif;
+}
+
+h1 {
+    color: #232E30;
+}
+
+header {
+    text-align: center;
+    background-color: rgba(144,186,199, .7);
+    width: 70%;
+    margin-left: 12%;
+    margin-top: 25px;
+    font-size: 120%;
+    padding: 20px;
+    border-radius: 20px;
 }
