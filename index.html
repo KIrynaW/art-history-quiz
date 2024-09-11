@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,29 +15,38 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Name the Artist Quiz</title>
 </head>
+
 <body>
     <header>
         <h1>Name the Artist Quiz</h1>
     </header>
     <main>
-        <section id="landing-space">
-            <div class="introduction">
+        <div class="quiz-container">
+            <div class="quiz-intro">
                 <h2>Welcome to the Art Quiz</h2>
                 <p>Fill in later</p>
+                <button id="quiz-start">Start</button>
             </div>
-            <button id="start-quiz">Start</button>
-        </section>
-        <section id="game-space" class="disguised">
-            <div id="questions-space"></div>
-            <div id="answer-options"></div>
+            <div class="questions-container" class="disguised">
+                <h2>Name the Artist by their artwork</h2>
+                <div id="art-images"></div>
+                <div id="answer-options"></div>
+            </div>
+        </div>
+        <div class="score-container">
+            <div id="score"></div>
             <div id="art-facts"></div>
-        </section>
-        <section id="score-space"></section>
-        <section id="game-end"></section>
+        </div>
+        <div id="quiz-end"></div>
+
+
+
+
 
     </main>
 
     <!-- Javascript -->
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
