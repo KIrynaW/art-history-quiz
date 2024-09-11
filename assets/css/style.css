@@ -14,15 +14,25 @@ body {
 
 h1 {
     color: #232E30;
+    font-weight: 500;
+    font-family: 'Limelight', sans-serif;
+    
 }
 
 header {
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     background-color: rgba(144,186,199, .7);
-    width: 70%;
-    margin-left: 12%;
+    width: 80%;
+    margin-left: 8%;
     margin-top: 25px;
-    font-size: 120%;
-    padding: 20px;
+    font-size: 90%;
+    padding: 15px;
     border-radius: 20px;
+}
+
+.score {
+    padding: 5px;
 }

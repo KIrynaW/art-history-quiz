@@ -10,7 +10,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Limelight&display=swap" rel="stylesheet">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Name the Artist Quiz</title>
@@ -18,7 +18,12 @@
 
 <body>
     <header>
-        <h1>Name the Artist Quiz</h1>
+        <div class="heading">
+            <h1>"Name the Artist" Quiz</h1>
+        </div>
+        <div>
+            <h2 class="score">Score:<span id="scoreNum">0</span></h2>
+        </div>
     </header>
     <main>
         <div class="quiz-container">
@@ -28,15 +33,12 @@
                 <button id="quiz-start">Start</button>
             </div>
             <div class="questions-container" class="disguised">
-                <h2>Name the Artist by their artwork</h2>
+                <h2>Name the artist by their artwork</h2>
                 <div id="art-images"></div>
                 <div id="answer-options"></div>
             </div>
         </div>
-        <div class="score-container">
-            <div id="score"></div>
-            <div id="art-facts"></div>
-        </div>
+        <div class="art-facts-container"></div>
         <div id="quiz-end"></div>
 
 
