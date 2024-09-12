@@ -26,22 +26,29 @@
             <div class="quiz-intro">
                 <h3>In this fun quiz, you are tasked with naming artists' based on the images
                     of their work.</h3>
-                <div class="image-start"></div>
-                <button id="quiz-start">Start</button>
-                
+                <div class= "image-start"></div>
+                <button id="start" class= "quiz-start"><h3>START</h3></button>
             </div>
-            <div class="questions-container" class="disguised">
-                <div id="art-images"></div>
-                <div id="answer-options"></div>
+            <div class="questions-container" class="hidden">
+                <h3>Painting Number: <span id = "paintingNum">1</span></h3>
+                <div class="art-images" id="artWork"></div>
+                <div id="answer-options">
+                    <button id= "optionOne" class= "option-bar"></button>
+                    <button id= "optionTwo" class= "option-bar"></button>
+                    <button id= "optionThree" class= "option-bar"></button>
+                    <button id= "optionFour" class= "option-bar"></button>
+                </div>
             </div>
         </div>
-        <div class="art-facts-container"></div>
-        <div id="quiz-end"></div>
-
-
-
-
-
+        <div class="art-facts-container">
+            <p id="artFacts">Interesting Facts</p>
+        </div>
+        <div id="quiz-end" class="hidden end">
+            <h2>You completed the Quiz!</h2>
+            <h3>Your Final Score: <span id="finalScore">0</span></h3>
+            <br>
+            <button id="tryAgain"><h3>Start Again</h3></button>
+        </div>
     </main>
 
     <!-- Javascript -->

@@ -10,20 +10,22 @@ body {
     min-height: 99vh;
     background: url(../images/background-image.jpg)no-repeat center/cover;
     font-family: "Antic Slab", serif;
+    letter-spacing: 1px;
 }
 
 h1 {
     color: #232E30;
     font-weight: 500;
     font-family: 'Limelight', sans-serif;
+    letter-spacing: 3px;
     padding: 5px;
-
 }
 
 h2,
 h3 {
     margin: 5px;
     padding: 5px;
+    font-family: "Antic Slab", serif;
 }
 
 header {
@@ -48,7 +50,7 @@ main {
     width: 80%;
     text-align: center;
     margin-left: 8%;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .quiz-intro {
@@ -63,8 +65,18 @@ main {
     position: relative;
     align-self: center;
     width: 40vw;
-    height: 25vw;
+    height: 20vw;
     min-width: 200px;
     min-height: 150px;
     border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.quiz-start {
+    width: fit-content;
+    font-size: 100%;
+    margin-top: 5px;
+    letter-spacing: 2px;
+    align-self: center;
 }
