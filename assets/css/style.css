@@ -180,6 +180,7 @@ main {
     background-color: rgb(144, 186, 199, .7);
     border-radius: 2px;
 }
+
 .next-questionbtn:hover {
     cursor: pointer;
     transform: scaleY(1.2);
@@ -195,6 +196,11 @@ main {
     text-align: left;
     padding: 10px;
 }
+
+.hidden-two {
+    display: none;
+}
+
 /* Quiz End Area Styling */
 .quiz-end-container {
     width: 90%;
@@ -204,6 +210,10 @@ main {
     padding: 10px;
     border-radius: 10px;
     align-self: center;
+}
+
+.hidden-three {
+    display: none;
 }
 
 .quiz-againbtn {
