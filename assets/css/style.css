@@ -65,6 +65,11 @@ main {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    background-color: rgb(231, 232, 234, .7);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+
 }
 
 /* Quiz Intro Area Styling*/
@@ -80,9 +85,9 @@ main {
     position: relative;
     align-self: center;
     width: 40vw;
-    height: 20vw;
-    min-width: 200px;
-    min-height: 150px;
+    height: 25vw;
+    min-width: 250px;
+    min-height: 300px;
     border-radius: 20px;
     padding: 10px;
     margin-top: 10px;
@@ -95,6 +100,7 @@ main {
     letter-spacing: 4px;
     align-self: center;
     border: 2px outset rgb(221, 100, 44, .7);
+    background-color: rgb(144, 186, 199, .7);
     border-radius: 2px;
 }
 
@@ -173,7 +179,7 @@ main {
     padding: 10px;
 }
 /* Quiz End Area Styling */
-.end-container {
+.quiz-end-container {
     width: 90%;
     height: fit-content;
     background-color: rgb(221, 100, 44, .7);
