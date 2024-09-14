@@ -88,7 +88,7 @@ main {
     margin-top: 10px;
 }
 
-.quiz-start {
+.quiz-startbtn {
     width: fit-content;
     margin-top: 10px;
     padding: 3px;
@@ -98,7 +98,7 @@ main {
     border-radius: 2px;
 }
 
-.quiz-start:hover {
+.quiz-startbtn:hover {
     cursor: pointer;
     transform: scaleY(1.2);
     transition: transform(250ms);
@@ -116,6 +116,10 @@ main {
     padding: 10px;
     border-radius: 15px;
     align-self: center;
+}
+
+.hidden {
+    display: none;
 }
 
 /* Quiz Image Styling */
@@ -141,7 +145,7 @@ main {
     align-content: center;
 }
 
-.option-bar {
+.option-barbtn {
     flex-grow: 1;
     margin: 5px;
     width: 250px;
@@ -152,7 +156,7 @@ main {
     color: #232E30;
 }
 
-.option-bar:hover {
+.option-barbtn:hover {
     cursor: pointer;
     transform: scaleY(1.2);
     transition: transform(250ms);
@@ -167,4 +171,30 @@ main {
     align-self: center;
     text-align: left;
     padding: 10px;
+}
+/* Quiz End Area Styling */
+.end-container {
+    width: 90%;
+    height: fit-content;
+    background-color: rgb(221, 100, 44, .7);
+    margin: 10px 6%;
+    padding: 10px;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.quiz-againbtn {
+    width: fit-content;
+    margin-top: 10px;
+    padding: 3px;
+    letter-spacing: 4px;
+    align-self: center;
+    border: 2px outset #232E30;
+    border-radius: 2px;
+}
+
+.quiz-againbtn:hover {
+    cursor: pointer;
+    transform: scaleY(1.2);
+    transition: transform(250ms);
 }
