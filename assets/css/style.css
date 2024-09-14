@@ -28,6 +28,7 @@ h3 {
     font-family: "Antic Slab", serif;
 }
 
+/* Header Section Styles */
 header {
     text-align: center;
     display: flex;
@@ -44,8 +45,13 @@ header {
 
 .score {
     padding: 5px;
+    width: fit-content;
+    background-color: #e7e8ea;
+    border: 1px solid #232E30;
+    border-radius: 5px;
 }
 
+/* Main Quiz Area Section */
 main {
     width: 80%;
     text-align: center;
