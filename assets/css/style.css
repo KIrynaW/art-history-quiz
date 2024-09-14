@@ -41,6 +41,7 @@ header {
     font-size: 90%;
     padding: 10px;
     border-radius: 20px;
+    box-shadow: 4px 3px 8px #dd642c;
 }
 
 .score {
@@ -59,6 +60,13 @@ main {
     margin-top: 15px;
 }
 
+.quiz-container {
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+/* Quiz Intro Area Styling*/
 .quiz-intro {
     display: flex;
     flex-direction: column;
@@ -95,16 +103,32 @@ main {
     transition: transform(250ms);
 }
 
+/* Quiz Play Area Styling */
 .questions-container {
-    width: 80%;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: rgb(231, 232, 234, .7);
     margin-top: 10px;
-    margin-left: 10%;
+    margin-left: 15px;
+    padding: 10px;
     border-radius: 15px;
+    align-self: center;
 }
+
+.art-images {
+    min-width: 250px;
+    min-height: 300px;
+    width: 40vw;
+    height:30vw;
+    align-self: center;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 5px 10px 8px #232E30;
+    border-radius: 10px;
+}
+
 
 .answer-options {
     max-width: 70%;
