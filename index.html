@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Limelight&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f6f486612e.js" crossorigin="anonymous"></script>
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Name the Artist Quiz</title>
@@ -44,12 +46,13 @@
                     <button id= "optionThree" class= "option-bar"></button>
                     <button id= "optionFour" class= "option-bar"></button>
                 </div>
+                <div class="art-facts-container" id="displayAfterSelection">
+                    <p id="artFacts"><i class="fa-solid fa-book-open-reader"></i></p>
+                </div>
             </div>
         </div>
         <!-- Interesting Facts Box Area displays when option is selected -->
-        <div class="art-facts-container" id="displayAfterSelection">
-            <p id="artFacts">Interesting Facts</p>
-        </div>
+       
         <div id="quiz-end" class="hidden end">
             <h2>You completed the Quiz!</h2>
             <h3 id="scoreMessage">Your Final Score: <span id="finalScore">0</span></h3>
