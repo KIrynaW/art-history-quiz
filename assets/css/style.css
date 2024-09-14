@@ -125,7 +125,7 @@ main {
 }
 
 .hidden {
-    display: none;
+    display: one;
 }
 
 /* Quiz Image Styling */
@@ -167,6 +167,23 @@ main {
     transform: scaleY(1.2);
     transition: transform(250ms);
     background-color: #dd642c;
+}
+
+/* Next Button Styling */
+.next-questionbtn {
+    width: fit-content;
+    margin-top: 3px;
+    padding: 5px;
+    letter-spacing: 4px;
+    align-self: center;
+    border: 2px outset rgb(221, 100, 44, .7);
+    background-color: rgb(144, 186, 199, .7);
+    border-radius: 2px;
+}
+.next-questionbtn:hover {
+    cursor: pointer;
+    transform: scaleY(1.2);
+    transition: transform(250ms);
 }
 
 /* Interesting Facts Area Styling */

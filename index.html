@@ -31,32 +31,37 @@
             <div class="quiz-intro">
                 <h3>In this fun quiz, you are tasked with naming artists' based on the images
                     of their work.</h3>
-                <div class= "image-start"></div>
+                <div class="image-start"></div>
                 <!-- Start the Quiz -->
-                <button id="start" class= "quiz-startbtn"><h3>Start</h3></button>
+                <button id="start" class="quiz-startbtn">
+                    <h3>Start</h3>
+                </button>
             </div>
-            <div class= "questions-container hidden">
+            <div class="questions-container hidden">
                 <!-- Painting Display Area -->
-                <h4>Painting Number: <span id = "paintingNum">1</span></h4>
+                <h4>Painting Number: <span id="paintingNum">1</span></h4>
                 <div class="art-images" id="artWork"></div>
                 <!-- Answer Options Area -->
-                <div class="answer-options" id= "options">
-                    <button id= "optionOne" class= "option-barbtn"></button>
-                    <button id= "optionTwo" class= "option-barbtn"></button>
-                    <button id= "optionThree" class= "option-barbtn"></button>
-                    <button id= "optionFour" class= "option-barbtn"></button>
+                <div class="answer-options" id="options">
+                    <button id="optionOne" class="option-barbtn"></button>
+                    <button id="optionTwo" class="option-barbtn"></button>
+                    <button id="optionThree" class="option-barbtn"></button>
+                    <button id="optionFour" class="option-barbtn"></button>
                 </div>
-                <div class="art-facts-container" id="displayAfterSelection">
+                <button id="nextQuestion" class="next-questionbtn hidden">Next</button>
+                <div class="art-facts-container hidden">
                     <p id="artFacts"><i class="fa-solid fa-book-open-reader"></i></p>
                 </div>
             </div>
         </div>
         <!-- Interesting Facts Box Area displays when option is selected -->
-        <div id="quiz-end" class= "quiz-end-container hidden ">
+        <div id="quiz-end" class="quiz-end-container hidden ">
             <h2>You completed the Quiz!</h2>
             <h3 id="scoreMessage"></h3>
             <br>
-            <button id="tryAgain" class= "quiz-againbtn"><h3>Start Again</h3></button>
+            <button id="tryAgain" class="quiz-againbtn">
+                <h3>Start Again</h3>
+            </button>
         </div>
     </main>
 
