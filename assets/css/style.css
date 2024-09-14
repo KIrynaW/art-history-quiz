@@ -22,7 +22,7 @@ h1 {
 }
 
 h2,
-h3 {
+h3, h4 {
     margin: 5px;
     padding: 5px;
     font-family: "Antic Slab", serif;
@@ -81,8 +81,44 @@ main {
 
 .quiz-start {
     width: fit-content;
-    font-size: 100%;
     margin-top: 5px;
     letter-spacing: 2px;
     align-self: center;
+}
+
+.questions-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(231, 232, 234, .7);
+    margin-top: 10px;
+    margin-left: 10%;
+    border-radius: 15px;
+}
+
+.answer-options {
+    max-width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    margin: 8px;
+    margin-left: 15%;
+}
+
+.option-bar {
+    flex-grow: 1;
+    margin: 5px;
+    width: 250px;
+    height: 30px;
+    background-color: rgb(221, 100, 44, .8);
+    border: 2px outset #232E30;
+    color: #232E30;
+}
+
+.option-bar:hover {
+    cursor:pointer;
+    transform:scaleY(1.2);
+    transition: transform(250ms);
+    background-color: #dd642c;
 }
