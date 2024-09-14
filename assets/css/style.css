@@ -24,7 +24,7 @@ h1 {
 h2,
 h3, h4 {
     margin: 5px;
-    padding: 5px;
+    padding: 3px, 5px;
     font-family: "Antic Slab", serif;
 }
 
@@ -47,8 +47,8 @@ header {
     padding: 5px;
     width: fit-content;
     background-color: #e7e8ea;
-    border: 1px solid #232E30;
-    border-radius: 5px;
+    border: 1px solid rgb(221, 100, 44, .7);
+    border-radius: 3px;
 }
 
 /* Main Quiz Area Section */
@@ -81,9 +81,18 @@ main {
 
 .quiz-start {
     width: fit-content;
-    margin-top: 5px;
-    letter-spacing: 2px;
+    margin-top: 10px;
+    padding: 3px;
+    letter-spacing: 4px;
     align-self: center;
+    border: 2px outset rgb(221, 100, 44, .7);
+    border-radius: 2px;
+}
+
+.quiz-start:hover {
+    cursor:pointer;
+    transform:scaleY(1.2);
+    transition: transform(250ms);
 }
 
 .questions-container {
@@ -112,6 +121,7 @@ main {
     width: 250px;
     height: 30px;
     background-color: rgb(221, 100, 44, .8);
+    border-radius: 2px;
     border: 2px outset #232E30;
     color: #232E30;
 }
