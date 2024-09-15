@@ -116,10 +116,9 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 10px;
     margin-left: 15px;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 10px;
     align-self: center;
 }
 
@@ -132,10 +131,10 @@ main {
     min-width: 250px;
     min-height: 300px;
     width: 40vw;
-    height: 30vw;
+    height: 20vw;
     align-self: center;
-    padding: 10px;
-    margin: 20px;
+    padding: 5px;
+    margin: 10px;
     box-shadow: 5px 10px 8px #232E30;
     border-radius: 10px;
 }

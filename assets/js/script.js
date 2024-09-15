@@ -1,15 +1,27 @@
 
-//-- Load DOM content and Activate buttons through event listeners --//
-    const start = document.getElementById("start");
-    const intro = document.getElementById("intro");
-    const questions = document.getElementById("questions");
+//-- Create variables and store elements there --//
+    const startBtn = document.getElementById("start");
+    const introArea = document.getElementById("intro");
+    const questionsArea = document.getElementById("questions");
     const scoreBox = document.getElementById("score-box");
-    start.addEventListener("click", startQuiz);
+    const optionOneBtn = document.getElementById("option-one");
+    const optionTwoBtn = document.getElementById("option-two");
+    const optionThreeBtn = document.getElementById("option-three");
+    const optionFourBtn = document.getElementById("option-four");
+    const nextQuestionBtn = document.getElementById("next-question");
+    const factsArea = document.getElementById("art-facts");
+    const quizEndArea = document.getElementById("quiz-end");
+    const scoreMessage = document.getElementById("score-message");
+    const tryAgainBtn = document.getElementById("try-again");
 
+    // Start the Quiz event listener
+    startBtn.addEventListener("click", startQuiz);
+
+//--- Create Quiz functions to run the game ---//
 // --- Start and Display the Quiz ---//
 function startQuiz() {
-    intro.classList.add("hidden");
-    questions.classList.remove("hidden");
+    introArea.classList.add("hidden");
+    questionsArea.classList.remove("hidden");
     scoreBox.classList.remove("hidden-two")
 }
 
