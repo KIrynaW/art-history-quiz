@@ -22,13 +22,13 @@
     <!-- Heading and a Score Box Area -->
     <header>
         <h1 id="heading">"Name the Artist" Quiz</h1>
-        <h2 class="score hidden">Score: <span id="scoreNum">0</span></h2>
+        <h2 id= "score-box" class="score hidden-two">Score: <span id="scoreNum">0</span></h2>
     </header>
     <!-- Quiz Game Area -->
     <main>
-        <div class="quiz-container">
+        <div class="quiz-container" id="quizContainer">
             <!-- Intro Area -->
-            <div class="quiz-intro">
+            <div id="intro" class="quiz-intro">
                 <h3>In this fun quiz, you are tasked with naming artists' based on the images
                     of their work.</h3>
                 <div class="image-start"></div>
@@ -37,7 +37,7 @@
                     <h3>Start</h3>
                 </button>
             </div>
-            <div class="questions-container hidden">
+            <div id="questions" class="questions-container hidden">
                 <!-- Painting Display Area -->
                 <h4>Painting Number: <span id="paintingNum">1</span></h4>
                 <div class="art-images" id="artWork"></div>

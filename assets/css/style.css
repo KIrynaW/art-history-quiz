@@ -125,7 +125,7 @@ main {
 }
 
 .hidden {
-    display: one;
+    display: none;
 }
 
 /* Quiz Image Styling */
@@ -198,7 +198,7 @@ main {
 }
 
 .hidden-two {
-    display: nne;
+    display: none;
 }
 
 /* Quiz End Area Styling */
@@ -213,7 +213,7 @@ main {
 }
 
 .hidden-three {
-    display: noe;
+    display: none;
 }
 
 .quiz-againbtn {

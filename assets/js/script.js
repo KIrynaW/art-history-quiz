@@ -1,6 +1,16 @@
+
+//-- Load DOM content and Activate buttons through event listeners --//
+    const start = document.getElementById("start");
+    const intro = document.getElementById("intro");
+    const questions = document.getElementById("questions");
+    const scoreBox = document.getElementById("score-box");
+    start.addEventListener("click", startQuiz);
+
 // --- Start and Display the Quiz ---//
 function startQuiz() {
-
+    intro.classList.add("hidden");
+    questions.classList.remove("hidden");
+    scoreBox.classList.remove("hidden-two")
 }
 
 //--- Display Painting/Question Number, after 11th Image, go to Quiz End ---//
