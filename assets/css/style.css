@@ -116,7 +116,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(231, 232, 234, .7);
     margin-top: 10px;
     margin-left: 15px;
     padding: 10px;
