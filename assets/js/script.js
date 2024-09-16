@@ -62,9 +62,12 @@ return questionContent;
 
 //-- Display question option --//
 function getOptions() {
-    const quizData = questionContent[currentNumber]
-    imageBox.src = quizData.img
-    }
+    const quizData = questionContent[currentNumber].answers;
+    optionOneBtn.innerText = quizData[0];
+    optionTwoBtn.innerText = quizData[1];
+    optionThreeBtn.innerText = quizData[2];
+    optionFourBtn.innerText = quizData[3];
+}
 
 
 //-- Engages option selection and triggers an event --//
