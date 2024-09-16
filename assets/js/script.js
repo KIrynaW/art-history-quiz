@@ -19,7 +19,7 @@ const tryAgainBtn = document.getElementById("try-again");
 // Start the Quiz event listener
 startBtn.addEventListener("click", startQuiz);
 
-//current question numer sequence
+//current question number sequence
 let currentNumber = 0;
 // the users points score
 let score = 0;
@@ -53,6 +53,7 @@ function imageNumber() {
 
 //-- Display Image of the Painting --//
 function getImage() {
+    
 }
 
 //-- Shuffle through the questions/images arrays by using Fiher-Yates methods--//
@@ -61,7 +62,7 @@ for(let i= questionContent.length -1; i > 0; i--) {
     const j = Math.floor(Math.random()*(i + 1));
     let k = questionContent[i];
     questionContent[i] = questionContent[j];
-    questionContent = k;
+    questionContent[j] = k;
 }
 return questionContent;
 }
