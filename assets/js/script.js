@@ -99,14 +99,14 @@ const questionContent = [
     {
         number: 2,
         image: "assets/images/andy-warhal.jpg",
-        answers: ["", "", "", ""],
-        facts: "",
-        correctAnswer: ""
+        answers: ["Roy Lichtenstein", "Andy Warhal", "Keith Haring", "Jeff Koons"],
+        facts: "'Campbell's Soup Cans I: Onion' by Andy Warhal. The works were Warhol's hand-painted depictions of printed imagery deriving from commercial products and popular culture and belong to the pop art movement.",
+        correctAnswer: "Andy Warhal"
 
     },
     {
         number: 3,
-        image: "assets/images/andy-warhal.jpg",
+        image: "assets/images/eduard-manet.jpg",
         answers: ["", "", "", ""],
         facts: "",
         correctAnswer: ""
@@ -114,7 +114,7 @@ const questionContent = [
     },
     {
         number: 4,
-        image: "assets/images/andy-warhal.jpg",
+        image: "assets/images/georges-seurat.jpg",
         answers: ["", "", "", ""],
         facts: "",
         correctAnswer: ""
@@ -122,7 +122,7 @@ const questionContent = [
     },
     {
         number: 5,
-        image: "assets/images/andy-warhal.jpg",
+        image: "assets/images/henri-matisse.jpg",
         answers: ["", "", "", ""],
         facts: "",
         correctAnswer: ""
@@ -130,7 +130,7 @@ const questionContent = [
     },
     {
         number: 6,
-        image: "assets/images/andy-warhal.jpg",
+        image: "assets/images/johannes-vermeer.jpg",
         answers: ["", "", "", ""],
         facts: "",
         correctAnswer: ""
@@ -138,7 +138,7 @@ const questionContent = [
     },
     {
         number: 7,
-        image: "assets/images/andy-warhal.jpg",
+        image: "assets/images/pablo-picasso.jpg",
         answers: ["", "", "", ""],
         facts: "",
         correctAnswer: ""
@@ -146,7 +146,7 @@ const questionContent = [
     },
     {
         number: 8,
-        image: "assets/images/andy-warhal.jpg",
+        image: "assets/images/paul-gauguin.jpg",
         answers: ["", "", "", ""],
         facts: "",
         correctAnswer: ""
@@ -154,7 +154,7 @@ const questionContent = [
     },
     {
         number: 9,
-        image: "assets/images/andy-warhal.jpg",
+        image: "assets/images/salvador-dali.jpg",
         answers: ["", "", "", ""],
         facts: "",
         correctAnswer: ""
@@ -162,7 +162,7 @@ const questionContent = [
     },
     {
         number: 10,
-        image: "assets/images/andy-warhal.jpg",
+        image: "assets/images/vincent-van-gogh.jpg",
         answers: ["", "", "", ""],
         facts: "",
         correctAnswer: ""
@@ -170,7 +170,7 @@ const questionContent = [
     },
     {
         number: 11,
-        image: "assets/images/andy-warhal.jpg",
+        image: "assets/images/wassiliy-kandinsky.jpg",
         answers: ["", "", "", ""],
         facts: "",
         correctAnswer: ""
