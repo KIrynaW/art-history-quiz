@@ -31,15 +31,7 @@ function startQuiz() {
     introArea.classList.add("hidden");
     questionsArea.classList.remove("hidden");
     scoreBox.classList.remove("hidden-two")
-    imageNumber();
-    getImage();
-    optionOneBtn.addEventListener("click", checkAnswer);
-    optionTwoBtn.addEventListener("click", checkAnswer);
-    optionThreeBtn.addEventListener("click", checkAnswer);
-    optionFourBtn.addEventListener("click", checkAnswer);
-    shuffleQuestions();
-    getFacts();
-
+    getNextQuestion();
 }
 
 //--- Display Painting/Question Number, after 11th Image, go to Quiz End ---//
@@ -92,7 +84,15 @@ function getFacts() {
 
 //-- Generate next question when button pressed --//
 function getNextQuestion() {
-
+    imageNumber();
+    getImage();
+    getOptions();
+    optionOneBtn.addEventListener("click", checkAnswer);
+    optionTwoBtn.addEventListener("click", checkAnswer);
+    optionThreeBtn.addEventListener("click", checkAnswer);
+    optionFourBtn.addEventListener("click", checkAnswer);
+    shuffleQuestions();
+    getFacts();
 }
 
 //--- Add to the score if answer correct ---//
