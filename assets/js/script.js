@@ -2,9 +2,10 @@
 //-- Create variables and store elements there --//
 const startBtn = document.getElementById("start");
 const introArea = document.getElementById("intro");
-const imageBox = document.getElementById("art-work");
+const imageBox = document.querySelector(".art-images");
+const imageIndex = document.getElementById("paintingNum");
 const questionsArea = document.getElementById("questions");
-const scoreBox = document.getElementById("score-box");
+const scoreBox = document.getElementById("scoreNum");
 const optionOneBtn = document.getElementById("option-one");
 const optionTwoBtn = document.getElementById("option-two");
 const optionThreeBtn = document.getElementById("option-three");
@@ -43,16 +44,15 @@ function startQuiz() {
 
 //--- Display Painting/Question Number, after 11th Image, go to Quiz End ---//
 function imageNumber() {
-
+    if (currentNumber +1 == 10) {
+        quizEndArea();
+    } else {
+        imageIndex.innerHTML = currentNumber +1;
+    }
 }
+
 //-- Display Image of the Painting --//
-function getImage(url) {
-imageBox.innerHTML = '';
-const img = document.createElement("img");
-img.src = url;
-img.alt = "A famous painting";
-imageBox.appendChild(img);
-shuffleQuestions(url);
+function getImage() {
 }
 
 //-- Shuffle through the questions/images arrays by using Fiher-Yates methods--//
@@ -68,14 +68,16 @@ return questionContent;
 
 //-- Display question option --//
 function getOptions() {
+    const quizData = questionContent[currentNumber]
+    imageBox.src = quizData.img
+    }
 
-
-}
 
 //-- Engages option selection and triggers an event --//
 function chooseOption() {
 
 }
+
 
 //-- Check correct answer and display the correct one if wrong and activate the facts text --//
 function checkAnswer() {
@@ -109,14 +111,14 @@ function playAgain() {
 const questionContent = [
     {
         number: 1,
-        url: "assets/images/alphonse-mucha.jpg",
+        img: "assets/images/alphonse-mucha.jpg",
         answers: ["Gustav Klimt", "Aubrey Beardsley", "Alphonse Mucha", "Egon Schiele"],
         facts: "'Fruit' by Alphonse Mucha. he was a Czech painter, illustrator, and graphic artist. Living in Paris during the Art Nouveau period, he was widely known for his distinctly stylized and decorative theatrical posters",
         correctAnswer: "Alphonse Mucha"
     },
     {
         number: 2,
-        url: "assets/images/andy-warhal.jpg",
+        img: "assets/images/andy-warhal.jpg",
         answers: ["Roy Lichtenstein", "Andy Warhal", "Keith Haring", "Jeff Koons"],
         facts: "'Campbell's Soup Cans I: Onion' by Andy Warhal. The works were Warhol's hand-painted depictions of printed imagery deriving from commercial products and popular culture and belong to the pop art movement.",
         correctAnswer: "Andy Warhal"
@@ -124,7 +126,7 @@ const questionContent = [
     },
     {
         number: 3,
-        url: ("assets/images/eduard-manet.jpg"),
+        img: "assets/images/eduard-manet.jpg",
         answers: ["", "", "", ""],
         facts: "",
         correctAnswer: ""
@@ -132,7 +134,7 @@ const questionContent = [
     },
     {
         number: 4,
-        url: "assets/images/georges-seurat.jpg",
+        img: "assets/images/georges-seurat.jpg",
         answers: ["", "", "", ""],
         facts: "",
         correctAnswer: ""
@@ -140,7 +142,7 @@ const questionContent = [
     },
     {
         number: 5,
-        url: "assets/images/henri-matisse.jpg",
+        img: "assets/images/henri-matisse.jpg",
         answers: ["", "", "", ""],
         facts: "",
         correctAnswer: ""
@@ -148,7 +150,7 @@ const questionContent = [
     },
     {
         number: 6,
-        url: "assets/images/johannes-vermeer.jpg",
+        img: "assets/images/johannes-vermeer.jpg",
         answers: ["", "", "", ""],
         facts: "",
         correctAnswer: ""
@@ -156,7 +158,7 @@ const questionContent = [
     },
     {
         number: 7,
-        url: "assets/images/pablo-picasso.jpg",
+        img: "assets/images/pablo-picasso.jpg",
         answers: ["", "", "", ""],
         facts: "",
         correctAnswer: ""
@@ -164,7 +166,7 @@ const questionContent = [
     },
     {
         number: 8,
-        url: "assets/images/paul-gauguin.jpg",
+        img: "assets/images/paul-gauguin.jpg",
         answers: ["", "", "", ""],
         facts: "",
         correctAnswer: ""
@@ -172,7 +174,7 @@ const questionContent = [
     },
     {
         number: 9,
-        url: "assets/images/salvador-dali.jpg",
+        img: "assets/images/salvador-dali.jpg",
         answers: ["", "", "", ""],
         facts: "",
         correctAnswer: ""
@@ -180,7 +182,7 @@ const questionContent = [
     },
     {
         number: 10,
-        url: "assets/images/vincent-van-gogh.jpg",
+        img: "assets/images/vincent-van-gogh.jpg",
         answers: ["", "", "", ""],
         facts: "",
         correctAnswer: ""
@@ -188,7 +190,7 @@ const questionContent = [
     },
     {
         number: 11,
-        url: "assets/images/wassiliy-kandinsky.jpg",
+        img: "assets/images/wassiliy-kandinsky.jpg",
         answers: ["", "", "", ""],
         facts: "",
         correctAnswer: ""
