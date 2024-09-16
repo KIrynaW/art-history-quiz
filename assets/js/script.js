@@ -53,7 +53,8 @@ function imageNumber() {
 
 //-- Display Image of the Painting --//
 function getImage() {
-    
+    let imageDiv = document.getElementById('art-work')
+    imageDiv.innerHTML = "<img class='art-images' src=" + questionContent[currentNumber].img + ">"
 }
 
 //-- Shuffle through the questions/images arrays by using Fiher-Yates methods--//
