@@ -130,7 +130,7 @@ main {
 .art-images {
     min-width: 250px;
     min-height: 300px;
-    width: 40vw;
+    /*width: 20vw;*/
     height: 20vw;
     align-self: center;
     padding: 5px;
