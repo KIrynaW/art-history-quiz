@@ -2,7 +2,7 @@
 //-- Create variables and store elements there --//
 const startBtn = document.getElementById("start");
 const introArea = document.getElementById("intro");
-const imageBox = document.querySelector(".art-images");
+const imageBox = document.getElementById("art-work");
 const imageIndex = document.getElementById("paintingNum");
 const questionsArea = document.getElementById("questions");
 const scoreBox = document.getElementById("scoreNum");
@@ -113,7 +113,7 @@ const questionContent = [
         number: 1,
         img: "assets/images/alphonse-mucha.jpg",
         answers: ["Gustav Klimt", "Aubrey Beardsley", "Alphonse Mucha", "Egon Schiele"],
-        facts: "'Fruit' by Alphonse Mucha. he was a Czech painter, illustrator, and graphic artist. Living in Paris during the Art Nouveau period, he was widely known for his distinctly stylized and decorative theatrical posters",
+        facts: "'Fruit' by Alphonse Mucha. He was a Czech painter, illustrator, and graphic artist. Living in Paris during the Art Nouveau period, he was widely known for his distinctly stylized and decorative theatrical posters",
         correctAnswer: "Alphonse Mucha"
     },
     {
@@ -127,23 +127,23 @@ const questionContent = [
     {
         number: 3,
         img: "assets/images/eduard-manet.jpg",
-        answers: ["", "", "", ""],
-        facts: "",
-        correctAnswer: ""
+        answers: ["Edouard Manet", "Edgar Degas", "Claude Monet", "Paul Cezanne"],
+        facts: "'A Bar at the Folies-Bergere' by Edouard Manet. It was painted in 1882 in the era of Impressionism and depicts a scene in the Folies Bergère nightclub in Paris.",
+        correctAnswer: "Edouard Manet"
 
     },
     {
         number: 4,
         img: "assets/images/georges-seurat.jpg",
-        answers: ["", "", "", ""],
-        facts: "",
-        correctAnswer: ""
+        answers: ["Camille Pissarro", "Charles Angrand", "Georges Seurat", "Paul Signac"],
+        facts: "'Bathers at Asnières' by Georges Seurat. The canvas is of a suburban, placid Parisian riverside scene, created in post-impressionist era of art.",
+        correctAnswer: "Georges Seurat"
 
     },
     {
         number: 5,
         img: "assets/images/henri-matisse.jpg",
-        answers: ["", "", "", ""],
+        answers: ["Henri ", "", "", ""],
         facts: "",
         correctAnswer: ""
 
