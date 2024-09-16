@@ -37,6 +37,7 @@ function startQuiz() {
     optionFourBtn.addEventListener("click", checkAnswer);
     shuffleQuestions();
     getFacts();
+
 }
 
 //--- Display Painting/Question Number, after 11th Image, go to Quiz End ---//
@@ -49,9 +50,15 @@ function getImage() {
 
 }
 
-//-- Shuffle through the questions/images arrays --//
+//-- Shuffle through the questions/images arrays by using Fiher-Yates methods--//
 function shuffleQuestions() {
-
+for(let i= questionContent.length -1; i > 0; i--) {
+    const j = Math.floor(Math.random()*(i + 1));
+    let k = questionContent[i];
+    questionContent[i] = questionContent[j];
+    questionContent = k;
+}
+return questionContent;
 }
 
 //-- Display answer options --//
