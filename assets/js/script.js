@@ -5,7 +5,8 @@ const introArea = document.getElementById("intro");
 const imageBox = document.getElementById("art-work");
 const imageIndex = document.getElementById("paintingNum");
 const questionsArea = document.getElementById("questions");
-const scoreBox = document.getElementById("scoreNum");
+const scoreBox = document.getElementById("score-box");
+const scoreIndex = document.getElementById("score-num")
 const optionOneBtn = document.getElementById("option-one");
 const optionTwoBtn = document.getElementById("option-two");
 const optionThreeBtn = document.getElementById("option-three");
@@ -19,6 +20,9 @@ const tryAgainBtn = document.getElementById("try-again");
 // Start the Quiz event listener
 startBtn.addEventListener("click", startQuiz);
 
+// Next Question Button event listener
+nextQuestionBtn.addEventListener("click", getNextQuestion);
+
 //current question number sequence
 let currentNumber = 0;
 // the users points score
@@ -30,13 +34,13 @@ let score = 0;
 function startQuiz() {
     introArea.classList.add("hidden");
     questionsArea.classList.remove("hidden");
-    scoreBox.classList.remove("hidden-two")
+    scoreBox.classList.remove("hidden-two");
     getNextQuestion();
 }
 
 //--- Display Painting/Question Number, after 11th Image, go to Quiz End ---//
 function imageNumber() {
-    if (currentNumber +1 == 10) {
+    if (currentNumber +1 == 11) {
         quizEndArea();
     } else {
         imageIndex.innerHTML = currentNumber +1;
@@ -60,7 +64,7 @@ for(let i= questionContent.length -1; i > 0; i--) {
 return questionContent;
 }
 
-//-- Display question option --//
+//-- Display question option text in option elements --//
 function getOptions() {
     const quizData = questionContent[currentNumber].answers;
     optionOneBtn.innerText = quizData[0];
@@ -78,7 +82,7 @@ function chooseOption() {
 
 //-- Check correct answer and display the correct one if wrong and activate the facts text --//
 function checkAnswer() {
-
+    
 }
 
 function getFacts() {
