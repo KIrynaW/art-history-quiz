@@ -2,6 +2,7 @@
 //-- Create variables and store elements there --//
 const startBtn = document.getElementById("start");
 const introArea = document.getElementById("intro");
+const imageBox = document.getElementById("art-work");
 const questionsArea = document.getElementById("questions");
 const scoreBox = document.getElementById("score-box");
 const optionOneBtn = document.getElementById("option-one");
@@ -44,10 +45,14 @@ function startQuiz() {
 function imageNumber() {
 
 }
-
 //-- Display Image of the Painting --//
-function getImage() {
-
+function getImage(url) {
+imageBox.innerHTML = '';
+const img = document.createElement("img");
+img.src = url;
+img.alt = "A famous painting";
+imageBox.appendChild(img);
+shuffleQuestions(url);
 }
 
 //-- Shuffle through the questions/images arrays by using Fiher-Yates methods--//
@@ -104,14 +109,14 @@ function playAgain() {
 const questionContent = [
     {
         number: 1,
-        image: "assets/images/alphonse-mucha.jpg",
+        url: "assets/images/alphonse-mucha.jpg",
         answers: ["Gustav Klimt", "Aubrey Beardsley", "Alphonse Mucha", "Egon Schiele"],
         facts: "'Fruit' by Alphonse Mucha. he was a Czech painter, illustrator, and graphic artist. Living in Paris during the Art Nouveau period, he was widely known for his distinctly stylized and decorative theatrical posters",
         correctAnswer: "Alphonse Mucha"
     },
     {
         number: 2,
-        image: "assets/images/andy-warhal.jpg",
+        url: "assets/images/andy-warhal.jpg",
         answers: ["Roy Lichtenstein", "Andy Warhal", "Keith Haring", "Jeff Koons"],
         facts: "'Campbell's Soup Cans I: Onion' by Andy Warhal. The works were Warhol's hand-painted depictions of printed imagery deriving from commercial products and popular culture and belong to the pop art movement.",
         correctAnswer: "Andy Warhal"
@@ -119,7 +124,7 @@ const questionContent = [
     },
     {
         number: 3,
-        image: "assets/images/eduard-manet.jpg",
+        url: ("assets/images/eduard-manet.jpg"),
         answers: ["", "", "", ""],
         facts: "",
         correctAnswer: ""
@@ -127,7 +132,7 @@ const questionContent = [
     },
     {
         number: 4,
-        image: "assets/images/georges-seurat.jpg",
+        url: "assets/images/georges-seurat.jpg",
         answers: ["", "", "", ""],
         facts: "",
         correctAnswer: ""
@@ -135,7 +140,7 @@ const questionContent = [
     },
     {
         number: 5,
-        image: "assets/images/henri-matisse.jpg",
+        url: "assets/images/henri-matisse.jpg",
         answers: ["", "", "", ""],
         facts: "",
         correctAnswer: ""
@@ -143,7 +148,7 @@ const questionContent = [
     },
     {
         number: 6,
-        image: "assets/images/johannes-vermeer.jpg",
+        url: "assets/images/johannes-vermeer.jpg",
         answers: ["", "", "", ""],
         facts: "",
         correctAnswer: ""
@@ -151,7 +156,7 @@ const questionContent = [
     },
     {
         number: 7,
-        image: "assets/images/pablo-picasso.jpg",
+        url: "assets/images/pablo-picasso.jpg",
         answers: ["", "", "", ""],
         facts: "",
         correctAnswer: ""
@@ -159,7 +164,7 @@ const questionContent = [
     },
     {
         number: 8,
-        image: "assets/images/paul-gauguin.jpg",
+        url: "assets/images/paul-gauguin.jpg",
         answers: ["", "", "", ""],
         facts: "",
         correctAnswer: ""
@@ -167,7 +172,7 @@ const questionContent = [
     },
     {
         number: 9,
-        image: "assets/images/salvador-dali.jpg",
+        url: "assets/images/salvador-dali.jpg",
         answers: ["", "", "", ""],
         facts: "",
         correctAnswer: ""
@@ -175,7 +180,7 @@ const questionContent = [
     },
     {
         number: 10,
-        image: "assets/images/vincent-van-gogh.jpg",
+        url: "assets/images/vincent-van-gogh.jpg",
         answers: ["", "", "", ""],
         facts: "",
         correctAnswer: ""
@@ -183,7 +188,7 @@ const questionContent = [
     },
     {
         number: 11,
-        image: "assets/images/wassiliy-kandinsky.jpg",
+        url: "assets/images/wassiliy-kandinsky.jpg",
         answers: ["", "", "", ""],
         facts: "",
         correctAnswer: ""
