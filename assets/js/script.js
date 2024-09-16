@@ -61,8 +61,14 @@ for(let i= questionContent.length -1; i > 0; i--) {
 return questionContent;
 }
 
-//-- Display answer options --//
-function getAnswerOptions() {
+//-- Display question option --//
+function getOptions() {
+
+
+}
+
+//-- Engages option selection and triggers an event --//
+function chooseOption() {
 
 }
 
