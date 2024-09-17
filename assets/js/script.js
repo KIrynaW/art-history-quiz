@@ -169,9 +169,9 @@ const questionContent = [
     {
         number: 5,
         img: "assets/images/henri-matisse.jpg",
-        answers: ["Henri ", "", "", ""],
-        facts: "",
-        correctAnswer: ""
+        answers: ["Henri Matisse", "Othon Friesz", "Andre Derain", "Georges Braque"],
+        facts: "'Blue Nude II' by Henri Matisse. One of the series of collages, and related color lithographs, made from paper cut-outs depicting nude figures in various positions. Restricted by his physical condition after his surgery for stomach cancer, Matisse began creating art by cutting and painting sheets of paper by hand.",
+        correctAnswer: "Henri Matisse"
 
     },
     {
