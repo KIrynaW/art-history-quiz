@@ -177,17 +177,17 @@ const questionContent = [
     {
         number: 6,
         img: "assets/images/johannes-vermeer.jpg",
-        answers: ["", "", "", ""],
-        facts: "",
-        correctAnswer: ""
+        answers: ["Anthony van Dyck", "Frans Hals", "Johannes Vermeer", "Peter Paul Rubens"],
+        facts: "'Girl with a Pearl Earring' is an oil painting by Dutch painter Johannes Vermeer, dated c. 1665. It depicts a European girl wearing 'exotic dress', an 'oriental turban', and what appears to be a very large pearl as an earring",
+        correctAnswer: "Johannes Vermeer"
 
     },
     {
         number: 7,
         img: "assets/images/pablo-picasso.jpg",
-        answers: ["", "", "", ""],
-        facts: "",
-        correctAnswer: ""
+        answers: ["Paul Cezanne", "Juan Gris", "Pablo Picasso", "Piet Mondrian"],
+        facts: "'Portrait of Dora Mar' is a 1937 oil on canvas painting by Pablo Picasso.In this portrait It depicts Dora Maar, the painter's lover, seated on a chair; her face is particularly remarkable for its experimental style, as the image depicts both the profile of the face and the frontal face in conjunction, which provides an opportunity to convey several perspectives.",
+        correctAnswer: "Pablo Picasso"
 
     },
     {
