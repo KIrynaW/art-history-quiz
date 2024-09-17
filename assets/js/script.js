@@ -193,17 +193,17 @@ const questionContent = [
     {
         number: 8,
         img: "assets/images/paul-gauguin.jpg",
-        answers: ["", "", "", ""],
-        facts: "",
-        correctAnswer: ""
+        answers: ["Vincent Van Gogh", "Paul Gauguin", "Edgar Degas", "Henri Matisse"],
+        facts: "'What's New?' by Paul Gauguin. He was a French painter, sculptor, printmaker, ceramist, and writer, whose work has been primarily associated with the Post-Impressionist and Symbolist movements. This painting is part of series created during his trip to Tahiti, depicting local villegers",
+        correctAnswer: "Paul Gauguin"
 
     },
     {
         number: 9,
         img: "assets/images/salvador-dali.jpg",
-        answers: ["", "", "", ""],
-        facts: "",
-        correctAnswer: ""
+        answers: ["Salvador Dali", "Rene Magritte", "Max Ernst", "Joan Miro"],
+        facts: "'The Persistence of Memory' is a 1931 painting by artist Salvador Dali and one of the most recognizable works of Surrealism.It epitomizes Dali's theory of 'softness' and 'hardness', which was central to his thinking at the time.",
+        correctAnswer: "Salvador Dali"
 
     },
     {
