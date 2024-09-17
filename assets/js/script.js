@@ -35,7 +35,9 @@ function startQuiz() {
     introArea.classList.add("hidden");
     questionsArea.classList.remove("hidden");
     scoreBox.classList.remove("hidden-two");
+    shuffleQuestions();
     getNextQuestion();
+
 }
 
 //--- Display Painting/Question Number, after 11th Image, go to Quiz End ---//
@@ -81,7 +83,14 @@ function chooseOption() {
 
 
 //-- Check correct answer and display the correct one if wrong and activate the facts text --//
-function checkAnswer() {
+function checkAnswer(event) {
+    let selectedOption = questionContent[currentNumber];
+    let correctAnswer = selectedOption.correctAnswer;
+    let optionText = event.target.innerHTML;
+    if (optionText == correctAnswer) {
+        console.log('go to sleep');
+        
+    }
     
 }
 
@@ -98,7 +107,6 @@ function getNextQuestion() {
     optionTwoBtn.addEventListener("click", checkAnswer);
     optionThreeBtn.addEventListener("click", checkAnswer);
     optionFourBtn.addEventListener("click", checkAnswer);
-    shuffleQuestions();
     getFacts();
 }
 
