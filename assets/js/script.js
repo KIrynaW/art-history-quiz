@@ -12,7 +12,7 @@ const optionTwoBtn = document.getElementById("option-two");
 const optionThreeBtn = document.getElementById("option-three");
 const optionFourBtn = document.getElementById("option-four");
 const nextQuestionBtn = document.getElementById("next-question");
-const factsArea = document.getElementById("art-facts");
+const factsArea = document.getElementById("art-facts-container");
 const quizEndArea = document.getElementById("quiz-end");
 const scoreMessage = document.getElementById("score-message");
 const tryAgainBtn = document.getElementById("try-again");
@@ -34,7 +34,7 @@ let score = 0;
 function startQuiz() {
     introArea.classList.add("hidden");
     questionsArea.classList.remove("hidden");
-    scoreBox.classList.remove("hidden-two");
+    scoreBox.classList.remove("hidden");
     shuffleQuestions();
     getNextQuestion();
 
@@ -90,10 +90,12 @@ function checkAnswer(event) {
     if (optionText == correctAnswer) {
         addScore()
     }
+    getFacts()
 }
 
 function getFacts() {
-
+    factsArea.classList.remove("hidden-two");
+    nextQuestionBtn.classList.remove("hidden-two")
 }
 
 //-- Generate next question when button pressed --//
@@ -105,7 +107,6 @@ function getNextQuestion() {
     optionTwoBtn.addEventListener("click", checkAnswer);
     optionThreeBtn.addEventListener("click", checkAnswer);
     optionFourBtn.addEventListener("click", checkAnswer);
-    getFacts();
 }
 
 //--- Add to the score if answer correct ---//
