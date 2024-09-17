@@ -209,17 +209,17 @@ const questionContent = [
     {
         number: 10,
         img: "assets/images/vincent-van-gogh.jpg",
-        answers: ["", "", "", ""],
-        facts: "",
-        correctAnswer: ""
+        answers: ["Claude Monet", "Paul Gauguin", "Eduard Manet", "Vincent Van Gogh"],
+        facts: "'Sunflowers ' is the title of two series of still life paintings by the Dutch painter Vincent van Gogh. The first series, executed in Paris in 1887, depicts the flowers lying on the ground, while the second set, made a year later in Arles, shows a bouquet of sunflowers in a vase.",
+        correctAnswer: "Vincent Van Gogh"
 
     },
     {
         number: 11,
-        img: "assets/images/wassiliy-kandinsky.jpg",
-        answers: ["", "", "", ""],
-        facts: "",
-        correctAnswer: ""
+        img: "assets/images/wassily-kandinsky.jpg",
+        answers: ["", "", "Wassily Kandinsky", ""],
+        facts: "'Composition IV' created by Wassily Kandinsky in 1913. It is part of series inspired by music; he theorised that (for example), yellow is the colour of middle C on a brassy trumpet; black is the colour of closure, and the end of things; and that combinations of colours produce vibrational frequencies, akin to chords played on a piano. Kandinsky is generally credited as one of the pioneers of abstraction in western art.",
+        correctAnswer: "Wassily Kandinsky"
 
     }
 
