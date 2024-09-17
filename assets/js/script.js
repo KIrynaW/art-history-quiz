@@ -88,10 +88,8 @@ function checkAnswer(event) {
     let correctAnswer = selectedOption.correctAnswer;
     let optionText = event.target.innerHTML;
     if (optionText == correctAnswer) {
-        console.log('go to sleep');
-        
+        addScore()
     }
-    
 }
 
 function getFacts() {
@@ -112,7 +110,8 @@ function getNextQuestion() {
 
 //--- Add to the score if answer correct ---//
 function addScore() {
-
+    score += 1
+    scoreIndex.innerText = score
 }
 
 //--- Final End of Quiz Message with a score and play again option ---//
