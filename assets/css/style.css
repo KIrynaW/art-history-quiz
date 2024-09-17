@@ -36,10 +36,10 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: rgba(144, 186, 199, .7);
-    width: 80%;
-    margin-left: 8%;
+    width: 70%;
+    margin-left: 13%;
     margin-top: 20px;
-    font-size: 90%;
+    font-size: 80%;
     padding: 10px;
     border-radius: 20px;
     box-shadow: 4px 3px 8px #dd642c;
@@ -127,11 +127,10 @@ main {
 }
 
 /* Quiz Image Styling */
-.art-images {
-    min-width: 250px;
-    min-height: 300px;
-    /*width: 20vw;*/
-    height: 20vw;
+#art-works{
+    min-width: 200px;
+    min-height: 250px;
+    height: 10vw;
     align-self: center;
     padding: 5px;
     margin: 10px;
@@ -186,13 +185,19 @@ main {
 }
 
 /* Interesting Facts Area Styling */
-.art-facts-container {
+#art-facts-container {
+    display: flex;
+    flex-direction: row;
     width: fit-content;
     border-top: 2px double #232E30;
     margin-top: 10px;
     align-self: center;
     text-align: left;
     padding: 10px;
+}
+
+#art-facts-container > i {
+    margin-right: 10px;
 }
 
 .hidden-two {

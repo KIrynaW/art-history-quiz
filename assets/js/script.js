@@ -53,7 +53,7 @@ function imageNumber() {
 //-- Display Image of the Painting --//
 function getImage() {
     let imageDiv = document.getElementById('art-work')
-    imageDiv.innerHTML = "<img class='art-images' src=" + questionContent[currentNumber].img + ">"
+    imageDiv.innerHTML = "<img id='art-works' alt='Famous Paintings' src=" + questionContent[currentNumber].img + ">"
 }
 
 //-- Shuffle through the questions/images arrays by using Fiher-Yates methods--//
@@ -95,7 +95,7 @@ function checkAnswer(event) {
 }
 
 function getFacts() {
-    facts.innerText = questionContent[currentNumber].facts
+    facts.innerText = questionContent[currentNumber].facts;
     factsArea.classList.remove("hidden-two");
     nextQuestionBtn.classList.remove("hidden-two");
     optionOneBtn.removeEventListener("click", checkAnswer);
