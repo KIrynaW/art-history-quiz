@@ -95,11 +95,13 @@ function checkAnswer(event) {
 
 function getFacts() {
     factsArea.classList.remove("hidden-two");
-    nextQuestionBtn.classList.remove("hidden-two")
+    nextQuestionBtn.classList.remove("hidden-two");
+    currentNumber += 1;
 }
 
 //-- Generate next question when button pressed --//
 function getNextQuestion() {
+    factsArea.classList.add ("hidden-two");
     imageNumber();
     getImage();
     getOptions();
