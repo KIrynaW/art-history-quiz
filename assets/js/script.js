@@ -217,7 +217,7 @@ const questionContent = [
     {
         number: 11,
         img: "assets/images/wassily-kandinsky.jpg",
-        answers: ["", "", "Wassily Kandinsky", ""],
+        answers: ["Kazimir Malevich", "El Lissitzky", "Wassily Kandinsky", "Paul Klee"],
         facts: "'Composition IV' created by Wassily Kandinsky in 1913. It is part of series inspired by music; he theorised that (for example), yellow is the colour of middle C on a brassy trumpet; black is the colour of closure, and the end of things; and that combinations of colours produce vibrational frequencies, akin to chords played on a piano. Kandinsky is generally credited as one of the pioneers of abstraction in western art.",
         correctAnswer: "Wassily Kandinsky"
 
