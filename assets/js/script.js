@@ -13,6 +13,7 @@ const optionThreeBtn = document.getElementById("option-three");
 const optionFourBtn = document.getElementById("option-four");
 const nextQuestionBtn = document.getElementById("next-question");
 const factsArea = document.getElementById("art-facts-container");
+const facts = document.getElementById("art-facts");
 const quizEndArea = document.getElementById("quiz-end");
 const scoreMessage = document.getElementById("score-message");
 const tryAgainBtn = document.getElementById("try-again");
@@ -42,10 +43,10 @@ function startQuiz() {
 
 //--- Display Painting/Question Number, after 11th Image, go to Quiz End ---//
 function imageNumber() {
-    if (currentNumber +1 == 11) {
-        quizEndArea();
+    if (currentNumber >= 12) {
+        endQuiz();
     } else {
-        imageIndex.innerHTML = currentNumber +1;
+        imageIndex.innerHTML = currentNumber;
     }
 }
 
@@ -78,7 +79,7 @@ function getOptions() {
 
 //-- Engages option selection and triggers an event --//
 function chooseOption() {
-
+    ;
 }
 
 
@@ -88,20 +89,26 @@ function checkAnswer(event) {
     let correctAnswer = selectedOption.correctAnswer;
     let optionText = event.target.innerHTML;
     if (optionText == correctAnswer) {
-        addScore()
+        addScore();
     }
-    getFacts()
+    getFacts();
 }
 
 function getFacts() {
+    facts.innerText = questionContent[currentNumber].facts
     factsArea.classList.remove("hidden-two");
     nextQuestionBtn.classList.remove("hidden-two");
-    currentNumber += 1;
+    optionOneBtn.removeEventListener("click", checkAnswer);
+    optionTwoBtn.removeEventListener("click", checkAnswer);
+    optionThreeBtn.removeEventListener("click", checkAnswer);
+    optionFourBtn.removeEventListener("click", checkAnswer);
 }
 
 //-- Generate next question when button pressed --//
 function getNextQuestion() {
+    currentNumber += 1;
     factsArea.classList.add ("hidden-two");
+    nextQuestionBtn.classList.add("hidden-two");
     imageNumber();
     getImage();
     getOptions();
@@ -119,7 +126,7 @@ function addScore() {
 
 //--- Final End of Quiz Message with a score and play again option ---//
 function endQuiz() {
-
+    console.log('quiz should end')
 }
 
 function playAgain() {
