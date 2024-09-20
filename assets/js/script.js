@@ -12,7 +12,7 @@ const optionTwoBtn = document.getElementById("option-two");
 const optionThreeBtn = document.getElementById("option-three");
 const optionFourBtn = document.getElementById("option-four");
 const nextQuestionBtn = document.getElementById("next-question");
-const factsArea = document.getElementById("art-facts-container");
+const factIcon = document.getElementById("icon");
 const facts = document.getElementById("art-facts");
 const quizEndArea = document.getElementById("quiz-end");
 const scoreMessage = document.getElementById("score-message");
@@ -96,7 +96,8 @@ function checkAnswer(event) {
 
 function getFacts() {
     facts.innerText = questionContent[currentNumber].facts;
-    factsArea.classList.remove("hidden-two");
+    facts.classList.remove("hidden-two");
+    factIcon.classList.remove("hidden-two");
     nextQuestionBtn.classList.remove("hidden-two");
     optionOneBtn.removeEventListener("click", checkAnswer);
     optionTwoBtn.removeEventListener("click", checkAnswer);
@@ -107,7 +108,8 @@ function getFacts() {
 //-- Generate next question when button pressed --//
 function getNextQuestion() {
     currentNumber += 1;
-    factsArea.classList.add ("hidden-two");
+    facts.classList.add("hidden-two");
+    factIcon.classList.add("hidden-two");
     nextQuestionBtn.classList.add("hidden-two");
     imageNumber();
     getImage();

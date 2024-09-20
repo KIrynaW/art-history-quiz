@@ -199,8 +199,9 @@ main {
     padding: 10px;
 }
 
-#art-facts-container > i {
+#icon {
     margin-right: 10px;
+    
 }
 
 .hidden-two {
