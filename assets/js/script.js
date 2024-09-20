@@ -7,10 +7,10 @@ const imageIndex = document.getElementById("paintingNum");
 const questionsArea = document.getElementById("questions");
 const scoreBox = document.getElementById("score-box");
 const scoreIndex = document.getElementById("score-num")
-const optionOneBtn = document.getElementById("option-one");
-const optionTwoBtn = document.getElementById("option-two");
-const optionThreeBtn = document.getElementById("option-three");
-const optionFourBtn = document.getElementById("option-four");
+const optionOneBtn = document.getElementById("option-1");
+const optionTwoBtn = document.getElementById("option-2");
+const optionThreeBtn = document.getElementById("option-3");
+const optionFourBtn = document.getElementById("option-4");
 const nextQuestionBtn = document.getElementById("next-question");
 const factIcon = document.getElementById("icon");
 const facts = document.getElementById("art-facts");
@@ -86,11 +86,18 @@ function chooseOption() {
 //-- Check correct answer and display the correct one if wrong and activate the facts text --//
 function checkAnswer(event) {
     let selectedOption = questionContent[currentNumber];
-    let correctAnswer = selectedOption.correctAnswer;
+    let correctAnswerIndex = selectedOption.correctAnswerIndex;
+    let correctAnswer = selectedOption.answers[correctAnswerIndex];
     let optionText = event.target.innerHTML;
     if (optionText == correctAnswer) {
         addScore();
     }
+    else {
+        event.target.classList.add('wrong');
+    }
+    let btnId = 'option-'+(correctAnswerIndex+1);
+    correctOptionBtn = document.getElementById(btnId);
+    correctOptionBtn.classList.add('right');
     getFacts();
 }
 
@@ -118,6 +125,14 @@ function getNextQuestion() {
     imageNumber();
     getImage();
     getOptions();
+    optionOneBtn.classList.remove("wrong");
+    optionTwoBtn.classList.remove("wrong");
+    optionThreeBtn.classList.remove("wrong");
+    optionFourBtn.classList.remove("wrong");
+    optionOneBtn.classList.remove("right");
+    optionTwoBtn.classList.remove("right");
+    optionThreeBtn.classList.remove("right");
+    optionFourBtn.classList.remove("right");
     optionOneBtn.addEventListener("click", checkAnswer);
     optionTwoBtn.addEventListener("click", checkAnswer);
     optionThreeBtn.addEventListener("click", checkAnswer);
@@ -150,14 +165,14 @@ const questionContent = [
         img: "assets/images/alphonse-mucha.jpg",
         answers: ["Gustav Klimt", "Aubrey Beardsley", "Alphonse Mucha", "Egon Schiele"],
         facts: "'Fruit' by Alphonse Mucha. He was a Czech painter, illustrator, and graphic artist. Living in Paris during the Art Nouveau period, he was widely known for his distinctly stylized and decorative theatrical posters",
-        correctAnswer: "Alphonse Mucha"
+        correctAnswerIndex: 2
     },
     {
         number: 2,
         img: "assets/images/andy-warhal.jpg",
         answers: ["Roy Lichtenstein", "Andy Warhal", "Keith Haring", "Jeff Koons"],
         facts: "'Campbell's Soup Cans I: Onion' by Andy Warhal. The works were Warhol's hand-painted depictions of printed imagery deriving from commercial products and popular culture and belong to the pop art movement.",
-        correctAnswer: "Andy Warhal"
+        correctAnswerIndex: 1
 
     },
     {
@@ -165,7 +180,7 @@ const questionContent = [
         img: "assets/images/eduard-manet.jpg",
         answers: ["Edouard Manet", "Edgar Degas", "Claude Monet", "Paul Cezanne"],
         facts: "'A Bar at the Folies-Bergere' by Edouard Manet. It was painted in 1882 in the era of Impressionism and depicts a scene in the Folies Bergère nightclub in Paris.",
-        correctAnswer: "Edouard Manet"
+        correctAnswerIndex: 0
 
     },
     {
@@ -173,7 +188,7 @@ const questionContent = [
         img: "assets/images/georges-seurat.jpg",
         answers: ["Camille Pissarro", "Charles Angrand", "Georges Seurat", "Paul Signac"],
         facts: "'Bathers at Asnières' by Georges Seurat. The canvas is of a suburban, placid Parisian riverside scene, created in post-impressionist era of art.",
-        correctAnswer: "Georges Seurat"
+        correctAnswerIndex: 2
 
     },
     {
@@ -181,7 +196,7 @@ const questionContent = [
         img: "assets/images/henri-matisse.jpg",
         answers: ["Henri Matisse", "Othon Friesz", "Andre Derain", "Georges Braque"],
         facts: "'Blue Nude II' by Henri Matisse. One of the series of collages, and related color lithographs, made from paper cut-outs depicting nude figures in various positions. Restricted by his physical condition after his surgery for stomach cancer, Matisse began creating art by cutting and painting sheets of paper by hand.",
-        correctAnswer: "Henri Matisse"
+        correctAnswerIndex: 0
 
     },
     {
@@ -189,7 +204,7 @@ const questionContent = [
         img: "assets/images/johannes-vermeer.jpg",
         answers: ["Anthony van Dyck", "Frans Hals", "Johannes Vermeer", "Peter Paul Rubens"],
         facts: "'Girl with a Pearl Earring' is an oil painting by Dutch painter Johannes Vermeer, dated c. 1665. It depicts a European girl wearing 'exotic dress', an 'oriental turban', and what appears to be a very large pearl as an earring",
-        correctAnswer: "Johannes Vermeer"
+        correctAnswerIndex: 2
 
     },
     {
@@ -197,15 +212,14 @@ const questionContent = [
         img: "assets/images/pablo-picasso.jpg",
         answers: ["Paul Cezanne", "Juan Gris", "Pablo Picasso", "Piet Mondrian"],
         facts: "'Portrait of Dora Mar' is a 1937 oil on canvas painting by Pablo Picasso.In this portrait It depicts Dora Maar, the painter's lover, seated on a chair; her face is particularly remarkable for its experimental style, as the image depicts both the profile of the face and the frontal face in conjunction, which provides an opportunity to convey several perspectives.",
-        correctAnswer: "Pablo Picasso"
-
+        correctAnswerIndex: 2
     },
     {
         number: 8,
         img: "assets/images/paul-gauguin.jpg",
         answers: ["Vincent Van Gogh", "Paul Gauguin", "Edgar Degas", "Henri Matisse"],
         facts: "'What's New?' by Paul Gauguin. He was a French painter, sculptor, printmaker, ceramist, and writer, whose work has been primarily associated with the Post-Impressionist and Symbolist movements. This painting is part of series created during his trip to Tahiti, depicting local villegers",
-        correctAnswer: "Paul Gauguin"
+        correctAnswerIndex: 1
 
     },
     {
@@ -213,7 +227,7 @@ const questionContent = [
         img: "assets/images/salvador-dali.jpg",
         answers: ["Salvador Dali", "Rene Magritte", "Max Ernst", "Joan Miro"],
         facts: "'The Persistence of Memory' is a 1931 painting by artist Salvador Dali and one of the most recognizable works of Surrealism.It epitomizes Dali's theory of 'softness' and 'hardness', which was central to his thinking at the time.",
-        correctAnswer: "Salvador Dali"
+        correctAnswerIndex: 0
 
     },
     {
@@ -221,15 +235,14 @@ const questionContent = [
         img: "assets/images/vincent-van-gogh.jpg",
         answers: ["Claude Monet", "Paul Gauguin", "Eduard Manet", "Vincent Van Gogh"],
         facts: "'Sunflowers ' is the title of two series of still life paintings by the Dutch painter Vincent van Gogh. The first series, executed in Paris in 1887, depicts the flowers lying on the ground, while the second set, made a year later in Arles, shows a bouquet of sunflowers in a vase.",
-        correctAnswer: "Vincent Van Gogh"
-
+        correctAnswerIndex: 3
     },
     {
         number: 11,
         img: "assets/images/wassily-kandinsky.jpg",
         answers: ["Kazimir Malevich", "El Lissitzky", "Wassily Kandinsky", "Paul Klee"],
         facts: "'Composition IV' created by Wassily Kandinsky in 1913. It is part of series inspired by music; he theorised that (for example), yellow is the colour of middle C on a brassy trumpet; black is the colour of closure, and the end of things; and that combinations of colours produce vibrational frequencies, akin to chords played on a piano. Kandinsky is generally credited as one of the pioneers of abstraction in western art.",
-        correctAnswer: "Wassily Kandinsky"
+        correctAnswerIndex: 2
 
     }
 

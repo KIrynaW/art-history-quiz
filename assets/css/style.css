@@ -169,6 +169,14 @@ main {
     background-color: #dd642c;
 }
 
+.right {
+    border: 2px solid green;
+}
+
+.wrong {
+    border: 2px solid red;
+}
+
 /* Next Button Styling */
 .next-questionbtn {
     width: fit-content;
