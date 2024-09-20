@@ -103,6 +103,10 @@ function getFacts() {
     optionTwoBtn.removeEventListener("click", checkAnswer);
     optionThreeBtn.removeEventListener("click", checkAnswer);
     optionFourBtn.removeEventListener("click", checkAnswer);
+    optionOneBtn.classList.remove("hover");
+    optionTwoBtn.classList.remove("hover");
+    optionThreeBtn.classList.remove("hover");
+    optionFourBtn.classList.remove("hover");
 }
 
 //-- Generate next question when button pressed --//
@@ -118,6 +122,10 @@ function getNextQuestion() {
     optionTwoBtn.addEventListener("click", checkAnswer);
     optionThreeBtn.addEventListener("click", checkAnswer);
     optionFourBtn.addEventListener("click", checkAnswer);
+    optionOneBtn.classList.add("hover");
+    optionTwoBtn.classList.add("hover");
+    optionThreeBtn.classList.add("hover");
+    optionFourBtn.classList.add("hover");
 }
 
 //--- Add to the score if answer correct ---//

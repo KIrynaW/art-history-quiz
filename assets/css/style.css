@@ -162,7 +162,7 @@ main {
     color: #232E30;
 }
 
-.option-barbtn:hover {
+.hover:hover {
     cursor: pointer;
     transform: scaleY(1.2);
     transition: transform(250ms);
