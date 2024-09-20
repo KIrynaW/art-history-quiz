@@ -25,7 +25,7 @@ startBtn.addEventListener("click", startQuiz);
 nextQuestionBtn.addEventListener("click", getNextQuestion);
 
 //current question number sequence
-let currentNumber = 0;
+let currentNumber = -1;
 // the users points score
 let score = 0;
 
@@ -43,7 +43,7 @@ function startQuiz() {
 
 //--- Display Painting/Question Number, after 11th Image, go to Quiz End ---//
 function imageNumber() {
-    if (currentNumber >= 12) {
+    if (currentNumber == 11) {
         endQuiz();
     } else {
         imageIndex.innerHTML = currentNumber;
@@ -151,7 +151,7 @@ function addScore() {
 
 //--- Final End of Quiz Message with a score and play again option ---//
 function endQuiz() {
-    console.log('quiz should end')
+    console.log('quiz should end');
 }
 
 function playAgain() {
