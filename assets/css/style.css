@@ -170,11 +170,11 @@ main {
 }
 
 .right {
-    border: 2px solid green;
+   background-color: green;
 }
 
 .wrong {
-    border: 2px solid red;
+    background-color: red;
 }
 
 /* Next Button Styling */
