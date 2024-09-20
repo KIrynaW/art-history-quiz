@@ -25,7 +25,7 @@ startBtn.addEventListener("click", startQuiz);
 nextQuestionBtn.addEventListener("click", getNextQuestion);
 
 //current question number sequence
-let currentNumber = -1;
+let currentNumber = 0;
 // the users points score
 let score = 0;
 
