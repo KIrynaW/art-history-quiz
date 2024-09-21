@@ -25,7 +25,7 @@ startBtn.addEventListener("click", startQuiz);
 nextQuestionBtn.addEventListener("click", getNextQuestion);
 
 //current question number sequence
-let currentNumber = 0;
+let currentNumber = -1;
 // the users points score
 let score = 0;
 
@@ -46,7 +46,7 @@ function imageNumber() {
     if (currentNumber == 11) {
         endQuiz();
     } else {
-        imageIndex.innerHTML = currentNumber;
+        imageIndex.innerHTML = currentNumber+1;
     }
 }
 
