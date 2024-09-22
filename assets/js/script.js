@@ -24,6 +24,9 @@ startBtn.addEventListener("click", startQuiz);
 // Next Question Button event listener
 nextQuestionBtn.addEventListener("click", getNextQuestion);
 
+// Try to play again
+tryAgainBtn.addEventListener("click", playAgain);
+
 //current question number sequence
 let currentNumber = -1;
 // the users points score
@@ -38,7 +41,6 @@ function startQuiz() {
     scoreBox.classList.remove("hidden");
     shuffleQuestions();
     getNextQuestion();
-
 }
 
 //--- Display Painting/Question Number, after 11th Image, go to Quiz End ---//
@@ -142,17 +144,45 @@ function getNextQuestion() {
 
 //--- Add to the score if answer correct ---//
 function addScore() {
-    score += 1
-    scoreIndex.innerText = score
+    score += 1;
+    scoreIndex.innerText = score;
+}
+
+function finalScore() {
+    if (score < 4) {
+        scoreMessage.innerHTML = "Better luck next time"
+    }
+
+    if (score == 5) {
+        scoreMessage.innerHTML = "Well done, you got a lot of answers right";
+    }
+   
+    if (score > 5 ) {
+        scoreMessage.innerHTML = "Excelent,you got most answers right";
+    }
+    if (score === 11) {
+        scoreMessage.innerHTML = "Outstanding, you scored all the points";
+    }
+
+
+
 }
 
 //--- Final End of Quiz Message with a score and play again option ---//
 function endQuiz() {
-    console.log('quiz should end');
+    introArea.classList.add("hidden");
+    questionsArea.classList.add("hidden");
+    scoreBox.classList.add("hidden");
+    quizEndArea.classList.remove("hidden-three");
+    finalScore();
 }
 
 function playAgain() {
-
+    score = 0;
+    currentNumber = -1;
+    quizEndArea.classList.add("hidden-three");
+    startQuiz();
+   
 }
 
 // --- Arrays --- //
