@@ -3,7 +3,8 @@
 const startBtn = document.getElementById("start");
 const introArea = document.getElementById("intro");
 const imageBox = document.getElementById("art-work");
-const imageIndex = document.getElementById("paintingNum");
+const quizContainer = document.getElementById("quiz-container");
+const imageIndex = document.getElementById("painting-num");
 const questionsArea = document.getElementById("questions");
 const scoreBox = document.getElementById("score-box");
 const scoreIndex = document.getElementById("score-num")
@@ -165,13 +166,11 @@ function finalScore() {
     if (score === 11) {
         scoreMessage.innerHTML = "Outstanding, you scored all the points";
     }
-
-
-
 }
 
 //--- Final End of Quiz Message with a score and play again option ---//
 function endQuiz() {
+    quizContainer.classList.add("hidden");
     introArea.classList.add("hidden");
     questionsArea.classList.add("hidden");
     scoreBox.classList.add("hidden");
@@ -184,6 +183,7 @@ function playAgain() {
     score = 0;
     currentNumber = -1;
     quizEndArea.classList.add("hidden-three");
+    quizContainer.classList.remove("hidden");
     startQuiz();
 }
 

@@ -26,7 +26,7 @@
     </header>
     <!-- Quiz Game Area -->
     <main>
-        <div class="quiz-container" id="quizContainer">
+        <div class="quiz-container" id="quiz-container">
             <!-- Intro Area -->
             <div id="intro" class="quiz-intro">
                 <h3>In this fun quiz, you are tasked with naming artists' based on the images
@@ -39,8 +39,9 @@
             </div>
             <div id="questions" class="questions-container hidden">
                 <!-- Painting Display Area -->
-                <h4>Painting Number: <span id="paintingNum">1</span></h4>
+                <h4>Painting Number: <span id="painting-num">1</span></h4>
                 <div class="art-images" id="art-work"></div>
+                <button id="next-question" class="next-questionbtn hidden-two">Next</button>
                 <!-- Answer Options Area -->
                 <div class="answer-options" id="options">
                     <button id="option-1" class="option-barbtn hover"></button>
@@ -48,7 +49,6 @@
                     <button id="option-3" class="option-barbtn hover"></button>
                     <button id="option-4" class="option-barbtn hover"></button>
                 </div>
-                <button id="next-question" class="next-questionbtn hidden-two">Next</button>
                 <div id="art-facts-container" class="hidden-two">
                     <i id="icon" class="fa-solid fa-book-open-reader"></i>
                     <p id="art-facts"></p>
@@ -57,9 +57,8 @@
         </div>
         <!-- Interesting Facts Box Area displays when option is selected -->
         <div id="quiz-end" class="quiz-end-container hidden-three ">
-            <h3>Your score:<span id="score-total">0</span></h3>
+            <h3 class="total">Your Score: <span id="score-total">0</span></h3>
             <h2 id="score-message"></h2>
-            <br>
             <button id="try-again" class="quiz-againbtn">
                 <h3>Try Again</h3>
             </button>
