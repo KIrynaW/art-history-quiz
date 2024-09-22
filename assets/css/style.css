@@ -144,7 +144,7 @@ main {
 
 /* Answer Options Box Styling */
 .answer-options {
-    width: 60%;
+    width: 65%;
     display: flex;
     flex-wrap: wrap;
     margin: 5px 20%;
@@ -233,8 +233,8 @@ main {
 
 .total {
     margin: 10px;
-    padding: 5px;
-    border-bottom: 2px solid #e7e8ea;
+    padding: 15px;
+    border-bottom: 2px double #e7e8ea;
 }
 
 #score-message {

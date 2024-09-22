@@ -152,19 +152,23 @@ function addScore() {
 
 function finalScore() {
     scoreTotal.innerHTML = score;
-    if (score < 4) {
-        scoreMessage.innerHTML = "Better luck next time"
+    if (score <= 4) {
+        scoreMessage.innerHTML = "Not Great! Try Again."
+        scoreIcon.innerHTML = `<i class="fa-regular fa-face-frown-open"></i>`;
     }
-
-    if (score == 5) {
-        scoreMessage.innerHTML = "Well done, you got a lot of answers right";
+    
+    if (score >= 5) {
+        scoreMessage.innerHTML = "Well Done! You Got Many Answers Right.";
+        scoreIcon.innerHTML = `<i class="fa-regular fa-face-smile"></i>`;
     }
    
-    if (score > 5 ) {
-        scoreMessage.innerHTML = "Excelent,you got most answers right";
+    if (score == 10) {
+        scoreMessage.innerHTML = "Excelent! You Got Most Answers Right.";
+        scoreIcon.innerHTML = `<i class="fa-regular fa-face-grin"></i>`;
     }
-    if (score === 11) {
-        scoreMessage.innerHTML = "Outstanding, you scored all the points";
+    if (score == 11) {
+        scoreMessage.innerHTML = "Outstanding! You Got All Answers Right.";
+        scoreIcon.innerHTML = `<i class="fa-regular fa-face-laugh-beam"></i>`;
     }
 }
 
