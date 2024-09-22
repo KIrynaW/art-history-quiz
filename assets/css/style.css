@@ -231,6 +231,10 @@ main {
     align-self: center;
 }
 
+#score-total {
+    margin: 5px;
+}
+
 .hidden-three {
     display: none;
 }
@@ -243,6 +247,7 @@ main {
     align-self: center;
     border: 2px outset #232E30;
     border-radius: 2px;
+    color: #232E30;
 }
 
 .quiz-againbtn:hover {

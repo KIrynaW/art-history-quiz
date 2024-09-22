@@ -16,6 +16,7 @@ const factIcon = document.getElementById("icon");
 const facts = document.getElementById("art-facts");
 const quizEndArea = document.getElementById("quiz-end");
 const scoreMessage = document.getElementById("score-message");
+const scoreTotal = document.getElementById("score-total");
 const tryAgainBtn = document.getElementById("try-again");
 
 // Start the Quiz event listener
@@ -149,6 +150,7 @@ function addScore() {
 }
 
 function finalScore() {
+    scoreTotal.innerHTML = score;
     if (score < 4) {
         scoreMessage.innerHTML = "Better luck next time"
     }
@@ -178,11 +180,11 @@ function endQuiz() {
 }
 
 function playAgain() {
+    scoreIndex.innerHTML = 0;
     score = 0;
     currentNumber = -1;
     quizEndArea.classList.add("hidden-three");
     startQuiz();
-   
 }
 
 // --- Arrays --- //
