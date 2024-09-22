@@ -31,6 +31,7 @@ h2,
 h3,
 h4 {
     padding: 3px, 5px;
+    line-height: 25px;
     font-family: "Antic Slab", serif;
 }
 
@@ -59,6 +60,9 @@ header {
 
 /* Main Quiz Area Section */
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 85%;
     text-align: center;
     margin-top: 15px;
@@ -70,7 +74,7 @@ main {
     flex-direction: column;
     background-color: rgb(231, 232, 234, .7);
     margin: 10px;
-    padding: 10px;
+    padding: 15px 10px;
     border-radius: 10px;
 }
 
@@ -98,8 +102,8 @@ main {
 
 .quiz-startbtn {
     width: fit-content;
-    margin: 15px 0;
-    padding: 3px;
+    margin: 20px 0;
+    padding: 4px 8px;
     letter-spacing: 4px;
     align-self: center;
     border: 2px outset rgb(221, 100, 44, .7);
@@ -147,7 +151,7 @@ main {
     width: fit-content;
     display: flex;
     flex-wrap: wrap;
-    margin: 5px;
+    margin: 10px;
     justify-content: center;
     align-self: center;
 }
@@ -185,8 +189,8 @@ main {
 /* Next Button Styling */
 .next-questionbtn {
     width: fit-content;
-    margin-top: 3px;
-    padding: 5px;
+    margin-top: 8px;
+    padding: 3px 7px;
     letter-spacing: 4px;
     align-self: center;
     border: 2px outset rgb(221, 100, 44, .7);
@@ -224,23 +228,30 @@ main {
 
 /* Quiz End Area Styling */
 .quiz-end-container {
+    display: flex;
+    flex-direction: column;
     width: 80%;
     height: fit-content;
     background-color: rgb(221, 100, 44, .7);
-    margin: 10px 10%;
+    margin: 10px;
     padding: 10px;
     border-radius: 10px;
-    align-self: center;
 }
 
 .total {
+    width: fit-content;
+    align-self: center;
     margin: 10px;
-    padding: 15px;
-    border-bottom: 2px double #e7e8ea;
+    padding: 10px 15px;
+    font-size: 110%;
+    border: 2px double #e7e8ea;
+    color: #232E30;
 }
 
 #score-message {
     margin: 15px;
+    font-size: 120%;
+    color: #232E30;
 }
 
 .hidden-three {
@@ -250,7 +261,7 @@ main {
 .quiz-againbtn {
     width: fit-content;
     margin: 10px;
-    padding: 3px;
+    padding: 3px 7px;;
     letter-spacing: 4px;
     align-self: center;
     border: 2px outset #232E30;
