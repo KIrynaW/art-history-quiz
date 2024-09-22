@@ -6,6 +6,9 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: beige;
     min-height: 100vh;
     background: url(../images/background-image.jpg)no-repeat center/cover;
@@ -40,7 +43,6 @@ header {
     background-color: rgba(144, 186, 199, .7);
     width: 70%;
     margin-top: 5px;
-    margin-left: 13%;
     font-size: 80%;
     padding: 10px;
     border-radius: 20px;
@@ -59,7 +61,6 @@ header {
 main {
     width: 85%;
     text-align: center;
-    margin-left: 5%;
     margin-top: 15px;
 }
 
@@ -97,7 +98,7 @@ main {
 
 .quiz-startbtn {
     width: fit-content;
-    margin-top: 15px;
+    margin: 15px 0;
     padding: 3px;
     letter-spacing: 4px;
     align-self: center;
@@ -119,7 +120,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 15px;
     padding: 10px;
     border-radius: 10px;
     align-self: center;
@@ -144,24 +144,26 @@ main {
 
 /* Answer Options Box Styling */
 .answer-options {
-    width: 65%;
+    width: fit-content;
     display: flex;
     flex-wrap: wrap;
-    margin: 5px 20%;
+    margin: 5px;
     justify-content: center;
-    align-content: center;
+    align-self: center;
 }
 
 .option-barbtn {
     flex-grow: 1;
-    margin: 8px;
-    width: 250px;
-    height: 30px;
+    margin: 6px;
+    min-width: 150px;
+    width: 230px;
+    height: 35px;
+    align-self: center;
     background-color: rgb(221, 100, 44, .8);
     border-radius: 2px;
     border: 2px outset #232E30;
     font-family: 'Antic Slab', serif;
-    font-size: 100%;
+    font-size: 110%;
     color: #232E30;
 }
 
