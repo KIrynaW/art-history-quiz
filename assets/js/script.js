@@ -2,12 +2,12 @@
 //-- Create variables and store elements there --//
 const startBtn = document.getElementById("start");
 const introArea = document.getElementById("intro");
-const imageBox = document.getElementById("art-work");
-const quizContainer = document.getElementById("quiz-container");
-const imageIndex = document.getElementById("painting-num");
-const questionsArea = document.getElementById("questions");
 const scoreBox = document.getElementById("score-box");
 const scoreIndex = document.getElementById("score-num")
+const quizContainer = document.getElementById("quiz-container");
+const imageIndex = document.getElementById("painting-num");
+const imageBox = document.getElementById("art-work");
+const questionsArea = document.getElementById("questions");
 const optionOneBtn = document.getElementById("option-1");
 const optionTwoBtn = document.getElementById("option-2");
 const optionThreeBtn = document.getElementById("option-3");
@@ -56,13 +56,12 @@ function imageNumber() {
 
 //-- Display Image of the Painting --//
 function getImage() {
-    let imageDiv = document.getElementById('art-work');
-    imageDiv.innerHTML = "";
+    imageBox.innerHTML = "";
     const quizImage = document.createElement("img");
     quizImage.src = questionContent[currentNumber].img;
     quizImage.alt = questionContent[currentNumber].alt;
     quizImage.id = "art-works";
-    imageDiv.appendChild(quizImage);
+    imageBox.appendChild(quizImage);
 }
 
 //-- Shuffle through the questions/images arrays by using Fiher-Yates methods--//
@@ -98,7 +97,7 @@ function checkAnswer(event) {
         event.target.classList.add('wrong');
     }
     let btnId = 'option-'+(correctAnswerIndex+1);
-    correctOptionBtn = document.getElementById(btnId);
+    let correctOptionBtn = document.getElementById(btnId);
     correctOptionBtn.classList.add('right');
     getFacts();
 }
@@ -158,6 +157,7 @@ function clearPreviousChoice() {
 
 function finalScore() {
     scoreTotal.innerHTML = score;
+    const scoreIcon = document.getElementById("score-icon");
     if (score <= 4) {
         scoreMessage.innerHTML = "Not Great! Maybe try again?"
         scoreIcon.innerHTML = `<i class="fa-regular fa-face-frown-open"></i>`;
