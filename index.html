@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta Tags-->
+    <meta name="description"
+        content="Art History knowlege quiz; testing one's ability to name the artist by their art work">
+    <meta name="keywords"
+        content="artist, painting, art quiz, art history, art student, impressionism, cubism, pop art, post-impressionism, modern art">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
@@ -11,8 +16,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Limelight&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/f6f486612e.js" crossorigin="anonymous"></script>
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Name the Artist Quiz</title>
@@ -26,46 +29,51 @@
     </header>
     <!-- Quiz Game Area -->
     <main>
-        <div class="quiz-container" id="quiz-container">
+        <section class="game-container" id="quiz-container">
             <!-- Intro Area -->
             <div id="intro" class="quiz-intro">
-                <h3>In this fun quiz, you are tasked with naming artists' based on the images
-                    of their work.</h3>
-                <div class="image-start"></div>
+                <h2>In this fun quiz, you are tasked with naming artists' based on the images
+                    of their work.</h2>
+                <img class="image-start" src="/assets/images/paint-splash.jpg"
+                    alt="splashes of multicolored acrylic paint">
                 <!-- Start the Quiz -->
                 <button id="start" class="quiz-startbtn">
-                    <h2>Start</h2>
+                    <h3>Start</h3>
                 </button>
             </div>
             <div id="questions" class="questions-container hidden">
                 <!-- Painting Display Area -->
                 <h3>Painting Number: <span id="painting-num">1</span></h3>
-                <div class="art-images" id="art-work"></div>
-                <button id="next-question" class="next-questionbtn hidden-two"><h3>Next</h3></button>
+                <div class="art-images" id="art-work">Art Work</div>
+                <button id="next-question" class="next-questionbtn hidden-two">
+                    <h3>Next</h3>
+                </button>
                 <!-- Answer Options Area -->
                 <div class="answer-options" id="options">
-                    <button id="option-1" class="option-barbtn hover"></button>
-                    <button id="option-2" class="option-barbtn hover"></button>
-                    <button id="option-3" class="option-barbtn hover"></button>
-                    <button id="option-4" class="option-barbtn hover"></button>
+                    <button id="option-1" class="option-barbtn hover">1</button>
+                    <button id="option-2" class="option-barbtn hover">2</button>
+                    <button id="option-3" class="option-barbtn hover">3</button>
+                    <button id="option-4" class="option-barbtn hover">4</button>
                 </div>
+                <!-- Facts about art, shown when next btn is clicked -->
                 <div id="art-facts-container" class="hidden-two">
-                    <i id="icon" class="fa-solid fa-book-open-reader"></i>
-                    <p id="art-facts"></p>
+                    <h4 id="icon"><i class="fa-solid fa-book-open-reader"></i></h4>
+                    <p id="art-facts">Facts</p>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Interesting Facts Box Area displays when option is selected -->
-        <div id="quiz-end" class="quiz-end-container hidden-three ">
-            <h3 class="total">Your Score: <span id="score-total">0</span></h3>
+        <section id="quiz-end" class="quiz-end-container hidden-three ">
+            <h2 class="total">Your Score: <span id="score-total">0</span></h2>
             <h2 id="score-message"></h2>
-            <h1 id="scoreIcon"></h1>
+            <h2 id="scoreIcon">Message Icon</h2>
             <button id="try-again" class="quiz-againbtn">
                 <h3>Start Again</h3>
             </button>
-        </div>
+        </section>
     </main>
-
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f6f486612e.js" crossorigin="anonymous"></script>
     <!-- Javascript -->
     <script src="assets/js/script.js"></script>
 </body>

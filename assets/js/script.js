@@ -98,6 +98,24 @@ function checkAnswer(event) {
     getFacts();
 }
 
+//-- Generate next question when button pressed --//
+function getNextQuestion() {
+    currentNumber += 1;
+    clearPreviousChoice();
+    facts.classList.add("hidden-two");
+    factIcon.classList.add("hidden-two");
+    nextQuestionBtn.classList.add("hidden-two");
+    imageNumber();
+    getImage();
+    getOptions();
+}
+
+//--- Add to the score if answer correct ---//
+function addScore() {
+    score += 1;
+    scoreIndex.innerText = score;
+}
+
 function getFacts() {
     facts.innerText = questionContent[currentNumber].facts;
     facts.classList.remove("hidden-two");
@@ -131,23 +149,6 @@ function clearPreviousChoice() {
     optionTwoBtn.classList.add("hover");
     optionThreeBtn.classList.add("hover");
     optionFourBtn.classList.add("hover");
-}
-//-- Generate next question when button pressed --//
-function getNextQuestion() {
-    currentNumber += 1;
-    clearPreviousChoice();
-    facts.classList.add("hidden-two");
-    factIcon.classList.add("hidden-two");
-    nextQuestionBtn.classList.add("hidden-two");
-    imageNumber();
-    getImage();
-    getOptions();
-}
-
-//--- Add to the score if answer correct ---//
-function addScore() {
-    score += 1;
-    scoreIndex.innerText = score;
 }
 
 function finalScore() {

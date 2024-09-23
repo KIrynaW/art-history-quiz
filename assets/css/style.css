@@ -68,7 +68,7 @@ main {
     margin-top: 15px;
 }
 
-.quiz-container {
+.game-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -86,7 +86,6 @@ main {
 }
 
 .image-start {
-    background: url('../images/paint-splash.jpg') no-repeat center/cover;
     opacity: .8;
     position: relative;
     align-self: center;
@@ -219,7 +218,6 @@ main {
 
 #icon {
     margin-right: 10px;
-    
 }
 
 .hidden-two {
