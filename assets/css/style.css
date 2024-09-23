@@ -30,7 +30,7 @@ h1 {
 h2,
 h3,
 h4 {
-    padding: 3px, 5px;
+    padding: 3px 5px;
     line-height: 25px;
     font-family: "Antic Slab", serif;
 }
@@ -113,8 +113,8 @@ main {
 
 .quiz-startbtn:hover {
     cursor: pointer;
-    transform: scaleY(1.2);
-    transition: transform(250ms);
+    transform: scale(1.1);
+    transition: 250ms;
 }
 
 /* Quiz Play Area Styling */
@@ -172,8 +172,8 @@ main {
 
 .hover:hover {
     cursor: pointer;
-    transform: scaleY(1.2);
-    transition: transform(250ms);
+    transform: scaleY(1.1);
+    transform:250ms;
     background-color: #dd642c;
 }
 
@@ -200,8 +200,8 @@ main {
 
 .next-questionbtn:hover {
     cursor: pointer;
-    transform: scaleY(1.2);
-    transition: transform(250ms);
+    transform: scale(1.1);
+    transition: 250ms;
 }
 
 /* Interesting Facts Area Styling */
@@ -269,6 +269,6 @@ main {
 
 .quiz-againbtn:hover {
     cursor: pointer;
-    transform: scaleY(1.2);
-    transition: transform(250ms);
+    transform: scale(1.1);
+    transition: 250ms;
 }
