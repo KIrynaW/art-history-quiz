@@ -56,8 +56,13 @@ function imageNumber() {
 
 //-- Display Image of the Painting --//
 function getImage() {
-    let imageDiv = document.getElementById('art-work')
-    imageDiv.innerHTML = "<img id='art-works' alt='Famous Paintings' src=" + questionContent[currentNumber].img + ">"
+    let imageDiv = document.getElementById('art-work');
+    imageDiv.innerHTML = "";
+    const quizImage = document.createElement("img");
+    quizImage.src = questionContent[currentNumber].img;
+    quizImage.alt = questionContent[currentNumber].alt;
+    quizImage.id = "art-works";
+    imageDiv.appendChild(quizImage);
 }
 
 //-- Shuffle through the questions/images arrays by using Fiher-Yates methods--//
@@ -197,6 +202,7 @@ const questionContent = [
     {
         number: 1,
         img: "assets/images/alphonse-mucha.jpg",
+        alt: "An art print of a girl, holding grapes.",
         answers: ["Gustav Klimt", "Aubrey Beardsley", "Alphonse Mucha", "Egon Schiele"],
         facts: "'Fruit' by Alphonse Mucha. He was a Czech painter, illustrator, and graphic artist. Living in Paris during the Art Nouveau period, he was widely known for his distinctly stylized and decorative theatrical posters",
         correctAnswerIndex: 2
@@ -204,6 +210,7 @@ const questionContent = [
     {
         number: 2,
         img: "assets/images/andy-warhal.jpg",
+        alt: "A painting of an onion soup can.",
         answers: ["Roy Lichtenstein", "Andy Warhal", "Keith Haring", "Jeff Koons"],
         facts: "'Campbell's Soup Cans I: Onion' by Andy Warhal. The works were Warhol's hand-painted depictions of printed imagery deriving from commercial products and popular culture and belong to the pop art movement.",
         correctAnswerIndex: 1
@@ -212,6 +219,7 @@ const questionContent = [
     {
         number: 3,
         img: "assets/images/eduard-manet.jpg",
+        alt: "A painting of a woman standing at a bar stand.",
         answers: ["Edouard Manet", "Edgar Degas", "Claude Monet", "Paul Cezanne"],
         facts: "'A Bar at the Folies-Bergere' by Edouard Manet. It was painted in 1882 in the era of Impressionism and depicts a scene in the Folies Bergère nightclub in Paris.",
         correctAnswerIndex: 0
@@ -220,6 +228,7 @@ const questionContent = [
     {
         number: 4,
         img: "assets/images/georges-seurat.jpg",
+        alt: "A painting of a hunched over boy, sitting at the bank of a river",
         answers: ["Camille Pissarro", "Charles Angrand", "Georges Seurat", "Paul Signac"],
         facts: "'Bathers at Asnières' by Georges Seurat. The canvas is of a suburban, placid Parisian riverside scene, created in post-impressionist era of art.",
         correctAnswerIndex: 2
@@ -228,6 +237,7 @@ const questionContent = [
     {
         number: 5,
         img: "assets/images/henri-matisse.jpg",
+        alt: "An art piece of an abstract blue figure.",
         answers: ["Henri Matisse", "Othon Friesz", "Andre Derain", "Georges Braque"],
         facts: "'Blue Nude II' by Henri Matisse. One of the series of collages, and related color lithographs, made from paper cut-outs depicting nude figures in various positions.",
         correctAnswerIndex: 0
@@ -236,6 +246,7 @@ const questionContent = [
     {
         number: 6,
         img: "assets/images/johannes-vermeer.jpg",
+        alt: "A portrait painting of a girl, wearing a big pearl earring.",
         answers: ["Anthony van Dyck", "Frans Hals", "Johannes Vermeer", "Peter Paul Rubens"],
         facts: "'Girl with a Pearl Earring' is an oil painting by Dutch painter Johannes Vermeer, dated c. 1665. It depicts a European girl wearing 'exotic dress', an 'oriental turban', and what appears to be a very large pearl as an earring",
         correctAnswerIndex: 2
@@ -244,6 +255,7 @@ const questionContent = [
     {
         number: 7,
         img: "assets/images/pablo-picasso.jpg",
+        alt: "An abstract portrait painting of a woman sitting on a chair.",
         answers: ["Paul Cezanne", "Juan Gris", "Pablo Picasso", "Piet Mondrian"],
         facts: "'Portrait of Dora Mar' is a 1937 oil on canvas painting by Pablo Picasso. This portrait is of the painter's lover, seated on a chair; it depicts both the profile and the frontal face in conjunction, which provides an opportunity to convey several perspectives.",
         correctAnswerIndex: 2
@@ -251,6 +263,7 @@ const questionContent = [
     {
         number: 8,
         img: "assets/images/paul-gauguin.jpg",
+        alt: "A painting of two women sitting on the ground, wearing flowers in their hair.",
         answers: ["Vincent Van Gogh", "Paul Gauguin", "Edgar Degas", "Henri Matisse"],
         facts: "'What's New?' by Paul Gauguin. He was a French artist and a writer, associated with the Post-Impressionist and Symbolist movements. This painting is part of series created during his trip to Tahiti, depicting local villegers",
         correctAnswerIndex: 1
@@ -259,6 +272,7 @@ const questionContent = [
     {
         number: 9,
         img: "assets/images/salvador-dali.jpg",
+        alt: "A painting of a dream-like landscape with melting clocks.",
         answers: ["Salvador Dali", "Rene Magritte", "Max Ernst", "Joan Miro"],
         facts: "'The Persistence of Memory' is a 1931 painting by artist Salvador Dali and one of the most recognizable works of Surrealism; depicting Dalis phylosophy regarding the consept of 'time'.",
         correctAnswerIndex: 0
@@ -267,6 +281,7 @@ const questionContent = [
     {
         number: 10,
         img: "assets/images/vincent-van-gogh.jpg",
+        alt: "A still-life painting of vase with sunflowers.",
         answers: ["Claude Monet", "Paul Gauguin", "Eduard Manet", "Vincent Van Gogh"],
         facts: "'Sunflowers ' is the title of two series of still life paintings by the Dutch painter Vincent van Gogh. Part of the second series, executed in Paris in 1888, depicts a still-life bouquet of sunflowers in a vase.",
         correctAnswerIndex: 3
@@ -274,10 +289,10 @@ const questionContent = [
     {
         number: 11,
         img: "assets/images/wassily-kandinsky.jpg",
+        alt: "An abstract painting, full of vivid colours and different random shapes.",
         answers: ["Kazimir Malevich", "El Lissitzky", "Wassily Kandinsky", "Paul Klee"],
         facts: "'Composition IV' created by Wassily Kandinsky in 1913. It is part of series inspired by music; he theorised that the combinations of colours produce vibrational frequencies, akin to chords played on a piano. Kandinsky is generally credited as one of the pioneers of abstraction in western art.",
         correctAnswerIndex: 2
-
     }
 
 ]
