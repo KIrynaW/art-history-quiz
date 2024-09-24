@@ -41,7 +41,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: rgba(144, 186, 199, .7);
-    width: 70%;
+    width: 80%;
     margin-top: 5px;
     font-size: 100%;
     padding: 10px;
@@ -280,4 +280,11 @@ main {
     cursor: pointer;
     transform: scale(1.1);
     transition: 250ms;
+}
+
+/* Media Query for larger screens */
+@media screen and (max-width: 1232px) {
+    .answer-options {
+        width: 70%;
+    }
 }
