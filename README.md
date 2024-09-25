@@ -52,6 +52,10 @@ The website is responsive on all screen types: Phones, Tablets and Laptops.
 
   ![Wireframes for iPad screens](docs/screenshots/wireframes_ipad.jpg)
 
+- __Laptop Screen View:__
+
+  ![Wireframes for Laptop screens](docs/screenshots/wireframes_laptop.jpg)
+
 #### *Color Scheme:*
 #### *Typography:*
 ## **Implementation Phase:**
