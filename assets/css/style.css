@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: beige;
+    background-color: #e7e8ea;
     min-height: 100vh;
     background: url(../images/background-image.jpg)no-repeat center/cover;
     font-family: "Antic Slab", serif;
@@ -163,7 +163,7 @@ main {
     width: 230px;
     height: 32px;
     align-self: center;
-    background-color: rgb(221, 100, 44, .8);
+    background-color: #e58b61;
     border-radius: 2px;
     border: 2px outset #232E30;
     font-family: 'Antic Slab', serif;
@@ -216,6 +216,9 @@ main {
     align-self: center;
     text-align: left;
     padding: 10px;
+    background-color: rgba(231, 232, 234, .8);
+    border-radius: 10px;
+    color: #232E30;
 }
 
 #icon {
