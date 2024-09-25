@@ -43,7 +43,7 @@ This fun Quiz provides users with a fun way of testing their knowledge of famous
 ### *Goals:*
 ### **User Interface(UI)**
 #### *Wireframes:*
-The website is responsive on all screen types: Phones, Tablets and Laptops.
+The quiz is responsive on all screen types: Phones, Tablets and Laptops.
 - __Mobile Screen view and all featured described:__
 
   ![Wireframes for mobile screen with functionality described](docs/screenshots/wireframes_mobile.jpg)
@@ -57,6 +57,8 @@ The website is responsive on all screen types: Phones, Tablets and Laptops.
   ![Wireframes for Laptop screens](docs/screenshots/wireframes_laptop.jpg)
 
 #### *Color Scheme:*
+This color palette was generated from [Coolors](https://coolors.co/)
+  ![Color Scheme chosen for the project](docs/screenshots/color-scheme.jpg)
 #### *Typography:*
 ## **Implementation Phase:**
 ## **Quiz features**
