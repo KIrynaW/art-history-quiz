@@ -135,8 +135,8 @@ main {
 
 /* Quiz Image Styling */
 #art-works {
-    min-width: 110px;
-    min-height: 150px;
+    min-width: 100px;
+    min-height: 140px;
     height: 21vw;
     width: auto;
     align-self: center;
@@ -151,7 +151,7 @@ main {
     width: fit-content;
     display: flex;
     flex-wrap: wrap;
-    margin: 5px;
+    margin-top: 10px;
     justify-content: center;
     align-self: center;
 }
@@ -190,6 +190,7 @@ main {
 .next-questionbtn {
     width: fit-content;
     padding: 3px 6px;
+    margin-top: 3px;
     letter-spacing: 4px;
     align-self: center;
     border: 2px outset rgb(221, 100, 44, .7);
