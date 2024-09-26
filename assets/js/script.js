@@ -158,21 +158,16 @@ function clearPreviousChoice() {
 function finalScore() {
     scoreTotal.innerHTML = score;
     const scoreIcon = document.getElementById("score-icon");
-    if (score <= 4) {
+    if (score < 5) {
         scoreMessage.innerHTML = "Not Great! Maybe try again?"
         scoreIcon.innerHTML = `<i class="fa-regular fa-face-frown-open"></i>`;
-    }
-    
-    if (score >= 5) {
+    } else if (score < 9) {
         scoreMessage.innerHTML = "Well Done! You have some knowlege in Art History";
         scoreIcon.innerHTML = `<i class="fa-regular fa-face-smile"></i>`;
-    }
-   
-    if (score == 10) {
-        scoreMessage.innerHTML = "Excelent! You know your Art History well.";
+    } else if (score < 11) {
+        scoreMessage.innerHTML = "Excellent! You know your Art History well.";
         scoreIcon.innerHTML = `<i class="fa-regular fa-face-grin"></i>`;
-    }
-    if (score == 11) {
+    } else {
         scoreMessage.innerHTML = "Outstanding! You are an Art History Master.";
         scoreIcon.innerHTML = `<i class="fa-regular fa-face-laugh-beam"></i>`;
     }
