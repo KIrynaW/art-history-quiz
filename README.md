@@ -22,11 +22,6 @@ This fun Quiz provides users with a fun way of testing their knowledge of famous
       * [*Current Features*](#current-features)
       * [*Possible Future Features*](#possible-future-deatures)
 3. [**Testing Phase**](#testing-phase)
-    * [***Bugs***](#bugs)
-    * [***Validator Testing***](#validator-testing)
-    * [***Accessibility Testing***](#accessibility-testing)
-    * [***Manual Testing***](#manual-testing)
-    * [***User Story Testing***](#user-story-testing)
 4. [**Deployment**](#deployment)
 5. [**Credits**](#credits)
     * [**Languages Used**](#languages-used)
@@ -78,11 +73,6 @@ This color palette was generated from [Coolors](https://coolors.co/)
 ### **Current Features**
 ### **Possible Future Deatures**
 ## **Testing Phase:**
-### **Bugs**
-### **Validator Testing**
-### **Accessibility Testing:**
-### **Manual Testing**
-### **User Story Testing**
 ## **Deployment:**
 ## **Credits:**
 ### **Languages Used**
