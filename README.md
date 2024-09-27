@@ -76,23 +76,24 @@ Art History Quiz site comprises of three sections, each activated when a specifi
   - At the bottom of the **Game End Section** there is a "Play Again" button that allows the user to try to play again; when clicked, it bring the user back to the **Game Section**.
 
 #### **Wireframes:**
-The quiz is responsive on all screen types: Phones, Tablets and Laptops.
-- __Mobile Screen view and all featured described:__
+The quiz is responsive on all screen types: Mobiles, Tablets and Laptops.
 
-  ![Wireframes for mobile screen with functionality described](docs/screenshots/wireframes_mobile.jpg)
+  - __Mobile Screen view and all featured described:__
 
-- __IPad Screen View:__
+    ![Wireframes for mobile screen with functionality described](docs/screenshots/wireframes_mobile.jpg)
 
-  ![Wireframes for iPad screens](docs/screenshots/wireframes_ipad.jpg)
+  - __IPad Screen View:__
 
-- __Laptop Screen View:__
+    ![Wireframes for iPad screens](docs/screenshots/wireframes_ipad.jpg)
 
-  ![Wireframes for Laptop screens](docs/screenshots/wireframes_laptop.jpg)
+  - __Laptop Screen View:__
+
+    ![Wireframes for Laptop screens](docs/screenshots/wireframes_laptop.jpg)
 
 #### **Color Scheme:**
-- This color palette was generated from [Coolors](https://coolors.co/)
+ - This color palette was generated from [Coolors](https://coolors.co/)
 
-  ![Color Scheme chosen for the project](docs/screenshots/color-scheme.jpg)
+    ![Color Scheme chosen for the project](docs/screenshots/color-scheme.jpg)
 #### **Typography:**
 ## **Implementation Phase:**
 ## **Quiz Features**
