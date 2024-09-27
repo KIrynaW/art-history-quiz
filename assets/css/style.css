@@ -12,6 +12,8 @@ body {
     background-color: #e7e8ea;
     min-height: 100vh;
     background: url(../images/background-image.jpg)no-repeat center/cover;
+    background-position: 70%;
+    flex-grow: 2;
     font-family: "Antic Slab", serif;
     letter-spacing: 1px;
     line-height: 20px;
