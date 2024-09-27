@@ -11,8 +11,8 @@ This fun Quiz provides users with a fun way of testing their knowledge of famous
 ## Table of Contents:
 1. [**Exploration Phase**](#exploration-phase)
     * [***User Experience(UX)***](#user-experienceux)
-      * [*User Stories*](#user-stories)
       * [*Goals*](#goals)
+      * [*User Stories*](#user-stories)
     * [***User Interface(UX)***](#user-interfaceui)
       * [*Wireframes*](#wireframes)
       * [*Color Scheme*](#color-scheme)
@@ -34,10 +34,17 @@ This fun Quiz provides users with a fun way of testing their knowledge of famous
 ***
 
 ## **Exploration Phase:**
-Who doesnt like a good quiz to test their knowlege on one or another topic. 
+Who does not like a good quiz to test their knowlege on one or another topic. 
 ### **User Experience(UX)**
 ***The Users :***  
 ***The Purpose of the Quiz :*** 
+### *Goals:*
+- ***User Goal:***
+  - *A Chance Visitors:* to experience a visualy stimulating and entertaining interactive quiz game while learning interesting art history facts.<br>
+  - *Fine-Art Students:* to test their knowlege in fine-art history, specificaly the 17-21 century art and their creators, while comparing their current knowlege to the information presented.<br>
+  - *Fine-Art History Amateurs:* to enjoy the visual experience while testing their current knowlege and learning new facts about a selection of 17-21 century fine-art paintings.
+- ***Quiz Owner Goal :***
+  - The owner of the Quiz site is a fine-art graduate, who loves art-history and plans to created different types of art-quizes available for students, novices and art-history enthusiasts who enjoy art and want to test their knowlege, learn more about art-history while experiencing an entertaining and visualy stimulating quiz game.
 ### *User Stories:*
   |No.|Story|
   |---|-----|
@@ -48,7 +55,6 @@ Who doesnt like a good quiz to test their knowlege on one or another topic.
   |5|**As a fine-art student**, <br> I want to be able to|
   |6|**As a fine-art history amateur**, <br> I want to be able to|
   |7|**As a fine-art history amateur**, <br> I want to be able to|
-### *Goals:*
 ### **User Interface(UI)**
 #### *Wireframes:*
 The quiz is responsive on all screen types: Phones, Tablets and Laptops.
@@ -74,6 +80,7 @@ This color palette was generated from [Coolors](https://coolors.co/)
 ### **Possible Future Deatures**
 ## **Testing Phase:**
 The Testing Phase Content is available in a separate document file that can be accessed at [TESTING.md](TESTING.md)
+
 ## **Deployment:**
 ## **Credits:**
 ### **Languages Used**
