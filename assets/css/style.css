@@ -278,6 +278,7 @@ main {
     border: 2px outset #232E30;
     border-radius: 2px;
     font-size: 100%;
+    color: #232E30;
 }
 
 .quiz-againbtn:hover {
