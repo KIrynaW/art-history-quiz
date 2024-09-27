@@ -43,7 +43,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: rgba(144, 186, 199, .7);
+    background-color: rgba(144, 186, 199, 0.7);
     width: 90%;
     margin-top: 5px;
     padding: 10px;
@@ -121,6 +121,7 @@ main {
     cursor: pointer;
     transform: scale(1.1);
     transition: 250ms;
+    background-color: #e7e8ea;
 }
 
 /* Quiz Play Area Styling */
@@ -210,6 +211,7 @@ main {
     cursor: pointer;
     transform: scale(1.1);
     transition: 250ms;
+    background-color: #e7e8ea;
 }
 
 /* Interesting Facts Area Styling */
@@ -285,6 +287,7 @@ main {
     cursor: pointer;
     transform: scale(1.1);
     transition: 250ms;
+    background-color: #90bac7;
 }
 
 /* Media Query for larger screens */
