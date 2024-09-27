@@ -5,7 +5,7 @@ This fun Quiz provides users with a fun way of testing their knowledge of famous
 
 ***(Designed by Iryna Walsh)***
 
-![Responsive Design](docs/screenshots/responsive_design1.jpg)
+![Responsive Design](docs/screenshots/responsive_design.jpg)
 ## [Play the Art History Quiz](https://kirynaw.github.io/art-history-quiz/)
 
 ## Table of Contents:
@@ -44,6 +44,15 @@ Who doesnt like a good quiz to test their knowlege on one or another topic.
 ***The Users :***  
 ***The Purpose of the Quiz :*** 
 ### *User Stories:*
+  |No.|Story|
+  |---|-----|
+  |1|**As a new visitor**, <br> I want to be able to|
+  |2|**As an fine-art history novice**, <br> I want to be able to|
+  |3|**As an fine-art history novice**, <br> I want to be able to|
+  |4|**As a fine-art student**, <br> I want to be able to|
+  |5|**As a fine-art student**, <br> I want to be able to|
+  |6|**As a fine-art history amateur**, <br> I want to be able to|
+  |7|**As a fine-art history amateur**, <br> I want to be able to|
 ### *Goals:*
 ### **User Interface(UI)**
 #### *Wireframes:*
