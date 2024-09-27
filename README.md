@@ -55,8 +55,27 @@ Who does not like a good quiz to test their knowlege on one or another topic.
   |5|**As a fine-art student**, <br> I want to be able to|
   |6|**As a fine-art history amateur**, <br> I want to be able to|
   |7|**As a fine-art history amateur**, <br> I want to be able to|
+
 ### **User Interface(UI)**
-#### *Wireframes:*
+Art History Quiz site comprises of three sections, each activated when a specific button is triggered.
+
+- **Landing Section :**
+  - This section briefly introduces the quiz; explaining the task and aim of the game to the user. It's aim is not only introduce but visually entise the user to do the quiz.
+  - It comprises of a heading that contains the name of the quiz; main with an image, visualy depicting the quiz; and a "Start" button, that triggers the **Game Section**.
+
+- **Game Section :**
+  - The **Game Section** contains the game board in it's entirty. It consists of a heading with the name of the quiz and reveals a "Score 0"; the main contains 11 historicaly famous paintings, with four option buttons. 
+  - Some features are disguised and revealed when a selection is made.
+  - When the selected answer is correct, the button turns green; but if selected answer is incorrect, the button turns red and the correct answer is also revealed in green.
+  - The selection of an answer option also reveals a "Next" button and a "Interesting Facts" paragraph.
+  - When "Next" button is clicked, it shows the next question/painting and hides the "Next" button and "Interesting Facts" paragraph. 
+  - The process repeats until all 11 painting are named and the final "Next" button reveals the **Game End Section**.
+
+- **Game End Section :**
+  - This section consists of a heading that only shows the name of the quiz, and a main notifying the user that they reached the end of the quiz, the final score and a message that changes depending of the score number, praising the user or encouraging to try again.
+  - At the bottom of the **Game End Section** there is a "Play Again" button that allows the user to try to play again; when clicked, it bring the user back to the **Game Section**.
+
+#### **Wireframes:**
 The quiz is responsive on all screen types: Phones, Tablets and Laptops.
 - __Mobile Screen view and all featured described:__
 
@@ -70,12 +89,13 @@ The quiz is responsive on all screen types: Phones, Tablets and Laptops.
 
   ![Wireframes for Laptop screens](docs/screenshots/wireframes_laptop.jpg)
 
-#### *Color Scheme:*
-This color palette was generated from [Coolors](https://coolors.co/)
+#### **Color Scheme:**
+- This color palette was generated from [Coolors](https://coolors.co/)
+
   ![Color Scheme chosen for the project](docs/screenshots/color-scheme.jpg)
-#### *Typography:*
+#### **Typography:**
 ## **Implementation Phase:**
-## **Quiz features**
+## **Quiz Features**
 ### **Current Features**
 ### **Possible Future Deatures**
 ## **Testing Phase:**
