@@ -73,6 +73,7 @@ This color palette was generated from [Coolors](https://coolors.co/)
 ### **Current Features**
 ### **Possible Future Deatures**
 ## **Testing Phase:**
+The Testing Phase Content is available in a separate document file that can be accessed at [TESTING.md](TESTING.md)
 ## **Deployment:**
 ## **Credits:**
 ### **Languages Used**
