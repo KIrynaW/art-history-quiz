@@ -12,7 +12,7 @@ body {
     background-color: #e7e8ea;
     min-height: 100vh;
     background: url(../images/background-image.jpg)no-repeat center/cover;
-    background-position: 70%;
+    background-position: 80%;
     flex-grow: 2;
     font-family: "Antic Slab", serif;
     letter-spacing: 1px;
@@ -33,6 +33,7 @@ h4 {
     padding: 3px 15px;
     line-height: 25px;
     font-family: "Antic Slab", serif;
+    color: #232E30;
 }
 
 /* Header Section Styles */
@@ -214,7 +215,7 @@ main {
     flex-direction: row;
     width: fit-content;
     border-top: 2px double #232E30;
-    margin-top: 8px;
+    margin: 8px;
     align-self: center;
     text-align: left;
     padding: 10px;
@@ -239,7 +240,7 @@ main {
     height: fit-content;
     background-color: rgb(221, 100, 44, .7);
     margin: 10px;
-    padding: 10px;
+    padding: 20px 10px;
     border-radius: 10px;
 }
 
@@ -250,17 +251,14 @@ main {
     padding: 10px 15px;
     font-size: 110%;
     border: 2px double #e7e8ea;
-    color: #232E30;
 }
 
 #score-message {
     margin: 15px;
     font-size: 120%;
-    color: #232E30;
 }
 
 #score-icon {
-    color: #232E30;
     font-size: 200%;
 }
 
@@ -277,7 +275,6 @@ main {
     border: 2px outset #232E30;
     border-radius: 2px;
     font-size: 100%;
-    color: #232E30;
 }
 
 .quiz-againbtn:hover {
