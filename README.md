@@ -4,8 +4,9 @@ This fun Quiz provides users with a fun way of testing their knowledge of famous
 ***
 
 ***(Designed by Iryna Walsh)***
-![Responsive Design]()
-![Viwe Art History Quiz]()
+
+![Responsive Design](docs/screenshots/responsive_design1.jpg)
+## [Play the Art History Quiz](https://kirynaw.github.io/art-history-quiz/)
 
 ## Table of Contents:
 1. [**Exploration Phase**](#exploration-phase)
@@ -38,7 +39,10 @@ This fun Quiz provides users with a fun way of testing their knowledge of famous
 ***
 
 ## **Exploration Phase:**
+Who doesnt like a good quiz to test their knowlege on one or another topic. 
 ### **User Experience(UX)**
+***The Users :***  
+***The Purpose of the Quiz :*** 
 ### *User Stories:*
 ### *Goals:*
 ### **User Interface(UI)**
