@@ -96,13 +96,21 @@ The quiz is responsive on all screen types: Mobiles, Tablets and Laptops.
 #### **Color Scheme:**
  - This color palette was generated from [Coolors](https://coolors.co/)
 
-    ![Color Scheme chosen for the project](docs/screenshots/color-scheme.jpg)
+    ![Color Scheme chosen for the project](docs/screenshots/color_scheme.jpg)
 #### **Typography:**
+- Fonts used
+    ![Two font styles used:Limelight and Antic Slab](docs/screenshots/site_fonts.jpg)
+
 ## **Implementation Phase:**
 ### **Current Quiz Features**
 #### **Landing Section**
+
   - It comprises of a heading section that contains the name of the quiz; main section, with an image, visualy depicting the quiz; and a "Start" button, that triggers the **Game Section**.
 #### **Game Section**
+- The main section overview, displaying responsivnes on all screen sizes, featuring the standard Laptop, Tablet and Smartphone screens.
+
+  ![Responsivnes of the Game Section on all screen sizes](docs/features-screenshots/all_screen_views.jpg)
+
   - When the selected answer is correct, the button turns green; but if selected answer is incorrect, the button turns red and the correct answer is also revealed in green.
   - The selection of an answer option also reveals a "Next" button and a "Interesting Facts" paragraph.
   - When "Next" button is clicked, it shows the next question/painting and hides the "Next" button and "Interesting Facts" paragraph. 
