@@ -104,9 +104,11 @@ The quiz is responsive on all screen types: Mobiles, Tablets and Laptops.
 ## **Implementation Phase:**
 ### **Current Quiz Features**
 #### **Landing Section**
-! 
+- It comprises of a heading section that contains the name of the quiz; main section, with an image, visualy depicting the quiz; and a "Start" button, that triggers the **Game Section**.
 
-  - It comprises of a heading section that contains the name of the quiz; main section, with an image, visualy depicting the quiz; and a "Start" button, that triggers the **Game Section**.
+  ![Landing section with game introduction and an image](docs/features-screenshots/landing_section.jpg)
+  ![Start the quiz button function](docs/features-screenshots/start_function.jpg)
+
 #### **Game Section**
 - The main section overview, displaying responsivnes on all screen sizes, featuring the standard Laptop, Tablet and Smartphone screens.
 
@@ -126,15 +128,18 @@ The quiz is responsive on all screen types: Mobiles, Tablets and Laptops.
 
 - When "Next" button is clicked, it shows the next question/painting and hides the "Next" button and "Interesting Facts" paragraph.
 
-    ![Next button hover feature](docs/features-screenshots/next_function.jpg)
+  ![Next button hover feature](docs/features-screenshots/next_function.jpg)
     
-
 - The process repeats until all 11 painting are named and the final "Next" button reveals the **Game End Section**.
 
 #### **Game End Section**
-![Game End Section](docs/features-screenshots/endgame_section.jpg)
-!
+  ![Game End heading section](docs/features-screenshots/endgame_heading.jpg)
+  ![Game End all message variations](docs/features-screenshots/end_game_messages.jpg)
+
 - At the bottom of the **Game End Section** there is a "Play Again" button that allows the user to try to play again; when clicked, it bring the user back to the **Game Section**.
+
+  ![Play Agian button hover function](docs/features-screenshots/startagain_function.jpg)
+ 
 
 
 ### **Possible Future Deatures**
