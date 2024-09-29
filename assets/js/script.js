@@ -8,6 +8,7 @@ const quizContainer = document.getElementById("quiz-container");
 const imageIndex = document.getElementById("painting-num");
 const imageBox = document.getElementById("art-work");
 const questionsArea = document.getElementById("questions");
+const allOptionBtns = document.getElementById("options");
 const optionOneBtn = document.getElementById("option-1");
 const optionTwoBtn = document.getElementById("option-2");
 const optionThreeBtn = document.getElementById("option-3");
@@ -41,7 +42,7 @@ function startQuiz() {
     introArea.classList.add("hidden");
     questionsArea.classList.remove("hidden");
     scoreBox.classList.remove("hidden");
-    hideItems();
+    toggleHiddenTwo();
     shuffleQuestions();
     getNextQuestion();
 }
@@ -103,11 +104,18 @@ function checkAnswer(event) {
     getFacts();
 }
 
+function toggleHiddenTwo() {
+    const revealHidden = document.querySelectorAll(".reveal");
+    revealHidden.forEach(element => {
+        element.classList.toggle("hidden-two");
+    });
+}
+
 //-- Generate next question when button pressed --//
 function getNextQuestion() {
     currentNumber += 1;
     clearPreviousChoice();
-    hideItems();
+    toggleHiddenTwo();
     imageNumber();
     getImage();
     getOptions();
@@ -119,23 +127,9 @@ function addScore() {
     scoreIndex.innerText = score;
 }
 
-function showHiddenItems() {
-    const revealHidden = document.querySelectorAll(".reveal");
-    revealHidden.forEach(element => {
-        element.classList.toggle("hidden-two", false);
-    });
-}
-
-function hideItems() {
-    const revealHidden = document.querySelectorAll(".reveal");
-    revealHidden.forEach(element => {
-        element.classList.toggle("hidden-two");
-    });
-}
-
 function getFacts() {
-    document.getElementById("options").addEventListener("click", showHiddenItems);
     facts.innerText = questionContent[currentNumber].facts;
+    allOptionBtns.addEventListener("click", toggleHiddenTwo);
     optionOneBtn.removeEventListener("click", checkAnswer);
     optionTwoBtn.removeEventListener("click", checkAnswer);
     optionThreeBtn.removeEventListener("click", checkAnswer);
