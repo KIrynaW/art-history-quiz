@@ -41,6 +41,7 @@ function startQuiz() {
     introArea.classList.add("hidden");
     questionsArea.classList.remove("hidden");
     scoreBox.classList.remove("hidden");
+    hideItems();
     shuffleQuestions();
     getNextQuestion();
 }
@@ -106,9 +107,7 @@ function checkAnswer(event) {
 function getNextQuestion() {
     currentNumber += 1;
     clearPreviousChoice();
-    facts.classList.add("hidden-two");
-    factIcon.classList.add("hidden-two");
-    nextQuestionBtn.classList.add("hidden-two");
+    hideItems();
     imageNumber();
     getImage();
     getOptions();
@@ -120,11 +119,23 @@ function addScore() {
     scoreIndex.innerText = score;
 }
 
+function showHiddenItems() {
+    const revealHidden = document.querySelectorAll(".reveal");
+    revealHidden.forEach(element => {
+        element.classList.toggle("hidden-two", false);
+    });
+}
+
+function hideItems() {
+    const revealHidden = document.querySelectorAll(".reveal");
+    revealHidden.forEach(element => {
+        element.classList.toggle("hidden-two");
+    });
+}
+
 function getFacts() {
+    document.getElementById("options").addEventListener("click", showHiddenItems);
     facts.innerText = questionContent[currentNumber].facts;
-    facts.classList.remove("hidden-two");
-    factIcon.classList.remove("hidden-two");
-    nextQuestionBtn.classList.remove("hidden-two");
     optionOneBtn.removeEventListener("click", checkAnswer);
     optionTwoBtn.removeEventListener("click", checkAnswer);
     optionThreeBtn.removeEventListener("click", checkAnswer);
