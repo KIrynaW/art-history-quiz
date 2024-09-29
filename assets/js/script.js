@@ -9,6 +9,7 @@ const imageIndex = document.getElementById("painting-num");
 const imageBox = document.getElementById("art-work");
 const questionsArea = document.getElementById("questions");
 const allOptionBtns = document.getElementById("options");
+const optionBtns = document.querySelectorAll(".option-barbtn")
 const optionOneBtn = document.getElementById("option-1");
 const optionTwoBtn = document.getElementById("option-2");
 const optionThreeBtn = document.getElementById("option-3");
@@ -134,30 +135,24 @@ function getFacts() {
     optionTwoBtn.removeEventListener("click", checkAnswer);
     optionThreeBtn.removeEventListener("click", checkAnswer);
     optionFourBtn.removeEventListener("click", checkAnswer);
-    optionOneBtn.classList.remove("hover");
-    optionTwoBtn.classList.remove("hover");
-    optionThreeBtn.classList.remove("hover");
-    optionFourBtn.classList.remove("hover");
+    optionBtns.forEach(element => {
+        element.classList.remove("hover");
+    });
 }
 
 //--- Clears the previously selected option and applied functions ---//
 function clearPreviousChoice() {
-    optionOneBtn.classList.remove("wrong");
-    optionTwoBtn.classList.remove("wrong");
-    optionThreeBtn.classList.remove("wrong");
-    optionFourBtn.classList.remove("wrong");
-    optionOneBtn.classList.remove("right");
-    optionTwoBtn.classList.remove("right");
-    optionThreeBtn.classList.remove("right");
-    optionFourBtn.classList.remove("right");
+   optionBtns.forEach(element => {
+        element.classList.remove("wrong");
+        element.classList.remove("right");
+    });
     optionOneBtn.addEventListener("click", checkAnswer);
     optionTwoBtn.addEventListener("click", checkAnswer);
     optionThreeBtn.addEventListener("click", checkAnswer);
     optionFourBtn.addEventListener("click", checkAnswer);
-    optionOneBtn.classList.add("hover");
-    optionTwoBtn.classList.add("hover");
-    optionThreeBtn.classList.add("hover");
-    optionFourBtn.classList.add("hover");
+    optionBtns.forEach(element => {
+        element.classList.add("hover");
+    });
 }
 
 function finalScore() {
