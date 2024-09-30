@@ -47,11 +47,7 @@ function startQuiz() {
 
 //--- Display Painting/Question Number, after 11th Image, go to Quiz End ---//
 function imageNumber() {
-    if (currentNumber == 11) {
-        endQuiz();
-    } else {
-        imageIndex.innerHTML = currentNumber+1;
-    }
+    imageIndex.innerHTML = currentNumber+1;
 }
 
 //-- Display Image of the Painting --//
@@ -120,9 +116,13 @@ function getNextQuestion() {
     clearPreviousChoice();
     toggleOptionBtns();
     allOptionBtns.classList.toggle("disable");
-    imageNumber();
-    getImage();
-    getOptions();
+    if (currentNumber == 11) {
+        endQuiz();
+    } else {
+        imageNumber();
+        getImage();
+        getOptions();
+    }
 }
 
 //--- Add to the score if answer correct ---//
