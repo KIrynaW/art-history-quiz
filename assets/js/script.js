@@ -108,7 +108,7 @@ function checkAnswer(event) {
 function toggleHiddenTwo() {
     const revealHidden = document.querySelectorAll(".reveal");
     revealHidden.forEach(element => {
-        element.classList.toggle("hidden-two");
+        element.classList.toggle("hidden");
     });
 }
 
@@ -131,12 +131,9 @@ function addScore() {
 function getFacts() {
     facts.innerText = questionContent[currentNumber].facts;
     allOptionBtns.addEventListener("click", toggleHiddenTwo);
-    optionOneBtn.removeEventListener("click", checkAnswer);
-    optionTwoBtn.removeEventListener("click", checkAnswer);
-    optionThreeBtn.removeEventListener("click", checkAnswer);
-    optionFourBtn.removeEventListener("click", checkAnswer);
     optionBtns.forEach(element => {
         element.classList.remove("hover");
+        element.removeEventListener("click", checkAnswer);
     });
 }
 
@@ -145,12 +142,7 @@ function clearPreviousChoice() {
    optionBtns.forEach(element => {
         element.classList.remove("wrong");
         element.classList.remove("right");
-    });
-    optionOneBtn.addEventListener("click", checkAnswer);
-    optionTwoBtn.addEventListener("click", checkAnswer);
-    optionThreeBtn.addEventListener("click", checkAnswer);
-    optionFourBtn.addEventListener("click", checkAnswer);
-    optionBtns.forEach(element => {
+        element.addEventListener("click", checkAnswer);
         element.classList.add("hover");
     });
 }
