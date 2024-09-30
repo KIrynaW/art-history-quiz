@@ -11,7 +11,6 @@ const questionsArea = document.getElementById("questions");
 const allOptionBtns = document.getElementById("options");
 const optionBtns = document.querySelectorAll(".option-barbtn")
 const nextQuestionBtn = document.getElementById("next-question");
-const factIcon = document.getElementById("icon");
 const facts = document.getElementById("art-facts");
 const quizEndArea = document.getElementById("quiz-end");
 const scoreMessage = document.getElementById("score-message");
@@ -86,20 +85,19 @@ function getOptions() {
 
 //-- Check correct answer and display the correct one if wrong and activate the facts text --//
 function checkAnswer(event) {
-    allOptionBtns.classList.toggle("disable");
     let selectedOption = questionContent[currentNumber];
     let correctAnswerIndex = selectedOption.correctAnswerIndex;
     let correctAnswer = selectedOption.answers[correctAnswerIndex];
     let optionText = event.target.innerHTML;
     if (optionText == correctAnswer) {
         addScore();
-    }
-    else {
+    } else {
         event.target.classList.add('wrong');
     }
     let btnId = 'option-'+(correctAnswerIndex+1);
     let correctOptionBtn = document.getElementById(btnId);
     correctOptionBtn.classList.add('right');
+    allOptionBtns.classList.toggle("disable");
     getFacts();
 }
 
@@ -135,7 +133,6 @@ function getFacts() {
     facts.innerText = questionContent[currentNumber].facts;
     allOptionBtns.addEventListener("click", toggleOptionBtns);
     optionBtns.forEach(element => {
-        element.classList.remove("hover");
         element.removeEventListener("click", checkAnswer);
         element.classList.toggle("disable");
     });
@@ -147,7 +144,6 @@ function clearPreviousChoice() {
         element.classList.remove("wrong");
         element.classList.remove("right");
         element.addEventListener("click", checkAnswer);
-        element.classList.add("hover");
         element.classList.remove("disable");
     });
 }
