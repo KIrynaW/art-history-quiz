@@ -10,10 +10,6 @@ const imageBox = document.getElementById("art-work");
 const questionsArea = document.getElementById("questions");
 const allOptionBtns = document.getElementById("options");
 const optionBtns = document.querySelectorAll(".option-barbtn")
-const optionOneBtn = document.getElementById("option-1");
-const optionTwoBtn = document.getElementById("option-2");
-const optionThreeBtn = document.getElementById("option-3");
-const optionFourBtn = document.getElementById("option-4");
 const nextQuestionBtn = document.getElementById("next-question");
 const factIcon = document.getElementById("icon");
 const facts = document.getElementById("art-facts");
@@ -43,7 +39,8 @@ function startQuiz() {
     introArea.classList.add("hidden");
     questionsArea.classList.remove("hidden");
     scoreBox.classList.remove("hidden");
-    toggleHiddenTwo();
+    allOptionBtns.classList.toggle("disable");
+    toggleOptionBtns();
     shuffleQuestions();
     getNextQuestion();
 }
@@ -80,6 +77,10 @@ return questionContent;
 
 //-- Display question option text in option elements --//
 function getOptions() {
+    const optionOneBtn = document.getElementById("option-1");
+    const optionTwoBtn = document.getElementById("option-2");
+    const optionThreeBtn = document.getElementById("option-3");
+    const optionFourBtn = document.getElementById("option-4");
     const quizData = questionContent[currentNumber].answers;
     optionOneBtn.innerText = quizData[0];
     optionTwoBtn.innerText = quizData[1];
@@ -89,6 +90,7 @@ function getOptions() {
 
 //-- Check correct answer and display the correct one if wrong and activate the facts text --//
 function checkAnswer(event) {
+    allOptionBtns.classList.toggle("disable");
     let selectedOption = questionContent[currentNumber];
     let correctAnswerIndex = selectedOption.correctAnswerIndex;
     let correctAnswer = selectedOption.answers[correctAnswerIndex];
@@ -105,9 +107,9 @@ function checkAnswer(event) {
     getFacts();
 }
 
-function toggleHiddenTwo() {
-    const revealHidden = document.querySelectorAll(".reveal");
-    revealHidden.forEach(element => {
+function toggleOptionBtns() {
+    const showHidden = document.querySelectorAll(".toggle");
+    showHidden.forEach(element => {
         element.classList.toggle("hidden");
     });
 }
@@ -116,7 +118,8 @@ function toggleHiddenTwo() {
 function getNextQuestion() {
     currentNumber += 1;
     clearPreviousChoice();
-    toggleHiddenTwo();
+    toggleOptionBtns();
+    allOptionBtns.classList.toggle("disable");
     imageNumber();
     getImage();
     getOptions();
@@ -130,10 +133,11 @@ function addScore() {
 
 function getFacts() {
     facts.innerText = questionContent[currentNumber].facts;
-    allOptionBtns.addEventListener("click", toggleHiddenTwo);
+    allOptionBtns.addEventListener("click", toggleOptionBtns);
     optionBtns.forEach(element => {
         element.classList.remove("hover");
         element.removeEventListener("click", checkAnswer);
+        element.classList.toggle("disable");
     });
 }
 
@@ -144,6 +148,7 @@ function clearPreviousChoice() {
         element.classList.remove("right");
         element.addEventListener("click", checkAnswer);
         element.classList.add("hover");
+        element.classList.remove("disable");
     });
 }
 
