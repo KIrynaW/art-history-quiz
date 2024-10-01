@@ -167,7 +167,7 @@ function endQuiz() {
     introArea.classList.add("hidden");
     questionsArea.classList.add("hidden");
     scoreBox.classList.add("hidden");
-    quizEndArea.classList.remove("hidden-three");
+    quizEndArea.classList.remove("hidden-end");
     finalScore();
 }
 
@@ -175,7 +175,7 @@ function playAgain() {
     scoreIndex.innerHTML = 0;
     score = 0;
     currentNumber = -1;
-    quizEndArea.classList.add("hidden-three");
+    quizEndArea.classList.add("hidden-end");
     quizContainer.classList.remove("hidden");
     startQuiz();
 }
@@ -197,7 +197,6 @@ const questionContent = [
         answers: ["Roy Lichtenstein", "Andy Warhal", "Keith Haring", "Jeff Koons"],
         facts: "'Campbell's Soup Cans I: Onion' by Andy Warhal. The works were Warhol's hand-painted depictions of printed imagery deriving from commercial products and popular culture and belong to the pop art movement.",
         correctAnswerIndex: 1
-
     },
     {
         number: 3,
@@ -206,7 +205,6 @@ const questionContent = [
         answers: ["Edouard Manet", "Edgar Degas", "Claude Monet", "Paul Cezanne"],
         facts: "'A Bar at the Folies-Bergere' by Edouard Manet. It was painted in 1882 in the era of Impressionism and depicts a scene in the Folies Bergère nightclub in Paris.",
         correctAnswerIndex: 0
-
     },
     {
         number: 4,
@@ -215,7 +213,6 @@ const questionContent = [
         answers: ["Camille Pissarro", "Charles Angrand", "Georges Seurat", "Paul Signac"],
         facts: "'Bathers at Asnières' by Georges Seurat. The canvas is of a suburban, placid Parisian riverside scene, created in post-impressionist era of art.",
         correctAnswerIndex: 2
-
     },
     {
         number: 5,
@@ -224,7 +221,6 @@ const questionContent = [
         answers: ["Henri Matisse", "Othon Friesz", "Andre Derain", "Georges Braque"],
         facts: "'Blue Nude II' by Henri Matisse. One of the series of collages, and related color lithographs, made from paper cut-outs depicting nude figures in various positions.",
         correctAnswerIndex: 0
-
     },
     {
         number: 6,
@@ -233,7 +229,6 @@ const questionContent = [
         answers: ["Anthony van Dyck", "Frans Hals", "Johannes Vermeer", "Peter Paul Rubens"],
         facts: "'Girl with a Pearl Earring' is an oil painting by Dutch painter Johannes Vermeer, dated c. 1665. It depicts a European girl wearing 'exotic dress', an 'oriental turban', and what appears to be a very large pearl as an earring",
         correctAnswerIndex: 2
-
     },
     {
         number: 7,
@@ -259,7 +254,6 @@ const questionContent = [
         answers: ["Salvador Dali", "Rene Magritte", "Max Ernst", "Joan Miro"],
         facts: "'The Persistence of Memory' is a 1931 painting by artist Salvador Dali and one of the most recognizable works of Surrealism; depicting Dalis phylosophy regarding the consept of 'time'.",
         correctAnswerIndex: 0
-
     },
     {
         number: 10,
