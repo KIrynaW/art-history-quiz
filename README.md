@@ -36,7 +36,11 @@ This fun Quiz provides users with a fun way of testing their knowledge of famous
 ***
 
 ## **Exploration Phase:**
-Who does not like a good quiz to test their knowlege on one or another topic. 
+Who does not like a good quiz to test their knowlege on a random topic? Generic Quiz games have an ability to engage a wide demographic, from a school student to one's grandmother.
+
+While digital technology continues to reshape human interactions with art, quiz games have emerged as a popular method for engaging audiences in the exploration of artistic knowledge. 
+In the exploration stage of the game development, we aproached a variet of people, of different ages and vocations; a secondary school student studying art, an art college graduate, a senior software developer, a housewife and a retired mechanical engeneer. We showed them a selection of historical fine art paintings and asked them to either name the art movement or the artist who created it. Surprisingly, our participants showed a lot more knowlege than antisipated; while the students who studied art, exhbited greater knowlege on the subgect, those with no background in art had some knowlege on almost every image shown. 
+Thus the conclusion was made that many must have a basic knowlege in art history; having aquired it in school or from attending museum as enetratinment, and as long as the game is simple enough, it CAN be accessible and experienced by many demographics and also offer extra information to those who like to learn. 
 ### **User Experience(UX)**
 ***The Users :***  
 - The target audience for this quiz are: secondary school students studing art-history, fine-art college students, users interested in interactive quizes, fine-art history novices and amateurs and anyone who like a visualy engaging quiz challage.
