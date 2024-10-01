@@ -3,13 +3,12 @@
 const startBtn = document.getElementById("start");
 const introArea = document.getElementById("intro");
 const scoreBox = document.getElementById("score-box");
-const scoreIndex = document.getElementById("score-num")
+const scoreIndex = document.getElementById("score-num");
 const quizContainer = document.getElementById("quiz-container");
 const imageIndex = document.getElementById("painting-num");
 const imageBox = document.getElementById("art-work");
 const questionsArea = document.getElementById("questions");
-const allOptionBtns = document.getElementById("options");
-const optionBtns = document.querySelectorAll(".option-barbtn")
+const optionBtns = document.querySelectorAll(".option-barbtn");
 const showHidden = document.querySelectorAll(".toggle");
 const nextQuestionBtn = document.getElementById("next-question");
 const facts = document.getElementById("art-facts");
@@ -60,26 +59,21 @@ function getImage() {
 
 //-- Shuffle through the questions/images arrays by using Fiher-Yates methods--//
 function shuffleQuestions() {
-for(let i= questionContent.length -1; i > 0; i--) {
-    const j = Math.floor(Math.random()*(i + 1));
-    let k = questionContent[i];
-    questionContent[i] = questionContent[j];
-    questionContent[j] = k;
-}
-return questionContent;
+    for(let i= questionContent.length -1; i > 0; i--) {
+        const j = Math.floor(Math.random()*(i + 1));
+        let k = questionContent[i];
+        questionContent[i] = questionContent[j];
+        questionContent[j] = k;
+    }
 }
 
 //-- Display question option text in option elements --//
 function getOptions() {
-    const optionOneBtn = document.getElementById("option-1");
-    const optionTwoBtn = document.getElementById("option-2");
-    const optionThreeBtn = document.getElementById("option-3");
-    const optionFourBtn = document.getElementById("option-4");
     const quizData = questionContent[currentNumber].answers;
-    optionOneBtn.innerText = quizData[0];
-    optionTwoBtn.innerText = quizData[1];
-    optionThreeBtn.innerText = quizData[2];
-    optionFourBtn.innerText = quizData[3];
+    optionBtns.forEach(
+        function(btn, index) {
+            btn.innerText = quizData[index];
+        });
 }
 
 //-- Check correct answer and display the correct one if wrong and activate the facts text --//
