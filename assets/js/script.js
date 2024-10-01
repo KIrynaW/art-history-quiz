@@ -10,6 +10,7 @@ const imageBox = document.getElementById("art-work");
 const questionsArea = document.getElementById("questions");
 const allOptionBtns = document.getElementById("options");
 const optionBtns = document.querySelectorAll(".option-barbtn")
+const showHidden = document.querySelectorAll(".toggle");
 const nextQuestionBtn = document.getElementById("next-question");
 const facts = document.getElementById("art-facts");
 const quizEndArea = document.getElementById("quiz-end");
@@ -38,8 +39,6 @@ function startQuiz() {
     introArea.classList.add("hidden");
     questionsArea.classList.remove("hidden");
     scoreBox.classList.remove("hidden");
-    allOptionBtns.classList.toggle("disable");
-    toggleOptionBtns();
     shuffleQuestions();
     getNextQuestion();
 }
@@ -97,14 +96,17 @@ function checkAnswer(event) {
     let btnId = 'option-'+(correctAnswerIndex+1);
     let correctOptionBtn = document.getElementById(btnId);
     correctOptionBtn.classList.add('right');
-    allOptionBtns.classList.toggle("disable");
     getFacts();
 }
 
-function toggleOptionBtns() {
-    const showHidden = document.querySelectorAll(".toggle");
+function toggleOptionBtns(arg) {
     showHidden.forEach(element => {
-        element.classList.toggle("hidden");
+        if (arg == 'show') {
+            element.classList.toggle("hidden", false);
+        }
+        else if (arg == 'hide') {
+            element.classList.toggle("hidden", true);
+        }
     });
 }
 
@@ -112,8 +114,7 @@ function toggleOptionBtns() {
 function getNextQuestion() {
     currentNumber += 1;
     clearPreviousChoice();
-    toggleOptionBtns();
-    allOptionBtns.classList.toggle("disable");
+    toggleOptionBtns('hide');
     if (currentNumber == 11) {
         endQuiz();
     } else {
@@ -131,10 +132,10 @@ function addScore() {
 
 function getFacts() {
     facts.innerText = questionContent[currentNumber].facts;
-    allOptionBtns.addEventListener("click", toggleOptionBtns);
+    toggleOptionBtns('show');
     optionBtns.forEach(element => {
         element.removeEventListener("click", checkAnswer);
-        element.classList.toggle("disable");
+        element.classList.remove("hover");
     });
 }
 
@@ -144,7 +145,7 @@ function clearPreviousChoice() {
         element.classList.remove("wrong");
         element.classList.remove("right");
         element.addEventListener("click", checkAnswer);
-        element.classList.remove("disable");
+        element.classList.add("hover");
     });
 }
 

@@ -233,11 +233,6 @@ main {
     margin-right: 10px;
 }
 
-.disable {
-    cursor: not-allowed;
-    pointer-events: none;
-}
-
 /* Quiz End Area Styling */
 .quiz-end-container {
     display: flex;
