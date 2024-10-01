@@ -147,7 +147,7 @@ function finalScore() {
     scoreTotal.innerHTML = score;
     const scoreIcon = document.getElementById("score-icon");
     if (score < 5) {
-        scoreMessage.innerHTML = "Not Great! Maybe try again?"
+        scoreMessage.innerHTML = "Not Great! Maybe try again?";
         scoreIcon.innerHTML = `<i class="fa-regular fa-face-frown-open"></i>`;
     } else if (score < 9) {
         scoreMessage.innerHTML = "Well Done! You have some knowlege in Art History";
@@ -277,5 +277,4 @@ const questionContent = [
         facts: "'Composition IV' created by Wassily Kandinsky in 1913. It is part of series inspired by music; he theorised that the combinations of colours produce vibrational frequencies, akin to chords played on a piano. Kandinsky is generally credited as one of the pioneers of abstraction in western art.",
         correctAnswerIndex: 2
     }
-
-]
+];
