@@ -60,12 +60,13 @@ Thus the conclusion was made that many must have a basic knowlege in art history
   |No.|Story|
   |------|--------|
   |1|**As a new visitor**, <br> I want to be able to understand the aim of the quiz from the landing page and experience a simple interactive and visualy engaging game. <br><br> **I know I can do it when the directions are clear, visualy engaing and the game is well organised and not cluttered.**|
-  |2|**As an fine-art history novice**, <br> I want to be able to|
-  |3|**As an fine-art history novice**, <br> I want to be able to|
-  |4|**As a fine-art student**, <br> I want to be able to|
-  |5|**As a fine-art student**, <br> I want to be able to|
-  |6|**As a fine-art history amateur**, <br> I want to be able to|
-  |7|**As a fine-art history amateur**, <br> I want to be able to|
+  |2|**As an fine-art history novice**, <br> I want to be able to particiape in a quiz that gives you extra information on the art topic in question, to gain more knowlege|
+  |3|**As an fine-art history novice**, <br> I want to be able to receive instant feedback on the answers, to know which is right and wrong|
+  |4|**As a fine-art student**, <br> I want to be engage in a quiz that incorporates images of artworks and artists, allowing for visual recognition and engagement.|
+  |5|**As a fine-art student**, <br> I want to be able to receive a comment on my performance in the art quiz|
+  |6|**As a fine-art history amateur**, <br> I want to be able I can test my knowledge, discover new artists, and improve my appreciation of art.
+|
+  |7|**As a fine-art history amateur**, <br> I want to be able to track my progress and the score throughout the quiz, with a final score tallied|
 
 ### **User Interface(UI)**
 Art History Quiz site comprises of three sections, each activated when a specific button is triggered.
