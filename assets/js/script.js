@@ -22,7 +22,7 @@ startBtn.addEventListener("click", startQuiz);
 // Global variables
 let currentNumber = -1; // Current question number sequence
 let score = 0; // the users points score
-let answerChosen = false // Store if option chosen
+let answerChosen = false; // Store if option chosen
 
 
 // Create Quiz functions to run the game 
