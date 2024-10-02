@@ -63,7 +63,7 @@ Thus the conclusion was made that many must have a basic knowlege in art history
   |2|**As a new visitor**, <br> I want to be experience clear navigation and user-friendly interface; ensuring that players of all ages can enjoy the game.<br><br>|
   |3|**As an fine-art history novice**, <br> I want to be able to particiape in a quiz that gives you extra information on the art topic in question, to gain more knowlege|
   |4|**As an fine-art history novice**, <br> I want to be able to receive instant feedback on the answers, to know which is right and wrong|
-  |5|**As a fine-art student**, <br> I want to be engage in a quiz that incorporates images of artworks and artists, allowing for visual recognition and engagement.|
+  |5|**As a fine-art student**, <br> I want to engage in a quiz that incorporates images of artworks and artists, allowing for visual recognition and engagement.|
   |6|**As a fine-art student**, <br> I want to be able to receive a comment on my performance in the art quiz|
   |7|**As a fine-art history amateur**, <br> I want to be able test my knowledge, discover new artists, and improve my appreciation of art.|
   |8|**As a fine-art history amateur**, <br> I want to be able to track my progress and the score throughout the quiz, with a final score tallied|
