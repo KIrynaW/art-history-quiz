@@ -58,8 +58,8 @@ Thus the conclusion was made that many must have a basic knowlege in art history
   - The owner of the Quiz site is a fine-art graduate, who loves art-history and plans to created different types of art-quizes available for students, novices and art-history enthusiasts who enjoy art and want to test their knowlege, learn more about art-history while experiencing an entertaining and visualy stimulating quiz game.
 ### *User Stories:*
   |No.|Story|
-  |---|-----|
-  |1|**As a new visitor**, <br> I want to be able to|
+  |------|--------|
+  |1|**As a new visitor**, <br> I want to be able to understand the aim of the quiz from the landing page and experience a simple interactive and visualy engaging game. <br><br> **I know I can do it when the directions are clear, visualy engaing and the game is well organised and not cluttered.**|
   |2|**As an fine-art history novice**, <br> I want to be able to|
   |3|**As an fine-art history novice**, <br> I want to be able to|
   |4|**As a fine-art student**, <br> I want to be able to|
