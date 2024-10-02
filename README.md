@@ -154,6 +154,10 @@ The Testing Phase Content is available in a separate document file that can be a
 ## **Deployment:**
 ## **Credits:**
 ### **Languages Used**
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
 ### **Technologies Used**
 - [GitHub](https://github.com/) - used to create, store and save the quiz building components.
 - [Git](https://git-scm.com/) - used for version control in the GitPod Terminal to Add, Commit and Push the code to GitHub
