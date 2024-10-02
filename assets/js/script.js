@@ -19,12 +19,6 @@ const tryAgainBtn = document.getElementById("try-again");
 // Start the Quiz event listener
 startBtn.addEventListener("click", startQuiz);
 
-// Next Question Button event listener
-nextQuestionBtn.addEventListener("click", getNextQuestion);
-
-// Try to play again
-tryAgainBtn.addEventListener("click", playAgain);
-
 // Global variables
 let currentNumber = -1; // Current question number sequence
 let score = 0; // the users points score
@@ -151,12 +145,18 @@ function addScore() {
     scoreIndex.innerText = score;
 }
 
+/**
+ * When a user makes an option selection it triggers this function,
+ * which reveals a facts paragraph and a "Next" btn, with an eventListener
+ * that triggers the next question/painting
+ */
 function getFacts() {
     facts.innerText = questionContent[currentNumber].facts;
     toggleHidden('show');
     optionBtns.forEach(element => {
         element.classList.remove("hover");
     });
+    nextQuestionBtn.addEventListener("click", getNextQuestion);
 }
 
 /**
@@ -204,6 +204,7 @@ function endQuiz() {
     questionsArea.classList.add("hidden");
     scoreBox.classList.add("hidden");
     quizEndArea.classList.remove("hidden-end");
+    tryAgainBtn.addEventListener("click", playAgain);
     finalScore();
 }
 /**
