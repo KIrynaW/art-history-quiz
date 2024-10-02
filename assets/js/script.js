@@ -39,7 +39,9 @@ let answerChosen = false // Store if option chosen
     getNextQuestion();
 }
 
-// Displays Painting/Question Number
+/**
+ * Displays Painting/Question sequence
+ */ 
 function imageNumber() {
     imageIndex.innerHTML = currentNumber+1;
 }
