@@ -26,10 +26,10 @@ nextQuestionBtn.addEventListener("click", getNextQuestion);
 // Try to play again
 tryAgainBtn.addEventListener("click", playAgain);
 
-//current question number sequence
-let currentNumber = -1;
-// the users points score
-let score = 0;
+// Global variables
+let currentNumber = -1; // Current question number sequence
+let score = 0; // the users points score
+let answerChosen = false // Store if option chosen
 
 
 //--- Create Quiz functions to run the game ---//
@@ -78,19 +78,25 @@ function getOptions() {
 
 //-- Check correct answer and display the correct one if wrong and activate the facts text --//
 function checkAnswer(event) {
-    let selectedOption = questionContent[currentNumber];
-    let correctAnswerIndex = selectedOption.correctAnswerIndex;
-    let correctAnswer = selectedOption.answers[correctAnswerIndex];
-    let optionText = event.target.innerHTML;
-    if (optionText == correctAnswer) {
-        addScore();
-    } else {
-        event.target.classList.add('wrong');
+    if (answerChosen) {
+        alert("Sorry! You've already chosen");
     }
-    let btnId = 'option-'+(correctAnswerIndex+1);
-    let correctOptionBtn = document.getElementById(btnId);
-    correctOptionBtn.classList.add('right');
-    getFacts();
+    else {
+        answerChosen = true;
+        let selectedOption = questionContent[currentNumber];
+        let correctAnswerIndex = selectedOption.correctAnswerIndex;
+        let correctAnswer = selectedOption.answers[correctAnswerIndex];
+        let optionText = event.target.innerHTML;
+        if (optionText == correctAnswer) {
+            addScore();
+        } else {
+            event.target.classList.add('wrong');
+        }
+        let btnId = 'option-'+(correctAnswerIndex+1);
+        let correctOptionBtn = document.getElementById(btnId);
+        correctOptionBtn.classList.add('right');
+        getFacts();
+    }
 }
 
 function toggleOptionBtns(arg) {
@@ -108,6 +114,7 @@ function toggleOptionBtns(arg) {
 function getNextQuestion() {
     currentNumber += 1;
     clearPreviousChoice();
+    answerChosen = false;
     toggleOptionBtns('hide');
     if (currentNumber == 11) {
         endQuiz();
@@ -128,7 +135,7 @@ function getFacts() {
     facts.innerText = questionContent[currentNumber].facts;
     toggleOptionBtns('show');
     optionBtns.forEach(element => {
-        element.removeEventListener("click", checkAnswer);
+        /*element.removeEventListener("click", checkAnswer);*/
         element.classList.remove("hover");
     });
 }
