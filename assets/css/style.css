@@ -11,7 +11,7 @@ body {
     align-items: center;
     background-color: #e7e8ea;
     min-height: 100vh;
-    background: url(../images/background-image.jpg)no-repeat center/cover;
+    background: url(../images/background_image.webp)no-repeat center/cover;
     background-position: 80%;
     flex-grow: 2;
     font-family: "Antic Slab", serif;
