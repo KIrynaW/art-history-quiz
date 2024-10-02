@@ -1,5 +1,4 @@
-
-//-- Create variables and store elements there --//
+// Create variables and store elements there 
 const startBtn = document.getElementById("start");
 const introArea = document.getElementById("intro");
 const scoreBox = document.getElementById("score-box");
@@ -32,9 +31,13 @@ let score = 0; // the users points score
 let answerChosen = false // Store if option chosen
 
 
-//--- Create Quiz functions to run the game ---//
-// --- Start and Display the Quiz ---//
-function startQuiz() {
+// Create Quiz functions to run the game 
+
+/** 
+ * When start btn is clicked it triggers this function which
+ * reveals game area and shuffles through the array of questions
+ */ 
+    function startQuiz() {
     introArea.classList.add("hidden");
     questionsArea.classList.remove("hidden");
     scoreBox.classList.remove("hidden");
@@ -42,12 +45,15 @@ function startQuiz() {
     getNextQuestion();
 }
 
-//--- Display Painting/Question Number, after 11th Image, go to Quiz End ---//
+// Displays Painting/Question Number
 function imageNumber() {
     imageIndex.innerHTML = currentNumber+1;
 }
 
-//-- Display Image of the Painting --//
+/** 
+ * Clears the div in html file,creates img atribute and syncs it 
+ * with the current img in the arrays to display the painting
+ */ 
 function getImage() {
     imageBox.innerHTML = "";
     const quizImage = document.createElement("img");
@@ -57,7 +63,9 @@ function getImage() {
     imageBox.appendChild(quizImage);
 }
 
-//-- Shuffle through the questions/images arrays by using Fiher-Yates methods--//
+/** 
+ * Shuffles through the questions/images arrays by using Fisher-Yates method
+ */ 
 function shuffleQuestions() {
     for(let i= questionContent.length -1; i > 0; i--) {
         const j = Math.floor(Math.random()*(i + 1));
@@ -67,7 +75,9 @@ function shuffleQuestions() {
     }
 }
 
-//-- Display question option text in option elements --//
+/** 
+ * Display question by syncing the buttons with the answers in the arrays section
+ */ 
 function getOptions() {
     const quizData = questionContent[currentNumber].answers;
     optionBtns.forEach(
@@ -76,10 +86,13 @@ function getOptions() {
         });
 }
 
-//-- Check correct answer and display the correct one if wrong and activate the facts text --//
+/**
+ * Check for the correct answer, display if correct or wrong, activate the facts text
+ * if clicked after answer is chosen alert is activated
+ */ 
 function checkAnswer(event) {
     if (answerChosen) {
-        alert("Sorry! You've already chosen");
+        alert("Oops! You have already made your choise. Click 'Next' to continue.");
     }
     else {
         answerChosen = true;
@@ -99,7 +112,10 @@ function checkAnswer(event) {
     }
 }
 
-function toggleOptionBtns(arg) {
+/**
+ * Function for toggle option btns to hide and reveal the facts and "Next" btn section
+ */
+function toggleHidden(arg) {
     showHidden.forEach(element => {
         if (arg == 'show') {
             element.classList.toggle("hidden", false);
@@ -110,12 +126,14 @@ function toggleOptionBtns(arg) {
     });
 }
 
-//-- Generate next question when button pressed --//
+/** 
+ * Displays next question, clears previous selections and after 11th Image triggers quizEnd
+ */ 
 function getNextQuestion() {
     currentNumber += 1;
-    clearPreviousChoice();
+    refreshQuestion();
     answerChosen = false;
-    toggleOptionBtns('hide');
+    toggleHidden('hide');
     if (currentNumber == 11) {
         endQuiz();
     } else {
@@ -125,7 +143,9 @@ function getNextQuestion() {
     }
 }
 
-//--- Add to the score if answer correct ---//
+/**
+ * Adds to the score if chosen answer is correct
+ */ 
 function addScore() {
     score += 1;
     scoreIndex.innerText = score;
@@ -133,15 +153,17 @@ function addScore() {
 
 function getFacts() {
     facts.innerText = questionContent[currentNumber].facts;
-    toggleOptionBtns('show');
+    toggleHidden('show');
     optionBtns.forEach(element => {
-        /*element.removeEventListener("click", checkAnswer);*/
         element.classList.remove("hover");
     });
 }
 
-//--- Clears the previously selected option and applied functions ---//
-function clearPreviousChoice() {
+/**
+ * Clears the previously selected options, applies hover feature and
+ * enables a checkAnswer function
+*/
+function refreshQuestion() {
    optionBtns.forEach(element => {
         element.classList.remove("wrong");
         element.classList.remove("right");
@@ -150,6 +172,10 @@ function clearPreviousChoice() {
     });
 }
 
+/**
+ * Reveals the tally of the points in the final score and 
+ * displays a one of four messages according to the points scored
+ */
 function finalScore() {
     scoreTotal.innerHTML = score;
     const scoreIcon = document.getElementById("score-icon");
@@ -168,7 +194,10 @@ function finalScore() {
     }
 }
 
-//--- Final End of Quiz Message with a score and play again option ---//
+/**
+ * End of Quiz function , when applied it hides the scorebox, quiz game and landing section
+ * and triggers the finalScore function
+ */
 function endQuiz() {
     quizContainer.classList.add("hidden");
     introArea.classList.add("hidden");
@@ -177,7 +206,10 @@ function endQuiz() {
     quizEndArea.classList.remove("hidden-end");
     finalScore();
 }
-
+/**
+ * Executes when the play again button is clicked;
+ * it bring the user back to the game section and clears the score
+ */  
 function playAgain() {
     scoreIndex.innerHTML = 0;
     score = 0;
@@ -187,7 +219,7 @@ function playAgain() {
     startQuiz();
 }
 
-// --- Arrays --- //
+// Question Arrays
 const questionContent = [
     {
         number: 1,
