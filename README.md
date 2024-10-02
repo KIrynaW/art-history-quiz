@@ -155,18 +155,33 @@ The Testing Phase Content is available in a separate document file that can be a
 ## **Credits:**
 ### **Languages Used**
 ### **Technologies Used**
+- [GitHub](https://github.com/) - used to create, store and save the quiz building components.
+- [Git](https://git-scm.com/) - used for version control in the GitPod Terminal to Add, Commit and Push the code to GitHub
+- [Google Fonts](https://fonts.google.com/) - used their fonts in the quiz.
+- [Favicon](https://favicon.io/) - used their favicons in the website.
+- [Font Awesome](https://fontawesome.com/) - used their free icons in the quiz.
+- [Balsamiq](https://balsamiq.com/) - used to create the wireframes.
+- [Birme](https://www.birme.net/) - used to resize the images and format into .webp files.
+- [Coolors](https://coolors.co/) - used to generate the colorscheme for the website.
+- [PineTools](https://pinetools.com/) - used to merge the photos for README.
+- [Wave](https://wave.webaim.org/) - to check the performance on web accessibility evaluation tool
+- [LightHouse Google Extension](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en) - this Chrome Dev Tools was used to scan and generate performance statistics of the quiz
+- [W3C Markup Validator](https://validator.w3.org/) - the HTML code was run through to check errors and validate
+- [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) - the CSS code was run through to check errors and validate
+- [Jshint JavaScript Validator](https://jshint.com/) - the JavaScript code was run through to check errors and validate
+- [DeepScan Extension](https://deepscan.io/dashboard/) - was used to perform a deep check of the whole webiste to evaluate overall performance
+
+
 ### **Code**
 - The quiz HTML and CSS code is completly original and was inspired by developer's background in art.
 - The [FreeCodeCamp](https://www.freecodecamp.org/) was consulted for the tutorial on how to shuffle through the array in JavaScript file by using [Fisher-Yates Sorting Algorithm code](https://www.freecodecamp.org/news/how-to-shuffle-an-array-of-items-using-javascript-or-typescript/)
 - The JavaScript code is mostly original, apart from using the "Fisher-Yates Algorithm" mentioned above; the rest was created through trial, error and consultation with the [Code Institute's](https://codeinstitute.net/ie/) course material, the [W3School](https://www.w3schools.com/js/default.asp), [Stack Overflow](https://stackoverflow.com/)
 
-
 ### **Content**
-The content for painting facts, was taken from [Wikipedia articles on each artist](https://www.wikipedia.org/) articles and then modified and rephrased.<br>
-Sections of original content is also present in the website.
-### **Media**
-Credit for the images used in the quiz:
+The content for paintings facts, was taken from [Wikipedia articles on each artist](https://www.wikipedia.org/) articles and then modified and rephrased.<br>
+Sections of original content are also present in the website.
 
+### **Media**
   Backround Image:<br>
   [Photo by Bade Saba: a white easel with paint brushes and a canvas](https://www.pexels.com/photo/a-white-easel-with-paint-brushes-and-a-canvas-15405967/)
 
