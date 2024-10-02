@@ -156,32 +156,39 @@ The Testing Phase Content is available in a separate document file that can be a
 ### **Languages Used**
 ### **Technologies Used**
 ### **Code**
+- The quiz HTML and CSS code is completly original and was inspired by developer's background in art.
+- The [FreeCodeCamp](https://www.freecodecamp.org/) was consulted for the tutorial on how to shuffle through the array in JavaScript file by using [Fisher-Yates Sorting Algorithm code](https://www.freecodecamp.org/news/how-to-shuffle-an-array-of-items-using-javascript-or-typescript/)
+- The JavaScript code is mostly original, apart from using the "Fisher-Yates Algorithm" mentioned above; the rest was created through trial, error and consultation with the [Code Institute's](https://codeinstitute.net/ie/) course material, the [W3School](https://www.w3schools.com/js/default.asp), [Stack Overflow](https://stackoverflow.com/)
+
+
 ### **Content**
+The content for painting facts, was taken from [Wikipedia articles on each artist](https://www.wikipedia.org/) articles and then modified and rephrased.<br>
+Sections of original content is also present in the website.
 ### **Media**
 Credit for the images used in the quiz:
 
   Backround Image:<br>
-    - [Photo by Bade Saba: a white easel with paint brushes and a canvas](https://www.pexels.com/photo/a-white-easel-with-paint-brushes-and-a-canvas-15405967/)
+  [Photo by Bade Saba: a white easel with paint brushes and a canvas](https://www.pexels.com/photo/a-white-easel-with-paint-brushes-and-a-canvas-15405967/)
 
-   Color Scheme:<br>
-    - [Photo by Sen Sen: abstract colorful painting](https://www.pexels.com/photo/abstract-colorful-painting-9902153/)
+  Color Scheme:<br>
+  [Photo by Sen Sen: abstract colorful painting](https://www.pexels.com/photo/abstract-colorful-painting-9902153/)
 
   Landing page image:<br>
-   [Image by freepik: golden frame](https://www.freepik.com/free-photo/copy-space-canvas-golden-frame-paint_9977242.htm#fromView=search&page=12&position=1&uuid=d41551d9-4e6a-4919-a0cd-d8988533d775/)<br>
-   [Image by rawpixel.com on Freepik: question mark](https://www.freepik.com/free-vector/question-mark-vector-hand-drawn-typography_33112898.htm#fromView=search&page=2&position=12&uuid=edd6bd37-cf77-4a98-b3bd-ca84881eea93/)
+  [Image by freepik: golden frame](https://www.freepik.com/free-photo/copy-space-canvas-golden-frame-paint_9977242.htm#fromView=search&page=12&position=1&uuid=d41551d9-4e6a-4919-a0cd-d8988533d775/)<br>
+  [Image by rawpixel.com on Freepik: question mark](https://www.freepik.com/free-vector/question-mark-vector-hand-drawn-typography_33112898.htm#fromView=search&page=2&position=12&uuid=edd6bd37-cf77-4a98-b3bd-ca84881eea93/)
 
-Images of the paintings:<br>
-[WikiArt: Fruit by Alphonse Mucha](https://www.wikiart.org/en/alphonse-mucha/fruit-1897#)<br>
-[WikiArt: Blue Nude II by Henri Matisse](https://www.wikiart.org/en/henri-matisse/blue-nude-1952)<br>
-[WikiArt: What's New? by Paul Gauguin](https://www.wikiart.org/en/paul-gauguin/what-s-new-1892)<br>
-[WikiArt: Campbell's Soup Can (onion) by Andy Warhol ](https://www.wikiart.org/en/andy-warhol/campbell-s-soup-can-onion)<br>
-[WikiArt: A Bar at the Folies-Bergere by Edouard Manet](https://www.wikiart.org/en/edouard-manet/a-bar-at-the-folies-bergere-1882-1)<br>
-[WikiArt: Portrait of Dora Maar by Pablo Picasso ](https://www.wikiart.org/en/pablo-picasso/portrait-of-dora-maar-1937-1)<br>
-[WikiArt: Composition IV by Wassily Kandinsky](https://www.wikiart.org/en/wassily-kandinsky/composition-iv-1911)<br>
-[WikiArt: The Girl with a Pearl Earring by Johannes Vermeer ](https://www.wikiart.org/en/johannes-vermeer/the-girl-with-a-pearl-earring)<br>
-[WikiArt: Bathers at Asnières by Georges Seurat](https://www.wikiart.org/en/georges-seurat/bathers-at-asni-res-1884)<br>
-[WikiArt: Still Life - Vase with Fifteen Sunflowers by Vincent van Gogh](https://www.wikiart.org/en/vincent-van-gogh/still-life-vase-with-fifteen-sunflowers-1888-1)<br>
-[WikiArt: The Persistence of Memory by Salvador Dali](https://www.wikiart.org/en/salvador-dali/the-persistence-of-memory-1931)<br>
+  Images of the paintings:<br>
+  [WikiArt: Fruit by Alphonse Mucha](https://www.wikiart.org/en/alphonse-mucha/fruit-1897#)<br>
+  [WikiArt: Blue Nude II by Henri Matisse](https://www.wikiart.org/en/henri-matisse/blue-nude-1952)<br>
+  [WikiArt: What's New? by Paul Gauguin](https://www.wikiart.org/en/paul-gauguin/what-s-new-1892)<br>
+  [WikiArt: Campbell's Soup Can (onion) by Andy Warhol ](https://www.wikiart.org/en/andy-warhol/campbell-s-soup-can-onion)<br>
+  [WikiArt: A Bar at the Folies-Bergere by Edouard Manet](https://www.wikiart.org/en/edouard-manet/a-bar-at-the-folies-bergere-1882-1)<br>
+  [WikiArt: Portrait of Dora Maar by Pablo Picasso ](https://www.wikiart.org/en/pablo-picasso/portrait-of-dora-maar-1937-1)<br>
+  [WikiArt: Composition IV by Wassily Kandinsky](https://www.wikiart.org/en/wassily-kandinsky/composition-iv-1911)<br>
+  [WikiArt: The Girl with a Pearl Earring by Johannes Vermeer ](https://www.wikiart.org/en/johannes-vermeer/the-girl-with-a-pearl-earring)<br>
+  [WikiArt: Bathers at Asnières by Georges Seurat](https://www.wikiart.org/en/georges-seurat/bathers-at-asni-res-1884)<br>
+  [WikiArt: Still Life - Vase with Fifteen Sunflowers by Vincent van Gogh](https://www.wikiart.org/en/vincent-van-gogh/still-life-vase-with-fifteen-sunflowers-1888-1)<br>
+  [WikiArt: The Persistence of Memory by Salvador Dali](https://www.wikiart.org/en/salvador-dali/the-persistence-of-memory-1931)<br>
 
 ### **Acknowledgements**
 - I would like to give special apreciation to my husband Chris Walsh for his support and extra guidense with this project.
