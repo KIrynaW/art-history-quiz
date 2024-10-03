@@ -83,17 +83,25 @@ There were no errors detected and the quiz has an overall high performance.
   ![DeepScan evaluation of the quiz site](docs/testing-screenshots/final_deepscan.jpg)
   
 ### **Manual Testing**
- - **Browser Testing** 
- - **Quiz site Responsiveness** 
- - **Quiz site Responsiveness** 
+ **Browser Testing** 
+
+ **Quiz Responsiveness** 
+ 
+ **Quiz Feature Performance** 
+|Feature                | Test                                 |Pass/Fail        |
+|-----------------------|--------------------------------------|-----------------|
+|When the "Start" button is clicked on landing section, it reveals: the game play section with paintings to identify; four answer options; the score box and hides the landing section| Hover over the start button, it will highlight, and then press on it| Pass |
+|When one of four option buttons are pressed: the buttons disable, the right answer turns green and wrong red| Hover over any of four buttons, they will highight, then make your choice by clicking|Pass|
+When any of the option buttons are pressed again after answer already selected, the alert message is triggered and this event is same on every question| Hover over any of the four buttons after having chosen an option, they will not highlight, the click one of the buttons|Pass|
+
 
 ### **User Story Testing**
-|No.|Result|Evidence|
-  |---|-----|-----|
-  |1||**As a new visitor**, <br> I want to be able to|
-  |2||**As an fine-art history novice**, <br> I want to be able to|
-  |3||**As an fine-art history novice**, <br> I want to be able to|
-  |4||**As a fine-art student**, <br> I want to be able to|
-  |5||**As a fine-art student**, <br> I want to be able to|
-  |6||**As a fine-art history amateur**, <br> I want to be able to|
-  |7||**As a fine-art history amateur**, <br> I want to be able to|
+|No.|Result|Evidence                                                             |
+|---|------|---------------------------------------------------------------------|
+|1  |      |**As a new visitor**, <br> I want to be able to                      |
+|2  |      |**As an fine-art history novice**, <br> I want to be able to         |
+|3  |      |**As an fine-art history novice**, <br> I want to be able to         |
+|4  |      |**As a fine-art student**, <br> I want to be able to                 |
+|5  |      |**As a fine-art student**, <br> I want to be able to                 |
+|6  |      |**As a fine-art history amateur**, <br> I want to be able to         |
+|7  |      |**As a fine-art history amateur**, <br> I want to be able to         |
