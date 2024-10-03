@@ -127,11 +127,13 @@ The quiz is responsive on all screen types: Mobiles, Tablets and Laptops.
 
 - When the selected answer is correct, the button turns green; but if selected answer is incorrect, the button turns red and the correct answer is also revealed in green.
 
-  ![Option selection reveals right and wrong answer](docs/features-screenshots/option_highlight.jpg)
+  ![Option selection reveals right and wrong answer](docs/features-screenshots/right_wrong_highlight.jpg)
 
 - The selection of an answer option also reveals a "Next" button and a "Interesting Facts" paragraph.
 
-  ![Next button reveal when option selected](docs/features-screenshots/nextbtn_factsreveal.jpg)
+  ![Next button reveal when option selected](docs/features-screenshots/nextbtn_reveal.jpg)
+
+  
   ![Alert message pop-up when option selected](docs/features-screenshots/alert_message.jpg)
 
 - When "Next" button is clicked, it shows the next question/painting and hides the "Next" button and "Interesting Facts" paragraph.
