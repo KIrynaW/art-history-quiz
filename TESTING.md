@@ -51,15 +51,42 @@ Bugs encountered during the development of the quiz:
 
       ![Get facts function refactor](docs/testing-screenshots/js_getfact_refactor.jpg)
 
-
-    ![]()
-
-
 ### **Validator Testing**
-  The final validation testing was performed when all the previously encountered bugs were fixed, and the results were of a clean code, with not errors in its final stage
+  The final validation testing was performed when all the previously encountered bugs were fixed, and the results were of a clean code, with not errors in its final stage.
+
+  - W3C Markup Validation report of the quiz.
+
+    ![HTML code validation results](docs/testing-screenshots/html_final_validation.jpg)
+
+  - Jigsaw CSS Validation report of the quiz.
+
+    ![CSS code validation results](docs/testing-screenshots/css_final_validation.jpg)
+
+  - JSHint JavaScript Code quality report of the quiz.
+
+    ![JavaScript code validation results](docs/testing-screenshots//jshint_final_scan.jpg)
 
 ### **Accessibility Testing:**
+To check the website *Performance*, *Accessibility*, *Best Practice* and *SEO*, the website was run through the *Lighthouse* Chrome Dev Tools performance statistics generator *Wave* a web accessability tool, and *DeepScan* a Javascript code quality evaluator.
+There were no errors detected and the quiz has an overall high performance.
+ 
+ - Lighthouse Desktop Report
+  ![Desktop Lightouse Report](docs/testing-screenshots/lighthouse_desktop.jpg)
+
+ - Lighthouse Mobile Report
+  ![Mobile Lightouse Report](docs/testing-screenshots/lighthouse_mobile.jpg)
+
+ - Wave Report on the Quiz Site:
+  ![Wave evaluation of the quiz site](docs/testing-screenshots/wave_scan.jpg)
+
+- DeepScan Report on the Quiz Site:
+  ![DeepScan evaluation of the quiz site](docs/testing-screenshots/final_deepscan.jpg)
+  
 ### **Manual Testing**
+ - **Browser Testing** 
+ - **Quiz site Responsiveness** 
+ - **Quiz site Responsiveness** 
+
 ### **User Story Testing**
 |No.|Result|Evidence|
   |---|-----|-----|
