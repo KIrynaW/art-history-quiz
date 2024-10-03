@@ -106,6 +106,8 @@ The quiz is responsive on all screen types: Mobiles, Tablets and Laptops.
 - Fonts used
     ![Two font styles used:Limelight and Antic Slab](docs/screenshots/site_fonts.jpg)
 
+***
+
 ## **Implementation Phase:**
 ### **Current Quiz Features**
 #### **Landing Section**
@@ -145,13 +147,41 @@ The quiz is responsive on all screen types: Mobiles, Tablets and Laptops.
 
   ![Play Agian button hover function](docs/features-screenshots/startagain_function.jpg)
  
+### **Possible Future Features**
 
+***
 
-### **Possible Future Deatures**
 ## **Testing Phase:**
 The Testing Phase Content is available in a separate document file that can be accessed at [TESTING.md](TESTING.md)
 
+***
+
 ## **Deployment:**
+### **Remote Deployment**
+The following steps were take to deploy the website to GitHub pages:
+  1. Log in to [GitHub](https://github.com/)
+  2. Use navigation to locate [KIrynaW/art-history-quiz](https://github.com/KIrynaW/art-history-quiz) in *"Your Repositories"*.
+  3. In the selected repository press the *"Settings"* tab.
+  4. On the left hand side, press the *"Pages"* tab.
+  5. Locate the **"Source"** section and make sure it is set to "Deploy from Branch".
+  6. Next, under the **"Branch"** section, extend the drop-down list and select "Main".
+  7. The page then automatically updates, confirms successful deployment and displays a link to the website.
+
+  A live link to the website can be found here: [Name The Artist Quiz](https://kirynaw.github.io/art-history-quiz/)
+
+### **Clone**
+
+
+### **Fork**
+1. Log in to [GitHub](https://github.com/)
+2. Use navigation to locate [KIrynaW/art-history-quiz](https://github.com/KIrynaW/art-history-quiz) repository.
+3. In the right-top corner of the page, locate "Fork" and click on it.
+4. In the "Repository Name" input window, create a new name that is different to the current or you can choose to keep the original.
+5. You can create a description of your Fork
+6. Scroll to the bottom of the page; in the bottom-right corner, click "Create Fork".
+
+***
+
 ## **Credits:**
 ### **Languages Used**
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
@@ -174,6 +204,7 @@ The Testing Phase Content is available in a separate document file that can be a
 - [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) - the CSS code was run through to check errors and validate
 - [Jshint JavaScript Validator](https://jshint.com/) - the JavaScript code was run through to check errors and validate
 - [DeepScan Extension](https://deepscan.io/dashboard/) - was used to perform a deep check of the whole webiste to evaluate overall performance
+- [Am I Responsive?](https://ui.dev/amiresponsive) - used to check for responsivness across variety of screen sizes
 
 
 ### **Code**
