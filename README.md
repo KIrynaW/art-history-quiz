@@ -157,7 +157,7 @@ The Testing Phase Content is available in a separate document file that can be a
 ***
 
 ## **Deployment:**
-### **Remote Deployment **
+### **Remote Deployment**
 The following steps were take to deploy the website to GitHub pages:
   1. Log in to [GitHub](https://github.com/)
   2. Use navigation to locate [KIrynaW/art-history-quiz](https://github.com/KIrynaW/art-history-quiz) in *"Your Repositories"*.

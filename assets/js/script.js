@@ -88,7 +88,7 @@ function getOptions() {
  */ 
 function checkAnswer(event) {
     if (answerChosen) {
-        alert("Oops! You have already made your choise. Click 'Next' to continue.");
+        alert("Oops! You have already made your choice. Click 'Next' to continue.");
     }
     else {
         answerChosen = true;
