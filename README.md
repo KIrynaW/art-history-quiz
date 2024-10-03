@@ -113,17 +113,19 @@ The quiz is responsive on all screen types: Mobiles, Tablets and Laptops.
 #### **Landing Section**
 - It comprises of a heading section that contains the name of the quiz; main section, with an image, visualy depicting the quiz; and a "Start" button, that triggers the **Game Section**.
 
-  ![Landing section with game introduction and an image](docs/features-screenshots/landing_section.jpg)
+  ![Landing section with game introduction and an image](docs/features-screenshots/landing_section.jpg)&nbsp;&nbsp;------->&nbsp;&nbsp;
   ![Start the quiz button function](docs/features-screenshots/start_function.jpg)
 
 #### **Game Section**
 - The main section overview, displaying responsivnes on all screen sizes, featuring the standard Laptop, Tablet and Smartphone screens.
 
   ![Responsivnes of the Game Section on all screen sizes](docs/features-screenshots/all_screen_views.jpg)
-  ![Header transformation revealing the score-box](docs/features-screenshots/score_box1.jpg)
 
-  ![Answer options Laptop](docs/features-screenshots/option_bar.jpg)
-  ![Answer options Laptop bar hover](docs/features-screenshots/option_bar_hover.jpg)
+  ![Header transformation revealing the score-box](docs/features-screenshots/score_box.jpg)
+
+  ![Answer options Laptop](docs/features-screenshots/option_bar.jpg)&nbsp;&nbsp;------->&nbsp;&nbsp;
+
+  &nbsp;&nbsp;------->&nbsp;&nbsp;![Answer options Laptop bar hover](docs/features-screenshots/option_bar_hover.jpg)
 
 - When the selected answer is correct, the button turns green; but if selected answer is incorrect, the button turns red and the correct answer is also revealed in green.
 
@@ -131,13 +133,13 @@ The quiz is responsive on all screen types: Mobiles, Tablets and Laptops.
 
 - The selection of an answer option also reveals a "Next" button and a "Interesting Facts" paragraph.
 
-  ![Next button reveal when option selected](docs/features-screenshots/nextbtn_reveal.jpg)
+  ![Next button reveal when option selected](docs/features-screenshots/nextbtn_reveal.jpg)&nbsp;&nbsp;------->&nbsp;&nbsp;
 
-  
-  ![Alert message pop-up when option selected](docs/features-screenshots/alert_message.jpg)
+  &nbsp;&nbsp;------->&nbsp;&nbsp;![Facts paragraph reveal when choice is made](docs/features-screenshots/fact_reveal.jpg)
 
 - When "Next" button is clicked, it shows the next question/painting and hides the "Next" button and "Interesting Facts" paragraph.
 
+  ![Alert message pop-up when option selected](docs/features-screenshots/alert_message.jpg)&nbsp;&nbsp;------->&nbsp;&nbsp;
   ![Next button hover feature](docs/features-screenshots/next_function.jpg)
     
 - The process repeats until all 11 painting are named and the final "Next" button reveals the **Game End Section**.
@@ -148,7 +150,7 @@ The quiz is responsive on all screen types: Mobiles, Tablets and Laptops.
 
 - At the bottom of the **Game End Section** there is a "Play Again" button that allows the user to try to play again; when clicked, it bring the user back to the **Game Section**.
 
-  ![Play Agian button hover function](docs/features-screenshots/startagain_function.jpg)
+  &nbsp;&nbsp;------->&nbsp;&nbsp;![Play Agian button hover function](docs/features-screenshots/startagain_function.jpg)
  
 ### **Possible Future Features**
 
