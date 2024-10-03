@@ -157,7 +157,7 @@ The Testing Phase Content is available in a separate document file that can be a
 ***
 
 ## **Deployment:**
-### **Remote Deployment**
+### **Remote Deployment **
 The following steps were take to deploy the website to GitHub pages:
   1. Log in to [GitHub](https://github.com/)
   2. Use navigation to locate [KIrynaW/art-history-quiz](https://github.com/KIrynaW/art-history-quiz) in *"Your Repositories"*.
@@ -170,7 +170,12 @@ The following steps were take to deploy the website to GitHub pages:
   A live link to the website can be found here: [Name The Artist Quiz](https://kirynaw.github.io/art-history-quiz/)
 
 ### **Clone**
-
+1. Go to the chosen repository.
+2. Click on the "Code" green button in the top-ride side of the page.
+3. Select and Copy the HTTP (Url)
+4. Open the Git Terminal;change the current directory to the disired one where the cloned directory to be placed.
+5. Input 'git clone' and after it the Url that was copied to look as following *git clone https://github.com/username/repository/*
+6. Click "Enter" to create a clone.
 
 ### **Fork**
 1. Log in to [GitHub](https://github.com/)
