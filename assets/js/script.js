@@ -26,7 +26,6 @@ let answerChosen = false; // Store if option chosen
 
 
 // Create Quiz functions to run the game 
-
 /** 
  * When start btn is clicked it triggers this function which
  * reveals game area and shuffles through the array of questions
@@ -60,7 +59,7 @@ function getImage() {
 }
 
 /** 
- * Shuffles through the questions/images arrays by using Fisher-Yates method
+ * Shuffles through the questions/images arrays by using Fisher-Yates algorithm
  */ 
 function shuffleQuestions() {
     for(let i= questionContent.length -1; i > 0; i--) {

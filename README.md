@@ -132,6 +132,7 @@ The quiz is responsive on all screen types: Mobiles, Tablets and Laptops.
 - The selection of an answer option also reveals a "Next" button and a "Interesting Facts" paragraph.
 
   ![Next button reveal when option selected](docs/features-screenshots/nextbtn_factsreveal.jpg)
+  ![Alert message pop-up when option selected](docs/features-screenshots/alert_message.jpg)
 
 - When "Next" button is clicked, it shows the next question/painting and hides the "Next" button and "Interesting Facts" paragraph.
 
