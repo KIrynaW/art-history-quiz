@@ -88,11 +88,20 @@ There were no errors detected and the quiz has an overall high performance.
  **Quiz Responsiveness** 
  
  **Quiz Feature Performance** 
-|Feature                | Test                                 |Pass/Fail        |
-|-----------------------|--------------------------------------|-----------------|
-|When the "Start" button is clicked on landing section, it reveals: the game play section with paintings to identify; four answer options; the score box and hides the landing section| Hover over the start button, it will highlight, and then press on it| Pass |
-|When one of four option buttons are pressed: the buttons disable, the right answer turns green and wrong red| Hover over any of four buttons, they will highight, then make your choice by clicking|Pass|
-When any of the option buttons are pressed again after answer already selected, the alert message is triggered and this event is same on every question| Hover over any of the four buttons after having chosen an option, they will not highlight, the click one of the buttons|Pass|
+|No. and Section |Function               | Test                                 |Pass/Fail        |
+|----------------|-----------------------|--------------------------------------|-----------------|
+| 1. Landing Section|When the "Start" button is clicked, it reveals: the game play section with paintings to identify; four answer options; the score box and hides the landing section| Hover over the start button, it will highlight, and then press on it. The assigned function executes|<p style="background-color:green">Pass</p>|
+|2. Quiz Game Section|When the answer option button, that is clicked, contains the correct answer, the function triggered increments 1 point to the score; if wrong, no points are added|Hover over any of the four buttons, they will highlight, and choose one of the options, then press. The assigned function executes|<p style="background-color:green">Pass</p>| 
+|3. Quiz Game Section|When any of the four option buttons are clicked: the buttons disable, the right answer turns green and wrong red| Hover over any of the four buttons, they will highight, then make your choice by pressing on one of them. The assigned function executes|<p style="background-color:green">Pass</p>|
+|4. Quiz Game Section|When any of the option buttons are clicked, they trigger a function that reveals the "Next" button and a "Facts" paragraph|Hover over any of the four buttons, they will highlight, then press on one of the buttons. The assigned function executes|<p style="background-color:green">Pass</p>|  
+|5. Quiz Game Section|When any of the option buttons are clicked again after an answer was already selected, the alert message is triggered; this event is the same on every question| Hover over any of the four buttons after having chosen an option, they will not highlight, then press on one of the buttons. The assigned function executes|<p style="background-color:green">Pass</p>|
+|6. Quiz Game Section|When the "Next" button is clicked the function is triggered, that loops randomly through stored questions; clears previously triggered functions and performs the No.2,3,4,5 functions all over again|Hover over the "Next" button, it will highlight, and press on it. The assigned function executes|<p style="background-color:green">Pass</p>|
+|7. Quiz Game Section|When the 11th image in the array is reached and the "Next" button is clicked, the function condition is triggered that reveals the End Quiz Section; hides the other sections; removes the score box from heading; reveals the final score in the main section, a message and "Start Again" button|Hover over the "Next" button, it will highlight, and press on it. The assigned function executes.|<p style="background-color:green">Pass</p>|
+|8. Quiz End Section|If the final score is 3-4 points, the message is "Not Great! Maybe try again?" with sad smiley icon; if 5-8 points, the message is "Well Done! You have some knowlege in Art History" with a smiling smiley icon; if 9-10 points, the message is "Excellent! You know your Art History well.", with happy smiley icon; if 11 points, the message is "Outstanding! You are an Art History Master." with very a happy smiley icon| Go through the whole quiz and choose the names of all the 11 painting creators to reach the End Quiz Section. The assigned function exectutes.<p style="background-color:green">Pass</p>|
+|9. Quiz End Section|When the "Play Again" button is clicked, it triggers the function that takes the user to the Quiz Game Section; it clears the score box and image index value to initial and restarts the loop function and dis
+
+
+
 
 
 ### **User Story Testing**
