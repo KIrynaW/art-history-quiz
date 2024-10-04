@@ -12,14 +12,23 @@
 Bugs encountered during the development of the quiz:
 
   - HTML Bugs:
+    - These errorss were encountered in the mid development of the quiz game:
 
-    ![Html code bugs after running validation test](docs/testing-screenshots/html_midcheck_error.jpg)
+      ![Html code bugs after running validation test](docs/testing-screenshots/html_midcheck_error.jpg)
 
-    &nbsp;&nbsp;------->&nbsp;&nbsp;![Html code bug fix solution one](docs/testing-screenshots/html_error_fix2.jpg)
+    - The *Empty Heading* error was fixed by adding "Facts" text to the heading, which later was changed to a paragraph, as can be seen in the screenshot below.
+    - Since the id of the paragrap is used to alter the message through Javascript, its contents are imperative, but needed to clear the error.
 
-    &nbsp;&nbsp;------->&nbsp;&nbsp;![Html code bug fix solution two](docs/testing-screenshots/html_error_fix.jpg)
+     &nbsp;&nbsp;------->&nbsp;&nbsp;![Html code bug fix solution one](docs/testing-screenshots/html_error_fix2.jpg)
 
-    &nbsp;&nbsp;------->&nbsp;&nbsp;![Html bug fix solution three](docs/testing-screenshots/html_error_fix3.jpg)
+    - The *Empty Heading Error* was fixed by adding "Message" text to the heading.
+    - Since the id of the heading is used to alter the message through Javascript, its contents are imperative, but needed to clear the error.
+
+     &nbsp;&nbsp;------->&nbsp;&nbsp;![Html code bug fix solution two](docs/testing-screenshots/html_error_fix.jpg)
+
+    - The *Child of Button Element Error* was fixed by removing the heading element from the text, and using the button class to style the text.
+    
+     &nbsp;&nbsp;------->&nbsp;&nbsp;![Html bug fix solution three](docs/testing-screenshots/html_error_fix3.jpg)
 
   - CSS Bugs:
 
