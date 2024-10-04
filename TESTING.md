@@ -114,12 +114,12 @@ There were no errors detected and the quiz has an overall high performance.
 |9. |Quiz End|When the "Play Again" button is clicked, it triggers the function that takes the user to the Quiz Game Section; it clears the score box and image index value to initial and restarts the loop function|Hover over the "Start Again" button, it will highlight, then press on it.<br> *The assigned function executes*.|Pass|
 
 ### **User Story Testing**
-|No.|Result|Evidence                                                             |
-|---|------|---------------------------------------------------------------------|
-|1  |      |**As a new visitor**, <br> I want to be able to                      |
-|2  |      |**As an fine-art history novice**, <br> I want to be able to         |
-|3  |      |**As an fine-art history novice**, <br> I want to be able to         |
-|4  |      |**As a fine-art student**, <br> I want to be able to                 |
-|5  |      |**As a fine-art student**, <br> I want to be able to                 |
-|6  |      |**As a fine-art history amateur**, <br> I want to be able to         |
-|7  |      |**As a fine-art history amateur**, <br> I want to be able to         |
+|No.|Story                |Result|Evidence                                            |
+|---|---------------------|------|----------------------------------------------------|
+|1  |  **As a chance visitor**, <br> I want to be able to     |      |                  |
+|2  |      |      |**As a chance visitor**, <br> I want to be able to         |
+|3  |      ||**As an fine-art history novice**, <br> I want to be able to         |
+|4  |      ||**As an fine-art history novice**, <br> I want to be able to         |
+|4  |      ||**As a fine-art student**, <br> I want to be able to                 |
+|6  |      ||**As a fine-art student**, <br> I want to be able to                 |
+
