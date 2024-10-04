@@ -59,14 +59,12 @@ Thus the conclusion was made that many must have a basic knowlege in art history
 ### *User Stories:*
   |No.|Story|
   |------|--------|
-  |1|**As a new visitor**, <br> I want to be able to understand the aim of the quiz from the landing page and experience a simple interactive and visualy engaging game. <br><br> **I know I can do it when the directions are clear, visualy engaing and the game is well organised and not cluttered.**|
-  |2|**As a new visitor**, <br> I want to be experience clear navigation and user-friendly interface; ensuring that players of all ages can enjoy the game.<br><br>|
-  |3|**As an fine-art history novice**, <br> I want to be able to particiape in a quiz that gives you extra information on the art topic in question, to gain more knowlege|
-  |4|**As an fine-art history novice**, <br> I want to be able to receive instant feedback on the answers, to know which is right and wrong|
-  |5|**As a fine-art student**, <br> I want to engage in a quiz that incorporates images of artworks and artists, allowing for visual recognition and engagement.|
-  |6|**As a fine-art student**, <br> I want to be able to receive a comment on my performance in the art quiz|
-  |7|**As a fine-art history amateur**, <br> I want to be able test my knowledge, discover new artists, and improve my appreciation of art.|
-  |8|**As a fine-art history amateur**, <br> I want to be able to track my progress and the score throughout the quiz, with a final score tallied|
+  |1|**As a chance visitor**, <br> I want to be able to understand the aim of the quiz from the landing page and experience a simple interactive and visualy engaging game. <br><br> **I know I can do it when the directions are clear, visualy engaing and the game is well organised and not cluttered.**|
+  |2|**As a chance visitor**, <br> I want to experience clear navigation and user-friendly interface; ensuring that players of all ages can enjoy the game.<br><br> **I know I can do it when the site has a visually inviting landing page with clean, bright graphics, with neutral design to suit all ages - with all the buttons in the game equipt with a hover feature to show which one is engagin.**|
+  |3|**As an fine-art history novice**, <br> I want to be able to particiape in a quiz that gives you extra information on the art topic in question, to gain more knowlege <br><br> **I know I can do it when there is a section in the game that pops up, presenting more information about the artist and their art.**|
+  |4|**As a fine-art history novice**, <br> I want to be able to see instant feedback on the answers, to know which is right and wrong <br><br> **I can experience it when the correct answer button is chosen, it changes visually to indicate it is right and if the wrong answer is chosen it visually indicates its wrong and shows the correct one**|
+  |5|**As a fine-art student**, <br> I want to engage in a quiz that incorporates images of artworks and artists, allowing for visual recognition and engagement.<br><br> **I know I can do it when the quiz is mostly visual and uses images of art work in the body of the game instead of written questions.**|
+  |6|**As a fine-art student**, <br> I want to be able test my knowledge, by tracking the score through the game and receive an evaluation on my performance. <br><br> **I know I can do it, when there is a score tracker visible throughout the game and at the end of the quiz I can see how much I scored in total and a message that comments on my performance.**|
 
 ### **User Interface(UI)**
 Art History Quiz site comprises of three sections, each activated when a specific button is triggered.
