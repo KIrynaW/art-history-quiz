@@ -114,12 +114,12 @@ There were no errors detected and the quiz has an overall high performance.
 |9. |Quiz End|When the "Play Again" button is clicked, it triggers the function that takes the user to the Quiz Game Section; it clears the score box and image index value to initial and restarts the loop function|Hover over the "Start Again" button, it will highlight, then press on it.<br> *The assigned function executes*.|Pass|
 
 ### **User Story Testing**
-|No.|Story                |Result|Evidence                                            |
-|---|---------------------|------|----------------------------------------------------|
-|1  |**As a chance visitor**, <br> I want to be able to     |      |                  |
-|2  |**As a chance visitor**, <br> I want to be able to      |      |      |
-|3  |**As an fine-art history novice**, <br> I want to be able to        ||       |
-|4  |**As an fine-art history novice**, <br> I want to be able to      ||         |
-|4  |**As a fine-art student**, <br> I want to be able to      ||                 |
-|6  |**As a fine-art student**, <br> I want to be able to      ||                 |
+|No.|Story                |Pass/Fail|Evidence                                            |
+|---|---------------------|---------|----------------------------------------------------|
+|1  |**As a chance visitor** <br> I want to be able to understand the aim of the quiz from the landing page and experience a simple interactive and visualy engaging game. <br> **I know I can do it when the directions are clear, visualy engaing and the game is well organised and not cluttered.**|Pass|The user starts of on a landing page which has clear, intuitive graphics, giving the user a visual comunication as well as simple text with direction of the quiz. The game is visualy rich and has intuitive and well labled navigation.<br> ![Image of landin and game features](docs/features-screenshots/landing_function.jpg)|
+|2  |**As a chance visitor** <br> I want to experience clear navigation and user-friendly interface; ensuring that players of all ages can enjoy the game. <br> **I know I can do it when the site is visually inviting with clean, bright graphics, with neutral design to suit all ages - with all the buttons in the game equipt with a hover feature to show which one is engagin.** |Pass|      |
+|3  |**As an fine-art history novice** <br> I want to be able to particiape in a quiz that gives you extra information on the art topic in question, to gain more knowlege. <br> **I know I can do it when there is a section in the game that pops up, presenting more information about the artist and their art.**|Pass|       |
+|4  |**As an fine-art history novice** <br> I want to be able to see instant feedback on the answers, to know which is right and wrong <br><br> **I can experience it when the correct answer button is chosen, it changes visually to indicate it is right and if the wrong answer is chosen it visually indicates its wrong and shows the correct one**|Pass|         |
+|4  |**As a fine-art student** <br> I want to engage in a quiz that incorporates images of artworks and artists, allowing for visual recognition and engagement.<br> **I know I can do it when the quiz is mostly visual and uses images of art work in the body of the game instead of written questions.**|Pass|                 |
+|6  |**As a fine-art student** <br> I want to be able test my knowledge, by tracking the score through the game and receive an evaluation on my performance. <br> **I know I can do it, when there is a score tracker visible throughout the game and at the end of the quiz I can see how much I scored in total and a message that comments on my performance.**|Pass|                 |
 
