@@ -5,7 +5,7 @@ const scoreBox = document.getElementById("score-box");
 const scoreIndex = document.getElementById("score-num");
 const quizContainer = document.getElementById("quiz-container");
 const imageIndex = document.getElementById("painting-num");
-const imageBox = document.getElementById("art-work");
+const imageBox = document.getElementById("painting");
 const questionsArea = document.getElementById("questions");
 const optionBtns = document.querySelectorAll(".option-barbtn");
 const showHidden = document.querySelectorAll(".toggle");
@@ -53,8 +53,8 @@ function getImage() {
     imageBox.innerHTML = "";
     const quizImage = document.createElement("img");
     quizImage.src = questionContent[currentNumber].img;
-    quizImage.alt = questionContent[currentNumber].alt;
     quizImage.id = "art-works";
+    quizImage.alt = questionContent[currentNumber].alt;
     imageBox.appendChild(quizImage);
 }
 
