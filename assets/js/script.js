@@ -54,6 +54,7 @@ function getImage() {
     const quizImage = document.createElement("img");
     quizImage.src = questionContent[currentNumber].img;
     quizImage.alt = questionContent[currentNumber].alt;
+    quizImage.toggleAttribute("img");
     quizImage.id = "art-works";
     imageBox.appendChild(quizImage);
 }
