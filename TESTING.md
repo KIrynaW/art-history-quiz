@@ -116,10 +116,10 @@ There were no errors detected and the quiz has an overall high performance.
 ### **User Story Testing**
 |No.|Story                |Result|Evidence                                            |
 |---|---------------------|------|----------------------------------------------------|
-|1  |  **As a chance visitor**, <br> I want to be able to     |      |                  |
-|2  |      |      |**As a chance visitor**, <br> I want to be able to         |
-|3  |      ||**As an fine-art history novice**, <br> I want to be able to         |
-|4  |      ||**As an fine-art history novice**, <br> I want to be able to         |
-|4  |      ||**As a fine-art student**, <br> I want to be able to                 |
-|6  |      ||**As a fine-art student**, <br> I want to be able to                 |
+|1  |**As a chance visitor**, <br> I want to be able to     |      |                  |
+|2  |**As a chance visitor**, <br> I want to be able to      |      |      |
+|3  |**As an fine-art history novice**, <br> I want to be able to        ||       |
+|4  |**As an fine-art history novice**, <br> I want to be able to      ||         |
+|4  |**As a fine-art student**, <br> I want to be able to      ||                 |
+|6  |**As a fine-art student**, <br> I want to be able to      ||                 |
 
