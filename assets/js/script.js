@@ -56,6 +56,7 @@ function getImage() {
     quizImage.id = "art-works";
     quizImage.alt = questionContent[currentNumber].alt;
     imageBox.appendChild(quizImage);
+    imageBox.classList.remove("hidden");
 }
 
 /** 
@@ -170,6 +171,7 @@ function refreshQuestion() {
         element.classList.remove("right");
         element.addEventListener("click", checkAnswer);
         element.classList.add("hover");
+        imageBox.classList.add("hidden");
     });
 }
 
