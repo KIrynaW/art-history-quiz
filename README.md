@@ -121,7 +121,10 @@ The quiz is responsive on all screen types: Mobiles, Tablets and Laptops.
 
   ![Responsivnes of the Game Section on all screen sizes](docs/features-screenshots/all_screen_views.jpg)
 
+  ![Header no score-box](docs/features-screenshots/heading_noscore.jpg)&nbsp;&nbsp;------->&nbsp;&nbsp;
   ![Header transformation revealing the score-box](docs/features-screenshots/score_box.jpg)
+
+  &nbsp;&nbsp;-------->&nbsp;&nbsp;![Incremented score function](docs/features-screenshots/score.jpg)
 
   ![Answer options Laptop](docs/features-screenshots/option_bar.jpg)&nbsp;&nbsp;------->&nbsp;&nbsp;
 
@@ -145,7 +148,8 @@ The quiz is responsive on all screen types: Mobiles, Tablets and Laptops.
 - The process repeats until all 11 painting are named and the final "Next" button reveals the **Game End Section**.
 
 #### **Game End Section**
-  ![Game End heading section](docs/features-screenshots/endgame_heading.jpg)
+  ![Header transformation revealing the score-box](docs/features-screenshots/score_box.jpg)&nbsp;&nbsp;------->&nbsp;&nbsp;
+  ![Header no score-box](docs/features-screenshots/heading_noscore.jpg)
   ![Game End all message variations](docs/features-screenshots/end_game_messages.jpg)
 
 - At the bottom of the **Game End Section** there is a "Play Again" button that allows the user to try to play again; when clicked, it bring the user back to the **Game Section**.
