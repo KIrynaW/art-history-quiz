@@ -56,7 +56,7 @@ function getImage() {
     quizImage.alt = questionContent[currentNumber].alt;
     quizImage.id = "art-works";
     imageBox.appendChild(quizImage);
-    quizImage.toggleAttribute("div");
+
 }
 
 /** 
@@ -166,7 +166,8 @@ function getFacts() {
  * enables a checkAnswer function
 */
 function refreshQuestion() {
-   optionBtns.forEach(element => {
+    imageBox.toggleAttribute("div");
+    optionBtns.forEach(element => {
         element.classList.remove("wrong");
         element.classList.remove("right");
         element.addEventListener("click", checkAnswer);
