@@ -60,11 +60,11 @@ Thus the conclusion was made that many must have a basic knowlege in art history
   |No.|Story|
   |------|--------|
   |1|**As a chance visitor**, <br> I want to be able to understand the aim of the quiz from the landing page and experience a simple interactive and visualy engaging game. <br><br> **I know I can do it when the directions are clear, visualy engaing and the game is well organised and not cluttered.**|
-  |2|**As a chance visitor**, <br> I want to experience clear navigation and user-friendly interface; ensuring that players of all ages can enjoy the game.<br><br> **I know I can do it when the site has a visually inviting landing page with clean, bright graphics, with neutral design to suit all ages - with all the buttons in the game equipt with a hover feature to show which one is engagin.**|
+  |2|**As a chance visitor** <br> I want to experience a user-friendly interface and clear navigation highlighting the quiz options; also ensuring that I can repeat the quiz easily to improve my score. <br> **I know I can do it when the site has visually ordered graphics, with all the buttons responding to the mouse cursor poining at them and a button in the end of the quiz that lets you repeat the game.**|
   |3|**As an fine-art history novice**, <br> I want to be able to particiape in a quiz that gives you extra information on the art topic in question, to gain more knowlege <br><br> **I know I can do it when there is a section in the game that pops up, presenting more information about the artist and their art.**|
   |4|**As a fine-art history novice**, <br> I want to be able to see instant feedback on the answers, to know which is right and wrong <br><br> **I can experience it when the correct answer button is chosen, it changes visually to indicate it is right and if the wrong answer is chosen it visually indicates its wrong and shows the correct one**|
   |5|**As a fine-art student**, <br> I want to engage in a quiz that incorporates images of artworks and artists, allowing for visual recognition and engagement.<br><br> **I know I can do it when the quiz is mostly visual and uses images of art work in the body of the game instead of written questions.**|
-  |6|**As a fine-art student**, <br> I want to be able test my knowledge, by tracking the score through the game and receive an evaluation on my performance. <br><br> **I know I can do it, when there is a score tracker visible throughout the game and at the end of the quiz I can see how much I scored in total and a message that comments on my performance.**|
+  |6|**As a fine-art student**, <br> I want to be able test my knowledge, see my progress throughout the quiz and receive an evaluation on my performance in the end. <br><br> **I know I can do it, when there is a score tracker visible throughout the game and at the end of the quiz I can see how much I scored out of total and a text feedback grading my performance.**|
 
 ### **User Interface(UI)**
 Art History Quiz site comprises of three sections, each activated when a specific button is triggered.
@@ -155,9 +155,26 @@ The quiz is responsive on all screen types: Mobiles, Tablets and Laptops.
   &nbsp;&nbsp;------->&nbsp;&nbsp;![Play Agian button hover function](docs/features-screenshots/startagain_function.jpg)
  
 ### **Possible Future Features**
-1. **User Registration/Login:**
-   - Players can create an account or log in using social media.
-   - Players can invite friends to challenge their scores or compete in real-time quizzes.
+**Online Presence**
+ - Create a sign up section on the landing page so players can create an account or log in using social media. 
+ - Enable players to invite friends to challenge their scores or compete in real-time quizzes.
+
+**Quiz Theme Variety**
+ - Create several types of art quizes that are accesible from the landing page; verbal quizes and image base; covering topics such as art movements, design history, 21 century art, art techniques, design techniques.
+
+**Internal Features**
+ - When the quiz is are completed, on the end of quiz page, to provide links to articles or video related to the topics covered, so the user can learn more and dive deeper into areas of interest.
+ - Give option to take the quiz with a timer to stimulate exam environment 
+ - Create a section with testimonials from other users to build trust and encourage participation.
+ 
+ **Other Advancements**
+ - Use an obfuscator tool to disquize the code that can identify answers to the quiz questions or help the user cheat.
+ 
+
+
+7. 
+
+
 
 
 ***
