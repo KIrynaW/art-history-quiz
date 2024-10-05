@@ -160,16 +160,17 @@ The quiz is responsive on all screen types: Mobiles, Tablets and Laptops.
  - Enable players to invite friends to challenge their scores or compete in real-time quizzes.
 
 **Quiz Theme Variety**
- - Create several types of art quizes that are accesible from the landing page; verbal quizes and image base; covering topics such as art movements, design history, 21 century art, art techniques, design techniques.
+ - Create several types of art quizes that can be selected from the landing page; verbal quizes and image based; covering topics such as art movements, design history, 21 century art, art techniques, design techniques, etc.
 
 **Internal Features**
- - When the quiz is are completed, on the end of quiz page, to provide links to articles or video related to the topics covered, so the user can learn more and dive deeper into areas of interest.
+ - When the quiz is completed, provide links to articles or videos related to the topics covered; located at the quiz end section, so the user can learn more and dive deeper into areas of interest after receiving their score.
  - Give option to take the quiz with a timer to stimulate exam environment 
  - Create a section with testimonials from other users to build trust and encourage participation.
- 
+
  **Other Advancements**
- - Use an obfuscator tool to disquize the code that can identify answers to the quiz questions or help the user cheat.
- 
+ - Use an obfuscator tool to disquize the code that can identify answers to the quiz questions to prevent the user from cheating.
+ - Add 20+ question arrays, and only loop through random 10 of them, so every time a user does the quiz again, they get different selection of questions.
+ - Create a json file to store objects data .
 
 
 7. 
