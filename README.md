@@ -155,6 +155,10 @@ The quiz is responsive on all screen types: Mobiles, Tablets and Laptops.
   &nbsp;&nbsp;------->&nbsp;&nbsp;![Play Agian button hover function](docs/features-screenshots/startagain_function.jpg)
  
 ### **Possible Future Features**
+1. **User Registration/Login:**
+   - Players can create an account or log in using social media.
+   - Players can invite friends to challenge their scores or compete in real-time quizzes.
+
 
 ***
 
