@@ -36,13 +36,12 @@ This fun Quiz provides users with a fun way of testing their knowledge of famous
 *** 
 
 ## **Exploration Phase:** 
-Who does not like a good quiz to test their knowledge on a random topic? Generic Quiz games have an ability to engage a wide demographic, from a school student to one's grandmother. 
-
+Who does not like a good quiz to test their knowledge? Fun quiz games have an ability to engage a wide demographic of people who like or need a challange. 
 While digital technology continues to reshape human interactions with art, quiz games have emerged as a popular method for engaging audiences in the exploration of artistic knowledge.  
 
-In the exploration stage of the game development, we approached a variety of people, of different ages and vocations; a secondary school student studying art, an art college graduate, a senior software developer, a housewife and a retired mechanical engineer. We showed them a selection of historical fine art paintings and asked them to either name the art movement or the artist who created it. Surprisingly, our participants showed a lot more knowledge than anticipated; while the students who studied art exhibited greater knowledge of the subject, those with no background in art had some knowledge of almost every image shown.  
+In the exploration stage of the game development, we approached a variety of people, of different ages and vocations; a secondary school student studying art, an art college graduate, a senior software developer, a housewife and a retired mechanical engineer. We showed them a selection of historical fine art paintings and asked them to either name the art movement or the artist who created it. Surprisingly, our participants showed a lot more knowledge than anticipated; while the students who studied art exhibited greater knowledge of the subject, those with no background in art, had some knowledge of almost every image shown.  
 
-Thus, the conclusion was made that many must have a basic knowledge in art history; having acquired it in school or from attending museum as entertainment, and as long as the game is simple enough, it can be accessible and experienced by many demographics and also offer extra information to those who like to learn.  
+Thus, the conclusion was made that many people have a basic knowledge in art history; having acquired it in school or from attending museum as entertainment, and as long as the game is simple enough, it can be accessible and experienced by variety of demographics and also offer extra information to those who like to learn.  
 
 ### **User Experience(UX)** 
 ***The Users :***   
@@ -100,16 +99,17 @@ The quiz is responsive on all screen types: Mobiles, Tablets and Laptops.
 #### **Color Scheme:** 
 - The color scheme for the quiz was inspired by art museums and painting palettes with bright contrasting blues and oranges. This theme reflects the theme of the quiz.<br>
   ![Art Museum inspiration](docs/screenshots/art_museum.jpg) &nbsp;&nbsp;&nbsp;&nbsp;
-  ![Easel inspiration](docs/screenshots/easel_smaller.jpg)    
+  ![Easel inspiration](docs/screenshots/easel_smaller.jpg)
+
 - These colors are rejuvinating and instill a sense of refreshment, which is very fitting to the setting of the art quiz. Oranges and light blue are complementary to each other, while grey, white and dark grey, add accent and contrast. 
 - This palette with a selection of colors was manually generated using [Coolors](https://coolors.co/)
-- The pallet was then scored on contrast levels on [Contrast Grid](https://contrast-grid.eightshapes.com/); to make sure that the color combinations are not clashing and are suitable to use for accessibility purposes.
+- The pallet was then scored on contrast levels on [Contrast Grid](https://contrast-grid.eightshapes.com/); to make sure that the color combinations are not clashing and are suitable to use for accessibility purposes.<br>
   ![Color Scheme chosen for the project](docs/screenshots/color-scheme.jpg) 
    
 #### **Typography:**
 The fonts were taken from [Google Fonts](https://fonts.google.com/)
   - These fonts are easy to read and are fitting with the theme of the quiz.
-  - For the header(h1) of the quiz "Limelight" font was used, and for the body headings (h2, h3, h4) and paragraphs the "Antic Slab" font was used.
+  - For the header(h1) of the quiz "Limelight" font was used, and for the body headings (h2, h3, h4) and paragraphs the "Antic Slab" font was used.<br>
     ![Two font styles used:Limelight and Antic Slab](docs/screenshots/site_fonts.jpg) 
 
 *** 
@@ -117,54 +117,56 @@ The fonts were taken from [Google Fonts](https://fonts.google.com/)
 ## **Implementation Phase:** 
 ### **Current Quiz Features** 
 #### **Landing Section** 
-- It comprises of a heading section that contains the name of the quiz; main section, with an image, visually depicting the quiz; and a "Start" button, that triggers the **Game Section**. 
-
+- It comprises of a heading section that contains the name of the quiz; main section, with an instruction of the game, an image visually representing the aim of the quiz; and a "Start" button, that triggers the **Game Section**. 
+- On Laptop, when the user hovers over the "Start" button it magnifies and changes color to white to show that it is selected and can be pressed.<br>
   ![Landing section with game introduction and an image](docs/features-screenshots/landing_section.jpg)&nbsp;&nbsp;------->&nbsp;&nbsp; 
   ![Start the quiz button function](docs/features-screenshots/start_function.jpg) 
 
 #### **Game Section** 
-- The main section overview, displaying responsiveness on all screen sizes, featuring the standard Laptop, Tablet and Smartphone screens. 
-
+- The main section overview, displaying responsiveness on all screen sizes, featuring the standard Laptop, Tablet and Smartphone screens.
+- This section contains a header; main with a painting number, a painting and four artists name option displayed in buttons.<br> 
   ![Responsiveness of the Game Section on all screen sizes](docs/features-screenshots/all_screen_views.jpg) 
-  ![Header no score-box](docs/features-screenshots/heading_noscore.jpg)&nbsp;&nbsp;------->&nbsp;&nbsp; 
 
+- The header in this section, has a score box, that is reveal when "Start" button is pressed.<br>
+  ![Header no score-box](docs/features-screenshots/heading_noscore.jpg)&nbsp;&nbsp;------->&nbsp;&nbsp; 
   ![Header transformation revealing the score-box](docs/features-screenshots/score_box.jpg) 
 
-  &nbsp;&nbsp;-------->&nbsp;&nbsp;![Incremented score function](docs/features-screenshots/score.jpg) 
+- The score box is only visible in the **Game Section** and shows the user the amount of points they are scorring out of 11 questions.<br>
+  &nbsp;&nbsp;-------->&nbsp;&nbsp;![Incremented score function](docs/features-screenshots/score.jpg)
 
-  ![Answer options Laptop](docs/features-screenshots/option_bar.jpg)&nbsp;&nbsp;------->&nbsp;&nbsp; 
+- On Laptop, users can hover over option buttons and the button with a mouse cursor on it, changes color to darker orange and magnifies, which indicates which button is being selected before it is clicked.
+- When the choise is made, this function diables.<br>
+  ![Answer options Laptop bar hover](docs/features-screenshots/option_bar_hover.jpg) 
 
-  &nbsp;&nbsp;------->&nbsp;&nbsp;![Answer options Laptop bar hover](docs/features-screenshots/option_bar_hover.jpg) 
-
-- When the selected answer is correct, the button turns green; but if selected answer is incorrect, the button turns red, and the correct answer is also revealed in green. 
-
+- When the clicked option button contains a correct answer, the button turns green; but if the chosen answer is incorrect, the button turns red, and the correct answer is also revealed, in green.<br>
   ![Option selection reveals right and wrong answer](docs/features-screenshots/right_wrong_highlight.jpg) 
 
-- The selection of an answer option also reveals a "Next" button and an "Interesting Facts" paragraph. 
-
+- Also, when the answer option is clicked it reveals a "Next" button and an current painting "Facts" paragraph.<br>
   ![Next button reveal when option selected](docs/features-screenshots/nextbtn_reveal.jpg)&nbsp;&nbsp;------->&nbsp;&nbsp; 
 
   &nbsp;&nbsp;------->&nbsp;&nbsp;![Facts paragraph reveal when choice is made](docs/features-screenshots/fact_reveal.jpg) 
 
-- When "Next" button is clicked, it shows the next question/painting and hides the "Next" button and "Interesting Facts" paragraph. 
+- If the user, intentionally or accidently, clicks on any answer option the second time, an alert message pops up, notifying the user and advising to press "Next" button to continue the quiz.
+- On Laptop, the "Next" button is also magnified and changes color, when hovered over.<br>
+ ![Alert message pop-up when option selected](docs/features-screenshots/alert_message.jpg)&nbsp;&nbsp;------->&nbsp;&nbsp; 
+ ![Next button hover feature](docs/features-screenshots/next_function.jpg) 
 
-  ![Alert message pop-up when option selected](docs/features-screenshots/alert_message.jpg)&nbsp;&nbsp;------->&nbsp;&nbsp; 
-
-  ![Next button hover feature](docs/features-screenshots/next_function.jpg) 
-
-- The process repeats until all 11 paintings are named and the final "Next" button reveals the **Game End Section**. 
+The above described process repeats until all 11 paintings are named and the final "Next" button click reveals the **Game End Section**. 
 
 #### **Game End Section** 
-
+- The last click of "Next button reveals this section of the game; the previous section is disabled and the **Game End Section** becomes visible.
+- The score box is removed from the heading in this section and the final score can be seen in the main section of the page.<br>
   ![Header transformation revealing the score-box](docs/features-screenshots/score_box.jpg)&nbsp;&nbsp;------->&nbsp;&nbsp; 
+  ![Header no score-box](docs/features-screenshots/heading_noscore.jpg)
 
-  ![Header no score-box](docs/features-screenshots/heading_noscore.jpg) 
-
+- In this section, the user also receives a message and a smiley, that changes depending on the points the user scores; its text content reflects how well the user performed in the quiz.<br>
   ![Game End all message variations](docs/features-screenshots/end_game_messages.jpg) 
 
-- At the bottom of the **Game End Section** there is a "Play Again" button that allows the user to try to play again; when clicked, it brings the user back to the **Game Section**. 
-
+- At the bottom of the **Game End Section** there is a "Play Again" button that allows the user to try to play again. 
+- When clicked, it brings the user back to the **Game Section**. <br>
   &nbsp;&nbsp;------->&nbsp;&nbsp;![Play Agian button hover function](docs/features-screenshots/startagain_function.jpg) 
+
+The "Play Again" button refreshes the **Game Section** to its initial state.
 
 ### **Possible Future Features** 
 **Online Presence** 
