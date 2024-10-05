@@ -98,11 +98,18 @@ The quiz is responsive on all screen types: Mobiles, Tablets and Laptops.
     ![Wireframes for Laptop screens](docs/screenshots/wireframes_laptop.jpg) 
 
 #### **Color Scheme:** 
-- This color palette was generated from [Coolors](https://coolors.co/) 
-    ![Color Scheme chosen for the project](docs/screenshots/color_scheme.jpg) 
-
-#### **Typography:** 
-- Fonts used 
+- The color scheme for the quiz was inspired by art museums and painting palettes with bright contrasting blues and oranges. This theme reflects the theme of the quiz.<br>
+  ![Art Museum inspiration](docs/screenshots/art_museum.jpg) &nbsp;&nbsp;&nbsp;&nbsp;
+  ![Easel inspiration](docs/screenshots/easel_smaller.jpg)    
+- These colors are rejuvinating and instill a sense of refreshment, which is very fitting to the setting of the art quiz. Oranges and light blue are complementary to each other, while grey, white and dark grey, add accent and contrast. 
+- This palette with a selection of colors was manually generated using [Coolors](https://coolors.co/)
+- The pallet was then scored on contrast levels on [Contrast Grid](https://contrast-grid.eightshapes.com/); to make sure that the color combinations are not clashing and are suitable to use for accessibility purposes.
+  ![Color Scheme chosen for the project](docs/screenshots/color-scheme.jpg) 
+   
+#### **Typography:**
+The fonts were taken from [Google Fonts](https://fonts.google.com/)
+  - These fonts are easy to read and are fitting with the theme of the quiz.
+  - For the header(h1) of the quiz "Limelight" font was used, and for the body headings (h2, h3, h4) and paragraphs the "Antic Slab" font was used.
     ![Two font styles used:Limelight and Antic Slab](docs/screenshots/site_fonts.jpg) 
 
 *** 
