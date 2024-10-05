@@ -63,7 +63,7 @@ Thus, the conclusion was made that many people have a basic knowledge in art his
   |No.|Story   | 
   |-  |--------| 
   |1  |**As a chance visitor**, <br> I want to be able to understand the aim of the quiz from the landing page and experience a simple interactive and visually engaging game. <br><br> **I know I can do it when the directions are clear, visually engaging and the game is well organized and not cluttered.**| 
-  |2|**As a chance visitor** <br> I want to experience a user-friendly interface and clear navigation highlighting the quiz options; also ensuring that I can repeat the quiz easily to improve my score. <br> **I know I can do it when the site has visually ordered graphics, with all the buttons responding to the mouse cursor pointing at them and a button in the end of the quiz that lets you repeat the game.**| 
+  |2|**As a chance visitor** <br> I want to experience a user-friendly interface and clear navigation highlighting the quiz options; also ensuring that I can repeat the quiz easily to improve my score. <br><br> **I know I can do it when the site has visually ordered graphics, with all the buttons responding to the mouse cursor pointing at them and an easy navigation to repeat the quiz again.**| 
   |3|**As an fine-art history novice**, <br> I want to be able to participate in a quiz that gives you extra information on the art topic in question, to gain more knowledge <br><br> **I know I can do it when there is a section in the game that pops up, presenting more information about the artist and their art.**| 
   |4|**As a fine-art history novice**, <br> I want to be able to see instant feedback on the answers, to know which is right and wrong <br><br> **I can experience it when the correct answer button is chosen, it changes visually to indicate it is right and if the wrong answer is chosen it visually indicates its wrong and shows the correct one**| 
   |5|**As a fine-art student**, <br> I want to engage in a quiz that incorporates images of artworks and artists, allowing for visual recognition and engagement.<br><br> **I know I can do it when the quiz is mostly visual and uses images of art work in the body of the game instead of written questions.**| 
@@ -97,13 +97,13 @@ The quiz is responsive on all screen types: Mobiles, Tablets and Laptops.
     ![Wireframes for Laptop screens](docs/screenshots/wireframes_laptop.jpg) 
 
 #### **Color Scheme:** 
-- The color scheme for the quiz was inspired by art museums and painting palettes with bright contrasting blues and oranges. This theme reflects the theme of the quiz.<br>
+- The color scheme for the quiz was inspired by art museums and painting palettes with bright contrasting blues and oranges. These colors reflect the theme of the quiz.<br>
   ![Art Museum inspiration](docs/screenshots/art_museum.jpg) &nbsp;&nbsp;&nbsp;&nbsp;
   ![Easel inspiration](docs/screenshots/easel_smaller.jpg)
 
-- These colors are rejuvinating and instill a sense of refreshment, which is very fitting to the setting of the art quiz. Oranges and light blue are complementary to each other, while grey, white and dark grey, add accent and contrast. 
+- These colors are rejuvinating and instil a sense of refreshment, which is very fitting to the setting of the art quiz. Oranges and light blue are complementary to each other, while grey, white and dark grey, add accent and contrast. 
 - This palette with a selection of colors was manually generated using [Coolors](https://coolors.co/)
-- The pallet was then scored on contrast levels on [Contrast Grid](https://contrast-grid.eightshapes.com/); to make sure that the color combinations are not clashing and are suitable to use for accessibility purposes.<br>
+- The palette was then scored on contrast levels on [Contrast Grid](https://contrast-grid.eightshapes.com/); to make sure that the color combinations are not clashing and are suitable to use for accessibility purposes.<br>
   ![Color Scheme chosen for the project](docs/screenshots/color-scheme.jpg) 
    
 #### **Typography:**
@@ -118,7 +118,7 @@ The fonts were taken from [Google Fonts](https://fonts.google.com/)
 ### **Current Quiz Features** 
 #### **Landing Section** 
 - It comprises of a heading section that contains the name of the quiz; main section, with an instruction of the game, an image visually representing the aim of the quiz; and a "Start" button, that triggers the **Game Section**. 
-- On Laptop, when the user hovers over the "Start" button it magnifies and changes color to white to show that it is selected and can be pressed.<br>
+- On Laptops, when users hovers over the "Start" button it magnifies and changes color to white to show that it is selected and can be pressed.<br>
   ![Landing section with game introduction and an image](docs/features-screenshots/landing_section.jpg)&nbsp;&nbsp;------->&nbsp;&nbsp; 
   ![Start the quiz button function](docs/features-screenshots/start_function.jpg) 
 
@@ -127,27 +127,27 @@ The fonts were taken from [Google Fonts](https://fonts.google.com/)
 - This section contains a header; main with a painting number, a painting and four artists name option displayed in buttons.<br> 
   ![Responsiveness of the Game Section on all screen sizes](docs/features-screenshots/all_screen_views.jpg) 
 
-- The header in this section, has a score box, that is reveal when "Start" button is pressed.<br>
+- The header in this section, has a score box, which is reveal when "Start" button is pressed.<br>
   ![Header no score-box](docs/features-screenshots/heading_noscore.jpg)&nbsp;&nbsp;------->&nbsp;&nbsp; 
   ![Header transformation revealing the score-box](docs/features-screenshots/score_box.jpg) 
 
 - The score box is only visible in the **Game Section** and shows the user the amount of points they are scorring out of 11 questions.<br>
   &nbsp;&nbsp;-------->&nbsp;&nbsp;![Incremented score function](docs/features-screenshots/score.jpg)
 
-- On Laptop, users can hover over option buttons and the button with a mouse cursor on it, changes color to darker orange and magnifies, which indicates which button is being selected before it is clicked.
-- When the choise is made, this function diables.<br>
+- On Laptops, users can hover over each option button with a mouse cursor and they change color to darker orange and magnifies, which indicates which button is being selected before it is clicked.
+- When the choise is made, this hover function disables.<br>
   ![Answer options Laptop bar hover](docs/features-screenshots/option_bar_hover.jpg) 
 
 - When the clicked option button contains a correct answer, the button turns green; but if the chosen answer is incorrect, the button turns red, and the correct answer is also revealed, in green.<br>
   ![Option selection reveals right and wrong answer](docs/features-screenshots/right_wrong_highlight.jpg) 
 
-- Also, when the answer option is clicked it reveals a "Next" button and an current painting "Facts" paragraph.<br>
+- Also, when the answer option is clicked, it reveals a "Next" button and a current painting "Facts" paragraph.<br>
   ![Next button reveal when option selected](docs/features-screenshots/nextbtn_reveal.jpg)&nbsp;&nbsp;------->&nbsp;&nbsp; 
 
   &nbsp;&nbsp;------->&nbsp;&nbsp;![Facts paragraph reveal when choice is made](docs/features-screenshots/fact_reveal.jpg) 
 
 - If the user, intentionally or accidently, clicks on any answer option the second time, an alert message pops up, notifying the user and advising to press "Next" button to continue the quiz.
-- On Laptop, the "Next" button is also magnified and changes color, when hovered over.<br>
+- On Laptops, the "Next" button is also magnified and changes color, when hovered over.<br>
  ![Alert message pop-up when option selected](docs/features-screenshots/alert_message.jpg)&nbsp;&nbsp;------->&nbsp;&nbsp; 
  ![Next button hover feature](docs/features-screenshots/next_function.jpg) 
 
@@ -253,14 +253,15 @@ The following steps were taken to deploy the website to GitHub pages:
 - The JavaScript code is mostly original, apart from using the "Fisher-Yates Algorithm" mentioned above; the rest was created through trial, error and consultation with the [Code Institute's](https://codeinstitute.net/ie/) course material, the [W3School](https://www.w3schools.com/js/default.asp), [Stack Overflow](https://stackoverflow.com/) 
 
 ### **Content** 
-The content for paintings facts, was taken from [Wikipedia articles on each artist](https://www.wikipedia.org/) articles and then modified and rephrased.<br> 
+The content for paintings facts was taken from [Wikipedia](https://www.wikipedia.org/) articles on each artist and then slightly modified.<br> 
 Sections of original content are also present on the website. 
 
 ### **Media** 
   Background Image:<br> 
   [Photo by Bade Saba: a white easel with paint brushes and a canvas](https://www.pexels.com/photo/a-white-easel-with-paint-brushes-and-a-canvas-15405967/) 
 
-  Color Scheme:<br> 
+  Color Scheme:<br>
+  [Photo by Sofya Borboris: woman in an art museum](https://www.pexels.com/photo/woman-in-room-with-paintings-12268350/) 
   [Photo by Sen Sen: abstract colorful painting](https://www.pexels.com/photo/abstract-colorful-painting-9902153/) 
 
   Landing page image:<br> 
