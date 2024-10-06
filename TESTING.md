@@ -11,7 +11,7 @@
 ### **Bugs**
 Bugs encountered during the development of the quiz:
 
-  - HTML Bugs:
+  - **HTML Bugs:**
     - These errorss were encountered in the mid development of the quiz game:
 
       ![Html code bugs after running validation test](docs/testing-screenshots/html_midcheck_error.jpg)
@@ -30,35 +30,41 @@ Bugs encountered during the development of the quiz:
     
      &nbsp;&nbsp;------->&nbsp;&nbsp;![Html bug fix solution three](docs/testing-screenshots/html_error_fix3.jpg)
 
-  - CSS Bugs:
+  - **CSS Bugs:**
+    - These errorss were encountered in the mid development of the quiz game:
 
-    ![CSS code bugs after running validation test](docs/testing-screenshots/css_midcheck_errors.jpg)
+      ![CSS code bugs after running validation test](docs/testing-screenshots/css_midcheck_errors.jpg)
+    - The first error was fixed by removing a come between two padding values.
+    - The other four errors displayed, happened due to the incorrect use of a transition and transform features.
+    - It was fixed in the code displayed below, by calling the transition and transform properties correctly.
+      ![CSS code bug fix solutions](docs/testing-screenshots/css_error_fix.jpg)
 
-    &nbsp;&nbsp;------->&nbsp;&nbsp;![CSS code bug fix solutions](docs/testing-screenshots/css_error_fix.jpg)
+  - **JavaScript Bugs:**
+    - *Get Image Bug:*<br>
+      ![JavaScript code bug that was encountered ](docs/testing-screenshots/javascript_error_one.jpg)
+    - This bug was spotted at the final stages of the development and it was discovered that the function responsible for assigning image quantity to loop, kept trying to apply a logic on the section containing no assigned image in the array. 
+    - Therefore the logic was refactored and part of the code was moved from one function to another to fix the error.
+    - The process can be seen below in the screenshots.
 
-  - JavaScript Bugs:
-    
-    Get Image Bug:
+      ![JavaScript getImage code bug solution one](docs/testing-screenshots/js_get_image_error.jpg)
+      ![JavaScript getImage code bug solution](docs/testing-screenshots/js_geimage_error.jpg)
 
-    ![JavaScript code bug that was encountered -no.one](docs/testing-screenshots/javascript_error_one.jpg)
-    ![JavaScript getImage code bug solution -no.one](docs/testing-screenshots/js_get_image_error.jpg)
-    ![JavaScript getImage code bug solution -no.one](docs/testing-screenshots/js_geimage_error.jpg)
+    - Here is the final function logic, which was refactored several times to fix the current bug as well as the following bug in "Toggling Hidden".
 
-    &nbsp;&nbsp;------->&nbsp;&nbsp;![JavaScript getImage code final refactor](docs/testing-screenshots/js_getimage_fix.jpg)
+      &nbsp;&nbsp;------->&nbsp;&nbsp;![JavaScript getImage code final refactor](docs/testing-screenshots/js_getimage_fix.jpg)
 
-    Toggle Hidden Items challanges:
+    - Toggle Hidden Items challanges:
+     - Previous Code:
 
-     Previous Code:
+       ![Code before it was optimised](docs/testing-screenshots/js_toggleerror_fix1.jpg)
 
-      ![Code before it was optimised](docs/testing-screenshots/js_toggleerror_fix1.jpg)
+     - Final Code refactor:
 
-     Final Code refactor:
+       ![Refactored and optimised code](docs/testing-screenshots/js_toggle_fix.jpg)
 
-      ![Refactored and optimised code](docs/testing-screenshots/js_toggle_fix.jpg)
+     - Get facts function is the function that is triggered by the toggle of the button.
 
-     Get facts function is the function that is triggered by the toggle of the button.
-
-      ![Get facts function refactor](docs/testing-screenshots/js_getfact_refactor.jpg)
+       ![Get facts function refactor](docs/testing-screenshots/js_getfact_refactor.jpg)
 
 ### **Validator Testing**
   The final validation testing was performed when all the previously encountered bugs were fixed, and the results were of a clean code, with not errors in its final stage.
@@ -119,6 +125,6 @@ There were no errors detected and the quiz has an overall high performance.
 |1  |**As a chance visitor** <br> I want to be able to understand the aim of the quiz from the landing page and experience a simple interactive and visualy engaging game. <br> **I know I can do it when the directions are clear, visualy engaing and the game is well organised and not cluttered.**|Pass|![Start the quiz button function](docs/features-screenshots/start_function.jpg)![Image of landin and game features](docs/features-screenshots/quiz_functions.jpg)![Next button hover feature](docs/features-screenshots/next_function.jpg)|The user starts of on a landing page which has clear, intuitive graphics, giving the user a visual comunication as well as simple text with direction of the quiz. The game is visualy rich and has intuitive and well labled navigation.|
 |2  |**As a chance visitor** <br> I want to experience a user-friendly interface and clear navigation highlighting the quiz options; also ensuring that I can repeat the quiz easily to improve my score. <br> **I know I can do it when the site has visually ordered graphics, with all the buttons responding to the mouse cursor pointing at them and an easy navigation to repeat the quiz again.**|Pass|![End of quiz screenshot](docs/features-screenshots/End_quiz.png)![Play Agian button hover function](docs/features-screenshots/startagain_function.jpg)|The quiz functions and visual oragnisation is ordered and on Laptops the user can use a hover feature over the buttons which hghlights them to indicate selection. On the Quiz End section the user can find a "Play Again" button that allows user to try for a better score.|
 |3  |**As an fine-art history novice** <br> I want to be able to particiape in a quiz that gives you extra information on the art topic in question, to gain more knowlege. <br> **I know I can do it when there is a section in the game that pops up, presenting more information about the artist and their art.**|Pass|![Facts paragraph reveal when choice is made](docs/features-screenshots/facts_box.jpg)|In the Game Section, when the user clicks on their answer selection, a paragraph with information about the painting and the artist pops up, to encourage learning.|
-|4  |**As an fine-art history novice** <br> I want to be able to see instant feedback on the answers, to know which is right and wrong <br><br> **I can experience it when the correct answer button is chosen, it changes visually to indicate it is right and if the wrong answer is chosen it visually indicates its wrong and shows the correct one**|Pass|![Option selection reveals right and wrong answer](docs/features-screenshots/option_highlight.jpg)|When the user clicks an option button containg a correct answer, the button turns green; but if the chosen answer is incorrect, the button turns red, and the correct answer is also revealed, in green.|
+|4  |**As an fine-art history novice** <br> I want to be able to see instant feedback on the answers, to know which is right and wrong <br> **I can experience it when the correct answer button is chosen, it changes visually to indicate it is right and if the wrong answer is chosen it visually indicates its wrong and shows the correct one**|Pass|![Option selection reveals right and wrong answer](docs/features-screenshots/option_highlight.jpg)|When the user clicks an option button containg a correct answer, the button turns green; but if the chosen answer is incorrect, the button turns red, and the correct answer is also revealed, in green.|
 |4  |**As a fine-art student** <br> I want to engage in a quiz that incorporates images of artworks and artists, allowing for visual recognition and engagement.<br> **I know I can do it when the quiz is mostly visual and uses images of art work in the body of the game instead of written questions.**|Pass|![Quiz paintings selection](docs/features-screenshots/images_selection.jpg)|The user can experience a visually rich quiz, where instead of text questions the user is presented with images of artworks; engaging their visual identification skills and give a purely visual experience.|
-|6  |**As a fine-art student**, <br> I want to be able test my knowledge, see my progress throughout the quiz and receive an evaluation on my performance in the end. <br><br> **I know I can do it, when there is a score tracker visible throughout the game and at the end of the quiz I can see how much I scored out of total and a text feedback grading my performance.**|Pass|![Incremented score function](docs/features-screenshots/score.jpg)![Game End all message variations](docs/features-screenshots/all_endquiz_messages.jpg)|The user can track ther progress in the score box, located in the heading of the **Game Section** that shows a score out of 11 points.In the End Quiz Section the user receives a message and a smiley, that changes depending on the points the user scores; its text content reflects how well the user performed in the quiz.|
+|6  |**As a fine-art student**, <br> I want to be able test my knowledge, see my progress throughout the quiz and receive an evaluation on my performance in the end. <br> **I know I can do it, when there is a score tracker visible throughout the game and at the end of the quiz I can see how much I scored out of total and a text feedback grading my performance.**|Pass|![Incremented score function](docs/features-screenshots/score.jpg)![Game End all message variations](docs/features-screenshots/all_endquiz_messages.jpg)|The user can track ther progress in the score box, located in the heading of the **Game Section** that shows a score out of 11 points.In the End Quiz Section the user receives a message and a smiley, that changes depending on the points the user scores; its text content reflects how well the user performed in the quiz.|
