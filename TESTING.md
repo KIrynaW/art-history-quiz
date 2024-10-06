@@ -11,59 +11,62 @@
 ### **Bugs**
 Bugs encountered during the development of the quiz:
 
-  - **HTML Bugs:**
-    - These errorss were encountered in the mid development of the quiz game:
+  **HTML Bugs:**
+   - These errorss were encountered in the mid development of the quiz game:
 
       ![Html code bugs after running validation test](docs/testing-screenshots/html_midcheck_error.jpg)
 
-    - The *Empty Heading* error was fixed by adding "Facts" text to the heading, which later was changed to a paragraph, as can be seen in the screenshot below.
-    - Since the id of the paragrap is used to alter the message through Javascript, its contents are imperative, but needed to clear the error.
+   - The *Empty Heading* error was fixed by adding "Facts" text to the heading, which later was changed to a paragraph, as can be seen in the screenshot below.
+   - Since the id of the paragrap is used to alter the message through Javascript, its contents are imperative, but needed to clear the error.
 
      &nbsp;&nbsp;------->&nbsp;&nbsp;![Html code bug fix solution one](docs/testing-screenshots/html_error_fix2.jpg)
 
-    - The *Empty Heading Error* was fixed by adding "Message" text to the heading.
-    - Since the id of the heading is used to alter the message through Javascript, its contents are imperative, but needed to clear the error.
+   - The *Empty Heading Error* was fixed by adding "Message" text to the heading.
+   - Since the id of the heading is used to alter the message through Javascript, its contents are imperative, but needed to clear the error.
 
      &nbsp;&nbsp;------->&nbsp;&nbsp;![Html code bug fix solution two](docs/testing-screenshots/html_error_fix.jpg)
 
-    - The *Child of Button Element Error* was fixed by removing the heading element from the text, and using the button class to style the text.
+  - The *Child of Button Element Error* was fixed by removing the heading element from the text, and using the button class to style the text.
     
      &nbsp;&nbsp;------->&nbsp;&nbsp;![Html bug fix solution three](docs/testing-screenshots/html_error_fix3.jpg)
 
-  - **CSS Bugs:**
-    - These errorss were encountered in the mid development of the quiz game:
+  **CSS Bugs:**
+   - These errorss were encountered in the mid development of the quiz game:
 
       ![CSS code bugs after running validation test](docs/testing-screenshots/css_midcheck_errors.jpg)
-    - The first error was fixed by removing a come between two padding values.
-    - The other four errors displayed, happened due to the incorrect use of a transition and transform features.
-    - It was fixed in the code displayed below, by calling the transition and transform properties correctly.
+   - The first error was fixed by removing a come between two padding values.
+   - The other four errors displayed, happened due to the incorrect use of a transition and transform features.
+   - It was fixed in the code displayed below, by calling the transition and transform properties correctly.
       ![CSS code bug fix solutions](docs/testing-screenshots/css_error_fix.jpg)
 
-  - **JavaScript Bugs:**
-    - *Get Image Bug:*<br>
+  **JavaScript Bugs:**
+   - **Get Image Bug:**
+
       ![JavaScript code bug that was encountered ](docs/testing-screenshots/javascript_error_one.jpg)
-    - This bug was spotted at the final stages of the development and it was discovered that the function responsible for assigning image quantity to loop, kept trying to apply a logic on the section containing no assigned image in the array. 
-    - Therefore the logic was refactored and part of the code was moved from one function to another to fix the error.
-    - The process can be seen below in the screenshots.
+   - This bug was spotted at the final stages of the development and it was discovered that the function responsible for assigning image quantity to loop, kept trying to apply a logic on the section containing no assigned image in the array. 
+   - Therefore the logic was refactored and part of the code was moved from one function to another to fix the error.
+   - The process can be seen below in the screenshots.
 
       ![JavaScript getImage code bug solution one](docs/testing-screenshots/js_get_image_error.jpg)
       ![JavaScript getImage code bug solution](docs/testing-screenshots/js_geimage_error.jpg)
 
-    - Here is the final function logic, which was refactored several times to fix the current bug as well as the following bug in "Toggling Hidden".
+   - Here is the final function logic, which was refactored several times to fix the current bug as well as the following bug in "Toggling Hidden".
 
       &nbsp;&nbsp;------->&nbsp;&nbsp;![JavaScript getImage code final refactor](docs/testing-screenshots/js_getimage_fix.jpg)
 
-    - Toggle Hidden Items challanges:
-     - This function was refactored several times and was created to optimise the length of other functions and to simplify the task of hiding and revealing the "Facts" section and "Next" button that require hiding and revealing, the most.
-     - This is how the solution looked in its first stages of development.<br>
-       ![Code before it was optimised](docs/testing-screenshots/js_toggleerror_fix1.jpg)
+   - **Toggle Hidden Items Challange:**
+   - This function was refactored several times and was created to optimise the length of other functions and to simplify the task of hiding and revealing the "Facts" section and "Next" button that require hiding and revealing, the most.
+   - This is how the solution looked in its first stages of development.
 
-     - Here is how the code looks now,cafter the final logic refactor, that required some experimentation.<br>
-       ![Refactored and optimised code](docs/testing-screenshots/js_toggle_fix.jpg)
+     ![Code before it was optimised](docs/testing-screenshots/js_toggleerror_fix1.jpg)
 
-     - Get facts function is the function that is triggered by the toggle of the button.
+   - Here is how the code looks now, after the final logic refactor, that required some experimentation.
 
-       ![Get facts function refactor](docs/testing-screenshots/js_getfact_refactor.jpg)
+     ![Refactored and optimised code](docs/testing-screenshots/js_toggle_fix.jpg)
+
+   - Get facts function is the function that is triggered by the toggle of the answer option buttons.
+
+     ![Get facts function refactor](docs/testing-screenshots/js_getfact_refactor.jpg)
 
 ### **Validator Testing**
   The final validation testing was performed when all the previously encountered bugs were fixed, and the results were of a clean code, with not errors in its final stage.
