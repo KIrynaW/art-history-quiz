@@ -54,12 +54,11 @@ Bugs encountered during the development of the quiz:
       &nbsp;&nbsp;------->&nbsp;&nbsp;![JavaScript getImage code final refactor](docs/testing-screenshots/js_getimage_fix.jpg)
 
     - Toggle Hidden Items challanges:
-     - Previous Code:
-
+     - This function was refactored several times and was created to optimise the length of other functions and to simplify the task of hiding and revealing the "Facts" section and "Next" button that require hiding and revealing, the most.
+     - This is how the solution looked in its first stages of development.<br>
        ![Code before it was optimised](docs/testing-screenshots/js_toggleerror_fix1.jpg)
 
-     - Final Code refactor:
-
+     - Here is how the code looks now,cafter the final logic refactor, that required some experimentation.<br>
        ![Refactored and optimised code](docs/testing-screenshots/js_toggle_fix.jpg)
 
      - Get facts function is the function that is triggered by the toggle of the button.
